@@ -1,0 +1,15 @@
+@import '../../mq';
+
+@media #{$desktopMega} {
+    @import '../desktop';
+
+    & {
+        .header {
+            background-size: contain;
+
+            &::before {
+                height: 93%;
+            }
+        }
+    }
+}

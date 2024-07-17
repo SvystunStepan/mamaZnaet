@@ -1,0 +1,70 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+  @import '../desktop';
+//1024-1199
+
+  .flex-left {
+    align-items: flex-start;
+    .block:last-of-type{
+      min-width: 168px;
+    }
+  }
+  .header-title{
+    font-size: 86px;
+    line-height: normal;
+  }
+
+
+  .problem {
+    padding: 0;
+  }
+  .problem .section-title{
+    font-size: 68px;
+  }
+  .problem .foto{
+    max-width: 500px;
+  }
+  
+  .banner::before{
+    display: none;
+  }
+  .banner::after{
+    width: 600px;
+    height: 600px;
+  }
+
+  .title-section::before{
+    left: 5%;
+  }
+  .title-section::after{
+    right: 5%;
+  }
+
+  .program::after{
+    display: none;
+  }
+
+  .price::after {
+    bottom: -50px;
+    width: 600px;
+    height: 500px;
+  }
+  .price .title img {
+    width: 90px;
+    height: auto;
+  }
+  .price ul {
+    padding: 0 10px 0 20px;
+  }
+
+  .speaker .section-title {
+    margin: 40px 0 15px;
+  }
+  .speaker ul {
+    margin-bottom: 40px;
+  }
+  .speaker li{
+    padding-bottom: 8px;
+  }
+}
