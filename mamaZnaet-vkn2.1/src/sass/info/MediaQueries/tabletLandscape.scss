@@ -1,0 +1,73 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+  @import '../desktop';
+
+  //  ПОЧАТОК НОВОГО ХЕДЕРА
+  .data-start {
+    font-size: 16px;
+  }
+
+  .header-title {
+    font-size: 46px;
+    margin-top: 60px;
+  }
+
+  //  КІНЕЦЬ НОВОГО ХЕДЕРА
+
+  .header-img {
+    margin-left: -237px;
+    position: relative;
+  }
+
+  .autor-img {
+    margin-top: -75px;
+    z-index: 1;
+  }
+
+  .modules {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .price {
+    &::before {
+      top: 3%;
+      left: 0;
+    }
+
+    &::after {
+      top: 91%;
+      right: 0;
+    }
+  }
+
+  .bg-img::before {
+    top: 83%;
+    right: -35%;
+  }
+
+  .title-block {
+    .speaker-frame {
+      &::after {
+        top: -1px;
+        height: 105%;
+      }
+    }
+  }
+
+  .reviews .frame {
+    max-width: 776px;
+  }
+
+  .footer {
+    ul {
+      display: block;
+    }
+  }
+}

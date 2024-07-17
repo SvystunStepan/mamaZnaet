@@ -1,0 +1,54 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+  @import '../desktop';
+
+  .who-course .section-title {
+    font-size: 60px;
+  }
+
+  .situations {
+    &::before {
+      top: -50px;
+      right: 0;
+      width: 200px;
+    }
+
+    &::after {
+      left: 0;
+      width: 220px;
+    }
+  }
+
+  .program {
+    &::before {
+      top: 150px;
+      right: 0;
+      width: 150px;
+    }
+
+    &::after {
+      bottom: 0px;
+      left: 0;
+      width: 200px;
+    }
+  }
+
+  .result::before {
+    top: -80px;
+    right: 0;
+    width: 200px;
+  }
+
+  .video-lesson::before {
+    bottom: -310px;
+    left: 0;
+    width: 250px;
+  }
+
+  .footer {
+    ul {
+      flex-direction: column;
+    }
+  }
+}

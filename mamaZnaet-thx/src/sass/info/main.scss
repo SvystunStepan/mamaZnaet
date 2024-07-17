@@ -1,0 +1,206 @@
+@import 'variables';
+
+.thank-you {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: -40px;
+    left: 0;
+    width: 870px;
+    height: 533px;
+    background-image: url(../images/thank-3.webp);
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -137px;
+    width: 614px;
+    height: 308px;
+    background-image: url(../images/thank-2.webp);
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .container {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 320px;
+      left: -290px;
+      width: 450px;
+      height: 290px;
+      background-image: url(../images/thank-1.webp);
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 288px;
+      right: -40px;
+      width: 220px;
+      height: 446px;
+      background-image: url(../images/thank-4.svg);
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+
+  .logo-center {
+    text-align: center;
+  }
+
+  .logo {
+    width: 116px;
+    height: 77px;
+    margin: 60px auto 78px;
+  }
+
+  .title {
+    color: #4343FF;
+    font-family: "Mont-Heavy", sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+
+    span {
+      color: #FF4E7C;
+      text-align: center;
+      font-family: "Mont-Heavy", sans-serif;
+      font-size: 46px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  .title-item {
+    color: #222;
+    text-align: center;
+    font-family: "Mont-Bold", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%;
+    max-width: 717px;
+    margin: 15px auto 43px;
+  }
+
+  .list-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 auto;
+    max-width: 650px;
+
+  }
+
+  .list-title {
+    color: #FF4E7C;
+    font-family: "Mont-Bold", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%;
+    max-width: 717px;
+    margin: 0 0 17px -20px;
+  }
+
+  ol>li {
+    list-style: decimal;
+    list-style-type: decimal;
+  }
+
+  .list li {
+    color: #222;
+    font-family: "Mont-Bold", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%;
+    max-width: 717px;
+    margin: 0 0 8px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .social-title {
+    color: #4343FF;
+    text-align: center;
+    font-family: "Mont-Bold", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%;
+    margin: 21px 0 20px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mess {
+    img {
+      width: 68px;
+      height: 68px;
+      transition: 0.3s ease;
+
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+
+  .viber {
+    margin-left: 0px;
+    margin-right: 18px;
+  }
+
+  .text {
+    color: #222;
+    text-align: center;
+    font-family: "Mont-Bold", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%;
+    margin: 36px auto;
+    max-width: 210px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: -41px;
+      right: 0;
+      width: 28px;
+      height: 40px;
+      background: url(../images/arrow-1.webp) no-repeat;
+    }
+  }
+}
+
+
+body {
+  background-image: url(../images/bg-noize.svg);
+  background-position: center;
+  overflow-x: hidden;
+  @import 'MediaQueries/main';
+}

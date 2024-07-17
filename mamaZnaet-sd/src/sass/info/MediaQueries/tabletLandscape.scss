@@ -1,0 +1,123 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+  @import '../desktop';
+
+  .logo {
+    margin-bottom: 30px;
+  }
+
+  .top-flex .inline-block:first-of-type {
+    margin-right: 27px;
+  }
+
+  .header-title {
+    font-size: 54px;
+    margin-top: 30px;
+  }
+
+  .header-img {
+    width: 100%;
+  }
+
+  .head .btn-box {
+    margin: 35px 0;
+  }
+
+  .btn {
+    padding: 30px 70px;
+  }
+
+  .top-flex {
+    margin-top: 10px;
+  }
+
+  .banner.first {
+    margin-bottom: 0;
+    padding: 70px 20px 10px;
+  }
+
+  .banner.first::before,
+  .banner::before {
+    left: -215px;
+  }
+
+  .banner.first::after,
+  .banner::after {
+    bottom: -112px;
+  }
+
+  .block-item {
+    margin-left: -50px;
+  }
+
+  .program-box {
+    width: 50%;
+  }
+
+  .speaker-img {
+    width: 100%;
+    margin-left: -170px;
+  }
+
+  .speaker h2 {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+
+  .title-block {
+    margin: 50px 0 37px;
+  }
+
+  .smi-list {
+    .slick-prev {
+      left: -50px;
+    }
+
+    .slick-next {
+      right: -50px;
+    }
+  }
+
+  .training-img {
+    left: -35%;
+  }
+
+  .price-bg {
+    margin: 0;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .reviews {
+    .slick-prev {
+      left: -70px;
+    }
+
+    .slick-next {
+      right: -70px;
+    }
+  }
+
+  .reviews-slider {
+    bottom: 0;
+    left: -20px;
+  }
+
+  .thank-you {
+    &::after {
+      top: -18px;
+      right: -380px;
+    }
+
+    .container {
+      &::after {
+        height: 420px;
+      }
+    }
+  }
+}

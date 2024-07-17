@@ -1,0 +1,55 @@
+//eot, woff2, woff,ttf, svg
+@font-face {
+	font-family: "Mont-Regular";
+	src: url("../fonts/Mont-Regular.eot");
+	src: url("../fonts/Mont-Regular.eot?#iefix") format("embedded-opentype"), 
+		// url("../fonts/Mont-Regular.otf") format("opentype"), 
+		url("../fonts/Mont-Regular.svg") format("svg"), 
+		url("../fonts/Mont-Regular.ttf") format("truetype"), 
+		url("../fonts/Mont-Regular.woff") format("woff"), 
+		url("../fonts/Mont-Regular.woff2") format("woff2"); 
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Mont-Bold";
+	src: url("../fonts/Mont-Bold.eot"); 
+	src: url("../fonts/Mont-Bold.eot?#iefix") format("embedded-opentype"), 
+		// url("../fonts/Mont-Bold.otf") format("opentype"), 
+		url("../fonts/Mont-Bold.svg") format("svg"),
+		url("../fonts/Mont-Bold.ttf") format("truetype"), 
+		url("../fonts/Mont-Bold.woff") format("woff"),
+		url("../fonts/Mont-Bold.woff2") format("woff2"); 
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: Mont-Black;
+	src: url("../fonts/Mont-Black.eot"); 
+	src: url("../fonts/Mont-Black.eot?#iefix") format("embedded-opentype"),
+		// url("../fonts/Mont-Black.otf") format("opentype"), 
+		url("../fonts/Mont-Black.svg") format("svg"),
+		url("../fonts/Mont-Black.ttf") format("truetype"), 
+		url("../fonts/Mont-Black.woff") format("woff"), 
+		url("../fonts/Mont-Black.woff2") format("woff2"); 
+	font-weight: 900;
+	font-style: normal;
+} 
+@font-face {
+	font-family: "SF UI Display";
+	src: url("../fonts/sf-ui-display-light.otf"); 
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: "SF UI Display";
+	src: url("../fonts/sfuidisplay_bold.ttf"); 
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "SF UI Display";
+	src: url("../fonts/sf-ui-display-bold.otf"); 
+	font-weight: 700;
+	font-style: normal;
+}

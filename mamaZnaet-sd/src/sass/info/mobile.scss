@@ -1,0 +1,848 @@
+& {
+  .roller {
+    height: 26px;
+
+    span {
+      font-size: 11px;
+    }
+  }
+
+  .head .logo {
+    margin-top: 11px;
+    width: 60px;
+    height: 40px;
+  }
+
+  .head {
+    margin-top: 26px;
+
+    &::before {
+      top: -38px;
+      left: -100px;
+      width: 458.092px;
+      height: 280.498px;
+      transform: rotate(-3.848deg);
+    }
+  }
+
+  .top-flex {
+    justify-content: center;
+    margin: 0;
+  }
+
+  .inline-block {
+    margin: 20px 0;
+    justify-content: center;
+
+    img {
+      margin-right: 8px;
+    }
+  }
+
+  .inline-block:first-of-type {
+    margin-right: 9px;
+  }
+
+  .data-start {
+    font-size: 12px;
+    font-style: normal;
+    line-height: normal;
+    max-width: 250px;
+  }
+
+  .img-toy {
+    width: 27px;
+    height: 34px;
+  }
+
+  .img-clock {
+    width: 29px;
+    height: 29px;
+  }
+
+  .header-title {
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    line-height: normal;
+    margin: 25px 0 10px;
+  }
+
+  .subtitle {
+    text-align: center;
+    max-width: 520px;
+    margin: 15px auto;
+  }
+
+  .subtitle-item {
+    text-align: center;
+    font-size: 16px;
+
+    span {
+      font-size: 16px;
+    }
+  }
+
+  .head .btn-box {
+    margin: 40px auto;
+  }
+
+  .bonus-block {
+    margin: 20px 0;
+    justify-content: center;
+  }
+
+  .header-bonus-img {
+    width: 58px;
+    height: 58px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+
+  .who-this-course h2 {
+    margin-top: 30px;
+  }
+
+  .top-10 {
+
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    h2 {
+      margin: 60px auto 10px;
+    }
+  }
+
+  .top-10-item {
+    font-family: "Mont-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .banner {
+    padding: 40px 20px 20px;
+    margin: 45px auto 100px;
+  }
+
+  .banner.first {
+    &::before {
+      top: auto;
+      bottom: -47px;
+      left: 0;
+      width: 35%;
+      background-size: contain;
+    }
+  }
+
+  .banner.first,
+  .banner {
+    &::after {
+      right: 0;
+      left: auto;
+      bottom: -175px;
+      width: 26%;
+      background-size: contain;
+    }
+  }
+
+  .banner {
+    &::before {
+      top: auto;
+      bottom: -183px;
+      left: 0;
+      width: 35%;
+      background-size: contain;
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .speaker-img img {
+      margin-top: -70px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .header-flex {
+      justify-content: center;
+    }
+
+    .header-flex .bonus-block {
+      margin-right: 0px;
+    }
+
+    .speaker {
+      margin-bottom: 70px;
+    }
+
+    .speaker-img img {
+      margin: -49px auto -60px !important;
+    }
+
+    .title-block {
+      margin-top: 0;
+    }
+  }
+
+  .banner-title {
+    font-size: 22px;
+    padding-top: 72px;
+    padding-bottom: 17px;
+  }
+
+  .banner-item {
+    font-size: 18px;
+    margin: 0 auto 10px;
+  }
+
+  .speaker {
+    margin-top: 0px;
+  }
+
+  .speaker-img {
+    margin: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-top: -70px;
+    }
+  }
+
+  .speaker-slider {
+    margin-top: 20px;
+
+    .slick-slide {
+      margin: 0 6px;
+    }
+  }
+
+  .smi-list {
+    margin: 110px auto 0;
+
+    .slick-next {
+      right: -40px;
+    }
+
+    .slick-prev {
+      left: -40px;
+    }
+  }
+
+  .training {
+    h2 {
+      margin-top: 70px;
+    }
+  }
+
+  .program {
+    h2 {
+      margin-top: 100px;
+    }
+
+    .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .box {
+      max-width: 150px;
+      min-height: 234px;
+      margin-bottom: 40px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .box-img::before {
+      width: 100%;
+      background-size: 100%;
+    }
+
+    .program-img {
+      width: 79%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  .price {
+    margin-top: 100px;
+
+    .container {
+      background-color: #4343FF;
+    }
+
+    .price-bg {
+      border-radius: 0;
+      margin: 0;
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .price-flex {
+      margin-top: -50px;
+    }
+
+    .price-item {
+      max-width: 345px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin: 0;
+      padding-top: 60px;
+    }
+  }
+
+  .timer {
+    font-size: 20px;
+    margin: 11px auto -15px;
+  }
+
+  .price-title {
+    p {
+      margin: 30px 0 5px;
+    }
+  }
+
+  .price {
+    .btn-box {
+      width: auto;
+    }
+
+    .btn .zirka {
+      left: 213px;
+    }
+
+    .btn {
+      margin-right: 35px;
+    }
+
+    .btn-block-item {
+      left: 230px;
+    }
+  }
+
+  .bad-mom .frame {
+    padding: 30px 15px;
+  }
+
+  .results {
+    h2 {
+      margin: 150px 0 30px;
+    }
+
+    .frame {
+      padding: 30px 15px;
+
+      &::after {
+        right: 0px;
+      }
+    }
+
+  }
+
+  .results-item {
+    font-size: 18px;
+    margin: 12px auto 20px;
+  }
+
+  .results .btn-box {
+    margin: 85px auto 0;
+  }
+
+  .reviews {
+    margin-top: 100px;
+
+    h2 {
+      margin-top: 30px;
+    }
+
+  }
+
+  .reviews-slider {
+    min-height: 532px;
+    max-width: 225px;
+    bottom: 0;
+
+    img {
+      max-width: 225px;
+    }
+
+    &::before {
+      width: 360px;
+      background-size: contain;
+    }
+  }
+
+  .slick-prev {
+    left: -70px;
+  }
+
+  .slick-next {
+    right: -70px;
+  }
+
+  .reviews-img {
+    margin-top: 30px;
+  }
+
+  .answers {
+    h2 {
+      margin: 60px auto 20px;
+    }
+  }
+
+  .answers-border {
+    margin: 10px auto;
+    padding: 15px 10px 15px 20px;
+  }
+
+  .bg-arrow {
+    padding: 0 14px;
+  }
+
+  .footer {
+    margin-top: 60px;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 15px 0;
+    }
+  }
+
+  .mess {
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .viber {
+    margin-left: 20px;
+  }
+
+  .fancybox-content {
+    max-width: 344px;
+    max-height: 581px;
+    padding: 23px;
+  }
+
+  .form-title {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .form-subtitle {
+    font-size: 18px;
+    width: 290px;
+  }
+
+  .f-popup form input {
+    width: 298px;
+    height: 60px;
+  }
+
+  .f-popup form label {
+    padding-left: 0px;
+  }
+
+  .f-popup form .btn {
+    margin: 20px auto 0px;
+    width: 298px;
+  }
+
+  .f-popup form .btn::after {
+    width: 298px;
+  }
+
+  .thank-you {
+    &::before {
+      width: 100%;
+      height: 100%;
+      background-size: contain;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    .container {
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .list-box {
+      max-width: -webkit-fit-content;
+      max-width: -moz-fit-content;
+      max-width: fit-content;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 374px) {
+    .head::before {
+      left: -215px;
+    }
+
+    .inline-block img {
+      margin-right: 3px;
+    }
+
+    .data-start {
+      font-size: 11px;
+    }
+
+    .head-btn {
+      padding-left: 40px;
+    }
+
+    .btn {
+      padding-left: 30px;
+    }
+
+    .head-btn,
+    .btn {
+      .zirka {
+        left: 180px;
+      }
+
+      .btn-block-item {
+        left: 195px;
+      }
+    }
+
+    .header-bonus {
+      font-size: 13px;
+    }
+
+    .price {
+      .btn-box {
+        width: auto;
+      }
+
+      .btn {
+        padding: 30px 70px 28px 14px;
+        font-size: 16px;
+        font-family: "Mont-Bold";
+        margin-right: 17px;
+      }
+
+      .btn .zirka {
+        left: 170px;
+        top: -15px;
+        width: 40%;
+        height: auto;
+      }
+
+      .btn-block-item {
+        left: 185px;
+        font-size: 16px;
+
+        span {
+          font-size: 28px;
+        }
+      }
+    }
+
+    .who-this-course .frame {
+      max-width: 305px;
+    }
+
+    .banner {
+      min-height: 480px;
+      padding: 50px 0px 30px;
+    }
+
+    .banner-item {
+      padding: 0 10px;
+    }
+
+    .program .wrap {
+      justify-content: center;
+    }
+
+    .program .box {
+      max-width: none;
+      min-height: none;
+      justify-content: start;
+      margin-bottom: 0px;
+    }
+
+    .price-title {
+      p {
+        margin: 10px 0 5px !important;
+      }
+    }
+
+    .price-today {
+      font-size: 16px;
+    }
+
+    .price-today span {
+      font-size: 40px;
+    }
+
+    .price-today span i {
+      font-size: 25px;
+    }
+
+    .slick-prev {
+      left: -50px;
+    }
+
+    .slick-next {
+      right: -50px;
+    }
+
+    .slick-next,
+    .slick-prev {
+      background-color: transparent;
+      border: none;
+    }
+
+    .reviews {
+      display: none;
+    }
+
+    .thank-you {
+      .title {
+        font-size: 40px;
+
+        span {
+          font-size: 40px;
+        }
+      }
+
+      .title-item {
+        font-size: 16px;
+      }
+
+      .list-title {
+        font-size: 20px;
+      }
+
+      .list li {
+        font-size: 16px;
+      }
+    }
+  }
+
+
+
+  @media screen and (min-width: 320px) and (max-width: 569px) {
+    .title-block {
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 40px;
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      .speaker-frame {
+        margin-left: -15px;
+      }
+    }
+
+    .price-title {
+      p {
+        margin: 20px 0 5px;
+      }
+    }
+
+    .price {
+      .header-bonus {
+        font-size: 15px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 571px) and (max-width: 991px) {
+    .speaker-img img {
+      max-width: 600px;
+      display: block;
+      margin: -70px auto -30px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .training-img {
+      width: 100%;
+      left: 0;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (min-width: 570px) and (max-width: 1023px) {
+    .top-flex {
+      justify-content: space-evenly;
+    }
+
+    .title-block {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1023px) {
+    .header-img {
+      margin-top: 50px;
+      margin-left: -50px;
+    }
+
+    .num-item {
+      margin-left: -15px;
+    }
+
+    .speaker {
+      margin: -50px auto 40px;
+    }
+
+    .speaker-img {
+      margin: 120px -10% 0;
+    }
+
+    .training-img {
+      width: 180%;
+      left: -35% !important;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .bad-mom {
+      &::after {
+        display: none;
+      }
+    }
+
+    .num-item {
+      margin-left: -14px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .mob {
+      display: block;
+    }
+
+    .desk {
+      display: none;
+    }
+
+    .header-flex {
+      flex-direction: column;
+
+      .price-block {
+        margin-right: 0px;
+      }
+
+      .bonus-block {
+        margin-right: 0px;
+      }
+    }
+
+    .top-10-block {
+      flex-direction: column;
+      justify-content: center;
+      padding: 5px 0;
+    }
+
+    .top-10-num {
+      width: 100%;
+      height: 100px;
+      align-items: start;
+      justify-content: center;
+      padding-left: 0;
+    }
+
+    .banner {
+      margin-bottom: 100px;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    .bad-mom {
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    .num-item {
+      text-align: center;
+      font-size: 28px;
+    }
+
+    .block-item {
+      margin-left: 0px;
+      margin-top: -42px;
+      align-items: flex-start;
+
+      img {
+        width: 61px;
+        height: 61px;
+        margin: 14px 0 0 8px;
+      }
+    }
+
+    .top-10-text {
+      font-size: 16px;
+      padding: 20px 20px 0px 8px;
+    }
+
+    .thank-you {
+      .logo {
+        margin: 60px 0 50px;
+      }
+
+      .list-title {
+        margin: 0px 0 17px -3px;
+      }
+
+      .list-box {
+        ol {
+          margin: 0 15px;
+        }
+      }
+    }
+
+    @media screen and (min-width: 878px) and (max-width: 1023px) {
+      .thank-you {
+        .title {
+          max-width: 674px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

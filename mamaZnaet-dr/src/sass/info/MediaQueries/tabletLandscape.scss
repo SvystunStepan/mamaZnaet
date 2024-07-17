@@ -1,0 +1,86 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+  @import '../desktop';
+
+  .header-title {
+    font-size: 38px;
+  }
+
+  .block-item {
+    margin-left: -50px;
+  }
+
+  .banner::before {
+    left: -215px;
+  }
+
+  .banner::after {
+    bottom: -112px;
+  }
+
+  .why-course-img {
+    width: 50%;
+    margin: -30px auto 0;
+    display: block;
+  }
+
+  .speaker-img {
+    width: 100%;
+    margin-left: -170px;
+  }
+
+  .speaker h2 {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+
+  .title-block {
+    margin: 50px 0 37px;
+  }
+
+  .smi-list {
+    .slick-prev {
+      left: -50px;
+    }
+
+    .slick-next {
+      right: -50px;
+    }
+  }
+
+  .training-img {
+    left: -35%;
+  }
+
+
+  .price-title p {
+    margin: 20px 0 0;
+  }
+
+  .price-bg {
+    margin: 0;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .reviews {
+    .slick-prev {
+      left: -70px;
+    }
+
+    .slick-next {
+      right: -70px;
+    }
+  }
+
+  .reviews-slider {
+    bottom: 0;
+    left: -20px;
+  }
+
+}

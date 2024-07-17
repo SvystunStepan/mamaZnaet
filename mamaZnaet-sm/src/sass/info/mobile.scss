@@ -1,0 +1,923 @@
+& {
+
+  @media screen and (max-width: 575px) {
+    .autor-img-mob {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 991px) {
+    .autor-img-mob-1 {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: -8px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .header {
+      background: none;
+      padding-bottom: 0;
+
+      &::before {
+        height: 100%;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: -55px;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        background: #f6f8fc;
+        -webkit-filter: blur(19px);
+        filter: blur(19px);
+      }
+    }
+  }
+
+  .header .flex {
+    justify-content: center;
+  }
+
+  .header-small-img {
+    width: 44px;
+    height: 52px;
+  }
+
+  .calendar {
+    max-width: 145px;
+  }
+
+  .header-title {
+    text-align: center;
+    font-size: 50px;
+    line-height: 48px;
+    margin: 30px auto 9px;
+  }
+
+  .header-subtitle {
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto 25px;
+  }
+
+  @media screen and (max-width: 575px) {
+    .header-form {
+      max-width: 345px;
+      margin: 0 auto;
+
+      .header-form-title {
+        max-width: 320px;
+        padding-top: 40px;
+        margin: 0 auto;
+      }
+
+      .header-bonus-img {
+        width: 33px;
+        height: 33px;
+        margin: 0 5px 0 12px;
+      }
+
+      .header-bonus {
+        font-size: 12px;
+        margin: 12px 0 20px;
+      }
+
+      form {
+        max-width: 315px;
+        margin: 0 auto;
+
+        input {
+          width: 305px;
+          height: 50px;
+          margin: 3px 0;
+        }
+
+        button {
+          width: 305px;
+          padding: 0px 48px;
+          margin-top: 10px;
+
+          &::before {
+            top: 63px;
+          }
+        }
+      }
+
+      .price-box {
+        margin: 30px auto 5px;
+
+        .old {
+          font-size: 24px;
+          align-self: flex-end;
+        }
+
+        .new {
+          font-size: 44px;
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 575px)and (max-width: 991px) {
+    .header-form {
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .header-form form input {
+      width: 170px;
+    }
+  }
+
+  .timer {
+    flex-wrap: wrap;
+    margin-top: 15px;
+    padding-bottom: 40px;
+  }
+
+  .timer-title {
+    width: 305px;
+    text-align: center;
+    margin-right: 0px;
+    margin-bottom: 9px;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin: 40px auto 20px;
+  }
+
+  li {
+    font-size: 14px;
+    padding: 0 0 15px 12px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .who-this-course {
+    &::after {
+      bottom: 0;
+      top: 75%;
+      left: -7px;
+      width: 132%;
+      height: 100%;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 80px auto 20px;
+    }
+
+    .box {
+      margin-bottom: 15px;
+    }
+  }
+
+  /*---------------------------------------*/
+  .program-designed {
+    margin-top: 120px;
+    z-index: 1;
+
+    &::before {
+      height: 80%;
+    }
+
+    &::after {
+      min-width: auto;
+      width: 100%;
+      height: 40px;
+      top: -20px;
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    h2 {
+      padding-top: 40px;
+    }
+
+    .block-bottom {
+      box-shadow: none;
+    }
+  }
+
+  #slider4 {
+    border-radius: 20px;
+    box-shadow: 4px 4px 18px 0px rgba(52, 73, 104, 0.15);
+
+    .slick-dots {
+      bottom: -50px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    #slider4 {
+      display: block;
+    }
+  }
+
+  /*---------------------------------------*/
+  .why-mom {
+    &::before {
+      display: none;
+    }
+
+    h2 {
+      padding-top: 60px;
+    }
+
+    .col-11 {
+      margin-bottom: 20px;
+    }
+
+    .block {
+      min-height: 456px;
+    }
+
+    .block-bottom {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  }
+
+  .mt {
+    margin-top: 0px;
+  }
+
+  .btn-box {
+    padding: 0;
+  }
+
+  .btn {
+    width: 345px;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    padding: 0 55px;
+    margin-top: 15px;
+  }
+
+  /*---------------------------------------*/
+  .six-mistakes {
+    margin-top: 80px;
+
+    &::before {
+      min-width: auto;
+      width: 100%;
+      height: 40px;
+      top: -20px;
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    h2 {
+      padding: 40px 20px 0;
+      margin-bottom: 30px;
+    }
+
+    .col-12 {
+      margin-bottom: 20px;
+    }
+
+    .block-text {
+      font-size: 18px;
+    }
+  }
+
+  /*---------------------------------------*/
+  .if-you {
+    &:before {
+      min-height: 340px;
+      height: auto;
+      background-size: cover;
+      margin-bottom: 0;
+      background-position: bottom center;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    h2 {
+      text-align: center;
+      margin-right: 0px;
+    }
+
+    li {
+      font-size: 18px;
+      padding-right: 7px;
+    }
+
+    .img-box {
+      .in {
+        width: 100%;
+        height: auto;
+        margin: 20px auto 0px;
+        max-width: 351px;
+        display: block;
+      }
+    }
+  }
+
+  /*---------------------------------------*/
+  .banner {
+    .block {
+      &::before {}
+
+      &::after {
+        right: 0;
+        width: 100%;
+        bottom: -3.5%;
+        background-position: bottom;
+      }
+    }
+
+    .block-title {
+      font-size: 18px;
+      padding: 50px 30px 20px 30px;
+    }
+
+    .block-text {
+      font-size: 18px;
+      padding: 0px 34px 90px 30px;
+    }
+  }
+
+  /*---------------------------------------*/
+  .four-options {
+    margin-top: 100px;
+
+    .box {
+      p {
+        padding: 90px 37px 40px;
+      }
+    }
+
+    .blue {
+      p {
+        padding: 90px 37px 20px;
+      }
+    }
+
+    .btn-box {
+      position: relative;
+      z-index: 2;
+    }
+
+    .btn {
+      font-size: 18px;
+      margin: 0 auto 30px;
+    }
+  }
+
+  /*---------------------------------------*/
+  .advantages {
+    .wrap {
+      flex-direction: column;
+      gap: 0px;
+    }
+
+    .wrap-box {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .image {
+      &::before {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  /*---------------------------*/
+  .course-format {
+    margin-top: 45px;
+
+    .block {
+      width: 100%;
+      height: auto;
+
+      &::after {
+        left: 0;
+        width: 100%;
+        margin-left: -12px;
+        top: -5.5%;
+        background-position: top;
+        background-size: cover;
+      }
+    }
+
+    h2 {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    ul {
+      padding: 20px 23px 40px;
+    }
+
+    li {
+      font-size: 18px;
+      padding-left: 25px;
+      padding-right: 28px;
+      width: auto;
+    }
+
+    .ml {
+      margin-left: 0px;
+    }
+
+    .in {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      padding: 59px 26px 20px 26px;
+    }
+  }
+
+  /*---------------------------------------*/
+  .program {
+    &:before {
+      display: none;
+    }
+
+    h2 {
+      margin: 60px auto 30px;
+      text-align: center;
+    }
+
+    .block {
+      flex-direction: column;
+    }
+
+    .num {
+      font-size: 18px;
+      text-align: left;
+      margin: 0 auto 8px 0;
+    }
+
+    .text {
+      margin-bottom: 20px;
+      padding: 24px 22px;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  /*-------------------------*/
+  .speaker {
+    margin-top: 60px;
+
+    &::after {
+      width: 100%;
+      background-size: cover;
+      background-position: bottom center;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-top: 0;
+      margin-left: 0;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 40px auto 30px;
+    }
+
+    li {
+      font-size: 18px;
+      margin-right: 0px;
+      padding: 0 0 15px 25px;
+    }
+
+    .box-img {
+      margin-top: 0px;
+
+      .in {
+        width: 100%;
+        height: auto;
+        max-width: 351px;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  /*---------------------------*/
+
+  .speaker-tv h2 {
+    margin: 60px auto 0px;
+  }
+
+  /*---------------------------*/
+
+  .smi-list {
+    margin: 100px auto 0;
+
+    .slick-prev {
+      left: -40px;
+    }
+
+    .slick-next {
+      right: -40px;
+    }
+  }
+
+  /*---------------------------*/
+  .slick-dots li {
+    margin: 0 -5px;
+
+    button {
+      &:before {
+        border: 1px solid #4343FF;
+      }
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #F6F8FC;
+  }
+
+  .slick-prev {
+    left: -5px;
+
+    &:before {
+      top: 6px;
+      left: 8px;
+    }
+  }
+
+  .slick-next {
+    right: -5px;
+
+    &:before {
+      top: 6px;
+      right: 8px;
+    }
+  }
+
+  /*-------------------------------*/
+  .result {
+    &::before {
+      width: 100%;
+      background-size: cover;
+      background-position: top center;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    h2 {
+      margin: 60px auto 20px;
+    }
+
+    ul {
+      margin-top: 0px;
+    }
+
+    li {
+      font-size: 18px;
+      padding: 0 2px 15px 25px;
+
+      &::before {
+        top: 3px;
+      }
+    }
+
+    .in {
+      width: 100%;
+      height: auto;
+      padding: 0 27px 0 37px;
+      max-width: 351px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  /*---------------------------*/
+  .price {
+    padding-bottom: 30px;
+
+    &::after {
+      min-width: auto;
+      width: 100%;
+      height: 40px;
+      bottom: -20px;
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    .flex {
+      padding: 60px 0 0px;
+    }
+
+    .block {
+      h2 {
+        padding: 0 10px;
+      }
+
+      .price-item {
+        margin: 20px auto;
+      }
+    }
+
+    .price-bonus {
+      margin: 30px auto 0px;
+
+      img {
+        margin: 26px auto 0px;
+      }
+
+      p {
+        padding: 6px 11px 20px;
+      }
+    }
+
+    .timer {
+      padding-bottom: 0;
+    }
+
+    .timer-title {
+      max-width: 305px;
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 9px;
+    }
+
+    .content {
+      li {
+        padding-left: 20px;
+        font-size: 18px;
+      }
+    }
+
+    .btn {
+      font-size: 18px;
+      margin: 6px auto 35px;
+    }
+  }
+
+  /*----------------------------*/
+  .reviews {
+    h2.up-1 {
+      max-width: 345px;
+      margin-top: 120px;
+
+      &::before {
+        top: 29px;
+        right: 298px;
+        width: 47px;
+        height: 30px;
+      }
+    }
+
+    .slick-prev {
+      left: -20px;
+    }
+
+    .slick-next {
+      right: -20px;
+    }
+
+    h2.up-2 {
+      padding: 0 12px;
+      margin: 0px auto;
+    }
+  }
+
+  /*----------------------------*/
+
+  .answers {
+    h2 {
+      margin: 60px auto 20px;
+    }
+  }
+
+  .answers-border {
+    padding: 24px 10px 23px 20px;
+  }
+
+  .bg-arrow {
+    padding: 0 13px;
+    margin-left: 15px;
+  }
+
+  /*----------------------------*/
+  .footer {
+    margin-top: 60px;
+
+    .row {
+      padding: 30px 0 20px;
+    }
+
+    .flex-left {
+      justify-content: center;
+    }
+
+    .logo {
+      width: 156px;
+      height: 103px;
+      margin: 0 auto;
+    }
+
+    ul {
+      flex-direction: column;
+      justify-content: center;
+      margin: 15px 0;
+    }
+
+    li {
+      margin-bottom: 20px;
+    }
+  }
+
+  .flex-inline {
+    flex-direction: column;
+    max-width: 225px;
+    margin: 0 auto;
+
+    ul {
+      margin: 0;
+    }
+
+    li {
+      margin: 10px auto;
+    }
+
+  }
+
+  ul.mail {
+    margin: 0;
+
+    li {
+      padding-bottom: 0;
+    }
+  }
+
+  /*----------------------------*/
+  .fancybox-content {
+    max-width: 344px;
+    max-height: 581px;
+    padding: 23px;
+  }
+
+  .form-title {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .form-subtitle {
+    font-size: 18px;
+    width: 290px;
+  }
+
+  .f-popup form input {
+    width: 298px;
+    height: 60px;
+  }
+
+  .f-popup form label {
+    padding-left: 0px;
+  }
+
+  .f-popup form .btn {
+    margin: 20px auto 0px;
+    width: 298px;
+  }
+
+  .f-popup form .btn::after {
+    width: 298px;
+  }
+
+  /*----------------------------*/
+  @media screen and (min-width: 426px) {
+    .who-this-course {
+      &::after {
+        top: 80%;
+        width: 102%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 734px) and (max-width: 1023px) {
+    .desktop {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1100px) {
+
+    .result .in,
+    .speaker .box-img .in,
+    .if-you .img-box .in {
+      margin-top: 142px;
+      padding: 0;
+      max-width: none;
+    }
+
+    .if-you .img-box .in {
+      margin-top: 151px;
+    }
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1023px) {
+    .banner .block::after {
+      bottom: -6.5%;
+    }
+
+    .course-format {
+      margin-top: 96px;
+
+      h2 {
+        margin-top: 40px;
+      }
+
+      .block::after {
+        top: -94px;
+        background-size: contain;
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .who-this-course {
+      .in {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .desktop {
+      display: none;
+    }
+
+    .mob {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 374px) {
+    .header-form form {
+      input {
+        margin: -4px 20px;
+      }
+
+      button {
+        padding: 0 25px;
+        margin: 20px 20px;
+      }
+    }
+
+    .btn {
+      width: auto;
+      padding: 0 30px;
+      margin: 15px 0px 0;
+    }
+
+    .why-mom .psevdo-2::after {
+      display: none;
+    }
+
+    .price .price-bonus {
+      max-height: 190px;
+    }
+
+    .reviews {
+      h2.up-1 {
+        font-size: 19px;
+
+        &::before {
+          top: 23px;
+          right: 255px;
+        }
+      }
+    }
+  }
+}

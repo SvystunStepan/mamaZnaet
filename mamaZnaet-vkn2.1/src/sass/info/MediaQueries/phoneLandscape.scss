@@ -1,0 +1,41 @@
+@import '../../mq';
+
+@media #{$phoneLandscape} {
+  @import '../mobile';
+
+  & {
+    .head {
+      .inline {
+        margin-top: 15px;
+        justify-content: space-evenly;
+      }
+    }
+
+    .header-title {
+      font-size: 26px;
+    }
+
+    .header-img {
+      width: 100%;
+      height: auto;
+    }
+
+    @media screen and (min-width: 580px) and (max-width: 720px) {
+      .logo {
+        margin-top: 40px;
+      }
+
+      .header-title {
+        margin-top: 40px;
+      }
+    }
+
+    @media screen and (min-width: 420px) and (max-width: 570px) {
+      .head {
+        .inline {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

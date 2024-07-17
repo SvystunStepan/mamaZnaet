@@ -1,0 +1,23 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+  @import '../desktop';
+
+  .header {
+    background-size: auto;
+  }
+
+  .header-title {
+    font-size: 65px
+  }
+
+  .format .format-img {
+    max-width: 550px;
+  }
+
+  .footer {
+    ul {
+      flex-direction: column;
+    }
+  }
+}

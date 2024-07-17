@@ -1,0 +1,112 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+  @import '../desktop';
+
+  .header-img {
+    margin-left: -237px;
+    position: relative;
+  }
+
+  .sec-triangle {
+    &::before {
+      top: 0;
+      left: -30%;
+    }
+
+    &::after {
+      top: 15%;
+      right: -27%;
+      width: 621.048px;
+    }
+  }
+
+  .banner {
+    min-height: 356px;
+
+    &::before {
+      bottom: -50px;
+      left: 0;
+    }
+
+    &::after {
+      bottom: -43px;
+      right: -80px;
+    }
+
+    .title {
+      margin-top: 32px;
+    }
+  }
+
+  .info {
+    &::before {
+      top: 4%;
+      left: -9%;
+    }
+
+    &::after {
+      top: 20%;
+      right: 0;
+    }
+  }
+
+  .program {
+    .block {
+      padding: 20px 59px 20px 66px;
+      margin-left: 109px;
+
+    }
+  }
+
+  .autor-img {
+    margin-top: -75px;
+    z-index: 1;
+  }
+
+  .modules {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .price {
+    &::before {
+      top: 3%;
+      left: 0;
+    }
+
+    &::after {
+      top: 91%;
+      right: 0;
+    }
+  }
+
+  .bg-img::before {
+    top: 83%;
+    right: -35%;
+  }
+
+  .title-block {
+    .speaker-frame {
+      &::after {
+        top: -1px;
+        height: 105%;
+      }
+    }
+  }
+
+  .reviews .frame {
+    max-width: 776px;
+  }
+
+  .footer {
+    ul {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@font-face {
+	font-family: "Mont-Bold";
+	src: url("../fonts/Mont-Bold.eot");
+	src: url("../fonts/Mont-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Mont-Bold.svg") format("svg"),
+		url("../fonts/Mont-Bold.ttf") format("truetype"),
+		url("../fonts/Mont-Bold.woff") format("woff"),
+		url("../fonts/Mont-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Mont-Heavy";
+	src: url("../fonts/Mont-Heavy.eot");
+	src: url("../fonts/Mont-Heavy.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Mont-Heavy.ttf") format("truetype"),
+		url("../fonts/Mont-Heavy.woff") format("woff"),
+		url("../fonts/Mont-Heavy.woff2") format("woff2");
+	font-weight: 800;
+	font-style: normal;
+}
