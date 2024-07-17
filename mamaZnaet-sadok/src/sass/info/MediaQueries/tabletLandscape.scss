@@ -1,0 +1,21 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+  @import '../desktop';
+//1024-1199
+  .header-title{
+    font-size: 76px;
+  }
+  .who-this-course .section-title{
+    font-size: 47px;
+    line-height: 60px;
+  }
+  .who-this-course .foto {
+    width: 120%;
+    margin-left: -20%;
+  }
+  .speaker .section-title{
+    font-size: 42px;
+    line-height: 55px;
+  }
+}

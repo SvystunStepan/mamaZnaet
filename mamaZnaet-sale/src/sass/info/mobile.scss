@@ -1,0 +1,446 @@
+& {
+  .roller {
+    height: 26px;
+
+    span {
+      font-size: 11px;
+    }
+  }
+
+  .header {
+    background-image: url(../images/header-bg-mobile.webp);
+    padding-bottom: 0px;
+    margin-top: 26px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 80%;
+      background-color: #D6E9FD;
+      z-index: -2;
+    }
+  }
+
+  .top-logo {
+    width: 78px;
+    height: 46px;
+  }
+
+  .top-block {
+    justify-content: center;
+    margin-top: 10px;
+    gap: 0 50px;
+  }
+
+  .top-btn {
+    max-width: 345px;
+    margin: 15px 0 30px;
+  }
+
+  .header-subtitle {
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    margin: 0 auto 28px;
+
+    span {
+      line-height: 160%;
+    }
+  }
+
+  .header-title {
+    text-align: center;
+    font-size: 43px;
+    line-height: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .header .block {
+    width: 305px;
+    height: 74px;
+    margin: 20px auto;
+  }
+
+  .header .btn {
+    width: 345px;
+    margin: 10px auto 0;
+    padding: 0 85px;
+  }
+
+  .header-img-mob {
+    display: block;
+    margin: -80px auto 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  //------
+  .section-title {
+    font-size: 38px;
+  }
+
+  .title-item {
+    font-size: 18px;
+  }
+
+  //------
+  .video-lesson {
+    padding: 60px 0 40px;
+
+    .title-item {
+      margin: 20px auto;
+    }
+
+    .video-box {
+      position: relative;
+      padding-bottom: 120%;
+      width: 67%;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+
+  //------
+  .price {
+    padding: 60px 0;
+
+    &::before {
+      height: 970px;
+    }
+
+    &::after {
+      top: 969px;
+    }
+
+    .section-title {
+      margin-bottom: 30px;
+    }
+
+    ul {
+      padding: 0 20px 15px 20px;
+    }
+  }
+
+  //------
+  .spec-offer {
+    .section-title {
+      text-align: center;
+      margin: 0 auto 20px;
+      padding: 0 45px;
+    }
+
+    .text {
+      padding: 0 5px;
+    }
+
+    .spec-offer-img {
+      max-width: 500px;
+      margin: 20px auto 0;
+    }
+  }
+
+  //------
+  .spec-package {
+    padding-top: 60px;
+
+    .section-title {
+      margin-bottom: 20px;
+    }
+
+    .block {
+      max-width: 413px;
+      padding: 40px 23px 40px 20px;
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        bottom: 280px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        border-top: 2px dashed #C4CDDF;
+      }
+    }
+
+    ul {
+      margin: 0px;
+    }
+
+    .price-box .old {
+      max-width: none;
+    }
+  }
+
+  //------
+  .not-sure {
+    padding: 60px 0 40px;
+
+    .section-title {
+      text-align: center;
+      margin: 0 auto 20px;
+    }
+
+    .mess {
+      margin: 15px 7px;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .tg {
+      margin-left: 0px;
+    }
+  }
+
+  //------
+  .footer {
+    margin-top: 0px;
+
+    .row {
+      padding: 30px 0 20px;
+    }
+
+    .flex-left {
+      text-align: center;
+    }
+
+    .logo {
+      width: 156px;
+      height: 103px;
+      margin: 0 auto;
+    }
+
+    ul {
+      flex-direction: column;
+      justify-content: center;
+      margin: 15px 0;
+    }
+
+    li {
+      margin-bottom: 20px;
+    }
+  }
+
+  .flex-inline {
+    flex-direction: column;
+    max-width: 225px;
+    margin: 0 auto;
+
+    ul {
+      margin: 0;
+    }
+
+    li {
+      margin: 10px auto;
+    }
+
+  }
+
+  ul.mail {
+    margin: 0;
+
+    li {
+      padding-bottom: 0;
+    }
+  }
+
+  //------
+  .fancybox-content {
+    max-width: 344px;
+    max-height: 530px;
+    padding: 23px;
+  }
+
+  .form-title {
+    font-size: 46px;
+    margin-top: 30px;
+  }
+
+  .form-subtitle {
+    font-size: 18px;
+    max-width: 290px;
+    margin: 10px auto 20px;
+
+  }
+
+  form label {
+    padding-left: 0px;
+  }
+
+  form .btn {
+    margin: 5px auto 0;
+    max-width: 295px;
+    width: 100%;
+    height: 69px;
+  }
+
+  form .btn::after {
+    height: 68px;
+  }
+
+  label[for="agree"] {
+    font-size: 11px;
+    padding: 14px 0 0;
+  }
+
+  form a,
+  label[for=agree] {
+    font-size: 12px;
+  }
+
+
+  @media screen and (max-width: 374px) {
+    .top-block {
+      justify-content: center;
+      margin-top: 10px;
+      gap: 0 13px;
+    }
+
+    .top-link {
+      font-size: 16px;
+    }
+
+    .header-subtitle {
+      font-size: 16px;
+    }
+
+    .header-subtitle span {
+      font-size: 15px;
+    }
+
+    .header-title {
+      font-size: 37px;
+    }
+
+    .header .btn {
+      width: 250px;
+      padding: 0 40px;
+    }
+
+    .spec-offer .section-title {
+      padding: 0;
+    }
+
+    //----
+    .fancybox-content {
+      max-height: 510px;
+      padding: 15px;
+    }
+
+    .fancybox-close-small {
+      margin: 0;
+    }
+
+    .form-title {
+      font-size: 44px;
+    }
+
+    form input {
+      width: 100%;
+    }
+
+    form a,
+    label[for=agree] {
+      font-size: 11px;
+    }
+  }
+
+  @media screen and (max-width: 674px) {
+    .spec-package {
+      &::before {
+        height: 970px;
+      }
+
+      &::after {
+        top: 969px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 570px) {
+    .header {
+      padding-bottom: 50px;
+    }
+
+    .header-img-mob {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 991px) and (max-width: 1023px) {
+    .header {
+      background-image: url(../images/header-bg-desktop.webp);
+      position: static;
+      padding-bottom: 100px;
+
+      &::before {
+        height: 70%;
+      }
+    }
+
+    .top-block {
+      margin: 20px -50px 30px 0;
+      max-width: none;
+      justify-content: flex-start;
+    }
+
+    .top-btn {
+      max-width: 260px;
+      margin: 0;
+    }
+
+    .header-subtitle {
+      text-align: left;
+      margin: 0 0 20px;
+    }
+
+    .header-title {
+      text-align: left;
+      margin: 0;
+      max-width: 480px;
+    }
+
+    .header .block {
+      margin: 20px 0;
+    }
+
+    .header .btn {
+      margin: 10px 0 0;
+    }
+
+    .header-img-mob {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .spec-offer-img {
+      width: inherit;
+      height: auto;
+    }
+  }
+
+  .header::after {
+    display: none;
+  }
+
+  .price,
+  .spec-package {
+
+    .psevdo::before,
+    .psevdo::after {
+      display: none;
+    }
+  }
+}

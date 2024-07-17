@@ -1,0 +1,53 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+  @import '../desktop';
+
+  .header {
+    background-image: url(../images/header-bg-desktop.webp);
+  }
+
+  .top-block,
+  .header-title {
+    margin-right: -50px;
+  }
+
+  .price .psevdo::before {
+    top: -170px;
+    left: -100px;
+  }
+
+  .price .psevdo::after {
+    top: 0;
+    right: 0;
+  }
+
+  .spec-offer {
+    padding-top: 60px;
+  }
+
+  .spec-package .psevdo::before {
+    top: -70px;
+    left: -150px;
+  }
+
+  .spec-package .psevdo::after {
+    top: -145px;
+    right: 0;
+  }
+
+
+  .not-sure .section-title {
+    text-align: center;
+  }
+
+  .not-sure .block {
+    justify-content: center;
+  }
+
+  .footer {
+    ul {
+      flex-direction: column;
+    }
+  }
+}

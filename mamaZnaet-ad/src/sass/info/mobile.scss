@@ -1,0 +1,903 @@
+& {
+  .header::before {
+    display: none;
+  }
+
+  .nav-main-box {
+    transition: .4s;
+    position: absolute;
+    padding: 75px 0;
+    right: -100%;
+    top: 90px;
+    z-index: 9;
+    border-radius: 15px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    width: 301px;
+    background: #4343ff;
+  }
+
+  .nav-main-box ul>li a {
+    color: #fff;
+  }
+
+  .nav-main {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav-main li {
+    padding: 15px 15px;
+  }
+
+  .show {
+    right: 0px;
+  }
+
+  .logo {
+    width: 80px;
+    height: 53px;
+  }
+
+  .social {
+    margin-left: auto;
+  }
+
+  .viber {
+    margin-left: 10px;
+  }
+
+  .header-text {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .header-title {
+    text-align: center;
+    font-size: 28px;
+    margin: 20px auto;
+  }
+
+  .header-subtitle {
+    text-align: center;
+
+    ul {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    li {
+      text-align: left;
+    }
+  }
+
+  .header-price {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+
+  .new {
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    margin: 0 0 20px 0;
+  }
+
+  .header-bonus {
+    font-size: 16px;
+  }
+
+  .header-img {
+    &::before {
+      bottom: -154px;
+      left: -87px;
+      width: 100%;
+      height: 100%;
+    }
+
+    &::after {
+      top: 41px;
+      right: -112px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .autor-img {
+      width: 100%;
+      height: auto;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .header {
+    overflow: hidden;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin: 70px auto 10px;
+
+  }
+
+  .who-this-course {
+    z-index: 3;
+
+    &::after {
+      display: none;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+    }
+  }
+
+  .title-block {
+    font-size: 18px;
+  }
+
+  .block {
+    margin-bottom: 20px;
+    height: auto;
+  }
+
+  .top-10::after {
+    display: none;
+  }
+
+  .top-10-block {
+    padding: 0px 17px 15px 0;
+    margin-bottom: 10px;
+  }
+
+  .block-img {
+    max-width: 51px;
+    margin: 12px 4px auto 13px;
+  }
+
+  .top-10-img {
+    width: 100%;
+  }
+
+  .block-cetner {
+    padding-top: 24px;
+
+    p:first-of-type {
+      padding-bottom: 8px;
+    }
+  }
+
+  .help {
+    &::before {
+      display: none;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .help-box {
+    max-height: none;
+    height: auto;
+
+    p {
+      padding-right: 16px;
+    }
+  }
+
+  .what-happen {
+    h2 {
+      text-align: center;
+      margin-top: 290px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+
+  .what-shall {
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .item {
+      text-align: center;
+      padding: 10px 0 30px;
+    }
+
+    .box {
+      max-height: none;
+      height: auto;
+      margin-bottom: 20px;
+
+      p {
+        padding: 80px 21px;
+      }
+    }
+
+    .blue::after {
+      top: 25px;
+      left: 21px;
+    }
+
+    .btn-box {
+      padding-bottom: 38px;
+    }
+
+    .btn {
+      margin: -50px auto 5px;
+    }
+  }
+
+  .after-passing {
+    h2 {
+      text-align: center;
+      margin: 50px auto 30px;
+    }
+
+    li {
+      padding: 0 15px 20px;
+
+      &::before {
+        left: 0;
+      }
+    }
+
+    .btn {
+      padding: 10px 20px;
+    }
+
+    img {
+      width: 143%;
+      height: auto;
+      margin-left: -163px;
+      margin-top: 0;
+      margin-bottom: 90px;
+    }
+  }
+
+  .advantages {
+    h2 {
+      margin: 40px auto 30px;
+    }
+
+    .wrap-box {
+      width: auto;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    p {
+      padding: 40px 22px 20px 22px;
+
+      span {
+        font-family: Mont-bold, sans-serif;
+      }
+    }
+
+    .btn {
+      padding: 10px 20px;
+      margin: 20px auto 5px;
+    }
+  }
+
+  .course-format {
+    h2 {
+      text-align: center;
+      margin: 70px auto 20px;
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+
+    li {
+      padding-right: 10px;
+    }
+
+    img {
+      width: 128%;
+      margin-left: -125px;
+    }
+  }
+
+  .speaker {
+    background-size: cover;
+
+    img {
+      width: 135%;
+      height: auto;
+      margin-top: -15px;
+      margin-left: -80px;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 60px auto 30px;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .how-will::before {
+    display: none;
+  }
+
+  .speaker-tv h2 {
+    margin: 20px auto 0px;
+  }
+
+  .smi-list {
+    margin: 100px auto 0;
+  }
+
+  .slick-prev {
+    left: -40px;
+  }
+
+  .slick-next {
+    right: -40px;
+  }
+
+  .how-will {
+
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    h2 {
+      width: auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  .how-will .block-cetner {
+    padding-bottom: 28px;
+    padding-right: 18px;
+  }
+
+  .recommendations {
+    &::before {
+      display: none;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 70px auto 30px;
+      width: auto;
+    }
+
+    .btn {
+      padding: 10px 20px;
+    }
+
+    img {
+      width: 132%;
+      margin-left: -150px;
+    }
+  }
+
+
+  .price-item {
+    text-align: center;
+    padding: 10px 15px 20px;
+  }
+
+  .timer {
+    font-size: 28px;
+    line-height: 0.4;
+    margin: 20px 0;
+  }
+
+  .price-block {
+    margin-top: 20px;
+  }
+
+  .content {
+    ul {
+      padding: 30px 40px;
+    }
+  }
+
+  .price-bonus {
+    width: auto;
+    height: auto;
+    align-items: start;
+    padding: 25px 19px 22px 19px;
+    margin-top: 20px;
+
+    img {
+      width: 40px;
+      height: 43px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .reviews {
+    h2:first-of-type {
+
+      &::before {
+        top: 28px;
+        left: 10px;
+        width: 47px;
+        height: 30px;
+      }
+    }
+
+    h2:last-of-type {
+      max-width: 327px;
+      margin: 30px auto 0;
+    }
+  }
+
+  .answers {
+    h2 {
+      margin: 70px auto 20px;
+    }
+  }
+
+  .answers-border {
+    padding: 24px 10px 23px 20px;
+  }
+
+  .bg-arrow {
+    padding: 0 13px;
+  }
+
+  .footer {
+    margin-top: 60px;
+
+    .logo {
+      width: 156px;
+      height: 103px;
+      margin: 20px 0 0;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 15px 0;
+    }
+  }
+
+  .mess {
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+
+    .what-happen img,
+    .after-passing img,
+    .course-format img,
+    .speaker img {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 768px) {
+
+    .what-happen img,
+    .after-passing img,
+    .course-format img,
+    .speaker img {
+      width: 75%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .flex {
+      flex-direction: column;
+    }
+
+    .header-text {
+      margin: 0 auto;
+    }
+
+    .header-subtitle {
+      margin-right: 0;
+    }
+
+    .header-img::after {
+      top: 41px;
+      right: -112px;
+      width: 100%;
+      height: 100%;
+      background-size: 100%;
+    }
+
+    .who-this-course::before {
+      top: -90px;
+      height: 84px;
+      background-size: cover;
+    }
+
+    .course-format img {
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+    }
+
+    .recommendations img {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1023px) {
+    .header-price {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: -50px;
+      z-index: 4;
+    }
+
+    header::after {
+      display: none;
+    }
+
+    .header-img:after {
+      right: 0;
+    }
+
+    .who-this-course h2 {
+      margin-top: 70px;
+    }
+
+    .btn {
+      margin: 0 30px 0px;
+    }
+
+    .block {
+      margin-bottom: 0px;
+      height: 100%;
+    }
+
+    .who-this-course .btn {
+      margin-top: 20px;
+      padding: 19px 20px;
+    }
+
+    .help h2 {
+      max-width: 590px;
+    }
+
+    .help-box {
+      max-height: none;
+      height: 100%;
+
+      p {
+        padding-bottom: 20px;
+      }
+    }
+
+    .low {
+      margin-top: 20px;
+      max-height: 250px;
+    }
+
+    .help-img img {
+      top: -60px;
+      right: -10px;
+    }
+
+    .what-happen {
+      h2 {
+        margin: 70px auto 20px;
+        max-width: 471px;
+      }
+
+      img {
+        width: 150%;
+        margin-top: 60px;
+        margin-left: -60px;
+      }
+
+      li {
+        padding-bottom: 10px;
+      }
+
+      .btn {
+        padding: 20px;
+      }
+    }
+
+    .what-shall {
+
+      .box {
+        height: 100%;
+
+        p {
+          padding: 80px 21px 20px;
+        }
+      }
+
+      .btn {
+        max-width: 200px;
+        padding: 20px 15px 20px;
+        margin: 30px auto 5px;
+      }
+    }
+
+    .after-passing {
+      h2 {
+        margin: 90px auto 20px;
+      }
+
+      li {
+        padding-bottom: 10px;
+      }
+
+      .btn {
+        padding: 20px;
+      }
+    }
+
+    .advantages {
+      h2 {
+        margin: 70px auto 20px;
+        max-width: 380px;
+      }
+
+      .wrap {
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .wrap-box {
+        width: 244px;
+        height: 531px;
+      }
+
+      .btn {
+        padding: 20px;
+      }
+    }
+
+    .speaker {
+      h2 {
+        z-index: 2;
+        position: relative;
+      }
+
+      img {
+        margin-top: 20px;
+        width: 140%;
+      }
+
+      li {
+        z-index: 2;
+      }
+    }
+
+    .speaker-tv h2 {
+      margin: 50px auto 0;
+    }
+
+    .how-will h2 {
+      width: 760px;
+    }
+
+    .recommendations {
+      .btn {
+        padding: 20px;
+      }
+    }
+
+    .price h2 {
+      max-width: 630px;
+      margin-top: 100px;
+    }
+
+    .price-item {
+      padding: 15px 15px 10px;
+    }
+
+    .timer {
+      line-height: 1;
+    }
+
+    .reviews h2:first-of-type {
+      max-width: 500px;
+    }
+
+    .reviews h2:last-of-type {
+      max-width: 565px;
+    }
+
+    .footer {
+      .logo {
+        margin: 0;
+      }
+
+      ul {
+        padding: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    .price-flex {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .price-block {
+      max-width: 346px;
+    }
+
+    .header-img {
+      position: relative;
+      max-width: 350px;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .flex {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .price-box {
+      margin-right: 20px;
+    }
+
+    .who-this-course .btn {
+      padding: 20px;
+    }
+
+    .what-happen .btn {
+      padding: 20px !important;
+      margin: 10px auto 5px;
+    }
+
+    .what-happen img {
+      width: 50%;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .after-passing .btn {
+      padding: 20px;
+      margin: 0 auto 5px;
+    }
+
+    .after-passing img {
+      width: 50%;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .advantages .btn {
+      padding: 20px;
+    }
+
+    .speaker h2 {
+      position: relative;
+      z-index: 2;
+    }
+
+    .speaker img {
+      width: 50%;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .recommendations .btn {
+      padding: 20px;
+      margin: 5px auto 5px;
+    }
+
+    .reviews h2:first-of-type {
+      max-width: 490px;
+    }
+
+    .reviews h2:last-of-type {
+      max-width: 575px;
+    }
+  }
+
+  @media screen and (min-width: 380px) and (max-width: 767px) {
+    .who-this-course .btn {
+      padding: 20px;
+    }
+
+    .what-happen .btn {
+      padding: 20px;
+      margin: 10px auto 5px;
+    }
+
+    .after-passing .btn {
+      padding: 20px;
+      margin: 0 auto 5px;
+    }
+
+    .advantages .btn {
+      padding: 20px;
+    }
+
+    .recommendations .btn {
+      padding: 20px;
+      margin: 5px auto 5px;
+    }
+
+    .timer {
+      line-height: 1;
+    }
+
+    .speaker h2 {
+      position: relative;
+      z-index: 2;
+    }
+
+    .reviews h2:first-of-type {
+      max-width: 491px;
+    }
+
+    .reviews h2:last-of-type {
+      max-width: 574px;
+    }
+
+    .speaker img {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .fancybox-content {
+    max-width: 344px;
+    max-height: 581px;
+    padding: 23px;
+  }
+
+  .form-title {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .form-subtitle {
+    font-size: 18px;
+    width: 290px;
+  }
+
+  form input {
+    width: 298px;
+    height: 60px;
+  }
+
+  form label {
+    padding-left: 0px;
+  }
+
+  form .btn {
+    margin: 20px auto 0px;
+  }
+}

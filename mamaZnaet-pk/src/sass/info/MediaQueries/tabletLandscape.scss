@@ -1,0 +1,36 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+  @import '../desktop';
+
+  .header-title {
+    font-size: 75px
+  }
+
+  .header .box {
+    top: 105px;
+    left: 355px;
+  }
+
+  .header .timer {
+    justify-content: center;
+  }
+
+  .situations {
+    margin-top: 60px;
+  }
+
+  .situations .h2-top {
+    padding-top: 0px;
+  }
+
+  .speaker h2 {
+    margin-top: 0;
+  }
+
+  .footer {
+    ul {
+      flex-direction: column;
+    }
+  }
+}

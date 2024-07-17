@@ -1,0 +1,10 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+  @import '../desktop';
+
+  .who-this-course .foto {
+    width: 130%;
+    margin-left: -33%;
+  }
+}

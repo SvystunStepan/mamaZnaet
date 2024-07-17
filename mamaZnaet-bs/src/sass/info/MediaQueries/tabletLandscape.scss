@@ -1,0 +1,83 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+  @import '../desktop';
+
+  .header-title {
+    font-size: 75px
+  }
+
+  .header .box {
+    top: 105px;
+    left: 355px;
+  }
+
+  .header .timer {
+    justify-content: center;
+  }
+
+  .situations .h2-top {
+    padding-top: 0px;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .tablet-landscape {
+    display: block;
+  }
+
+  .consequences::before {
+    display: none;
+  }
+
+  .consequences .tablet-landscape {
+    background: #ECF6FD;
+
+    .title-item {
+      text-align: center;
+      margin: 40px auto 30px;
+      max-width: 770px;
+    }
+  }
+
+  .are-you-bored {
+    .block {
+      max-width: 314px;
+    }
+
+    .wide {
+      max-width: 983px;
+      margin: 0 auto;
+    }
+  }
+
+  .advantages .tablet-landscape {
+    background-color: #fff;
+
+    .title-item {
+      text-align: center;
+      margin: 40px auto 30px;
+      max-width: 770px;
+    }
+  }
+
+  .price .flex {
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .speaker h2 {
+    margin-top: 0;
+  }
+
+  .footer {
+    ul {
+      flex-direction: column;
+    }
+  }
+}
