@@ -355,6 +355,37 @@
   margin-top: 20px;
 }
 
+.bonus-box {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+  min-height: 73px;
+  border-radius: 10px;
+  background-color: #ffe4e4;
+  margin: 30px 0 20px;
+}
+
+.header-bonus-img {
+  width: 46px;
+  height: 46px;
+  margin: 0 15px;
+}
+
+.header-bonus {
+  color: #373536;
+  font-family: "Involve-Regular", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 400px;
+
+  span {
+    font-family: "Involve-Bold", sans-serif;
+    font-weight: 700;
+  }
+}
 .header-flex {
   display: flex;
   align-items: center;
@@ -972,22 +1003,27 @@ li {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
+    height: 100%;
     max-width: 454px;
     border-radius: 20px;
     background: #FFF;
-    padding: 40px 30px 0;
+    padding: 30px 30px 0;
+    margin-bottom: 40px;
     position: relative;
     z-index: 3;
   }
   .title {
-    color: #373536;
-    text-align: center;
-    font-family: "Involve-Bold",sans-serif;
-    font-size: 22px;
+    background: linear-gradient(98deg, #474748 0%, #636363 34%, #373536 82.92%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Bebas Neue Cyrillic",sans-serif;
+    font-size: 50px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: normal;
-    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 10px;
   }
   ul {
     padding: 30px 0;
@@ -1018,15 +1054,42 @@ li {
   li {
     color: #373536;
     padding: 7px 0 17px 55px;
+    span{
+      white-space: nowrap;
+    }
   }
   li:last-of-type{
     padding-bottom: 0;
   }
-  
+  .price-bonus-box {
+    padding: 20px 0;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .price-bonus-img {
+    width: 46px;
+    height: 46px;
+    margin: 0 12px 0 0;
+  }
   .price-box {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+
+    &::before{
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-image: linear-gradient(to right, #fff 40%, #AEB9D5 40%);
+      background-size: 20px 1px;
+      background-repeat: repeat-x;
+    }
   }
   .old {
     color: #7A7A7A;

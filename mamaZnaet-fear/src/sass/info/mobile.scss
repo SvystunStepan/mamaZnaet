@@ -84,6 +84,17 @@
     margin: 0 auto 20px;
   }
 
+  .bonus-box {
+    min-height: 95px;
+    margin: 30px auto 20px;
+  }
+  .header-bonus-img {
+    margin: 0 9px 0 11px;
+  }
+  .header-bonus {
+    font-size: 16px;
+  }
+
   .header-price {
     align-items: center;
     justify-content: space-between;
@@ -265,14 +276,17 @@
       }
     }
     .tariff {
-      padding: 30px 20px 0;
+      padding: 20px 20px 0;
     }
     .title {
-      margin-bottom: 15px;
-      padding: 0 7px;
+      font-size: 40px;
     }
     ul {
       padding: 20px 0;
+    }
+    .price-bonus-box {
+      max-width: 288px;
+      margin: 0 auto;
     }
   }
 
