@@ -1,4 +1,5 @@
 & {
+
   /* .row>* {
     padding-right: calc(var(--bs-gutter-x) * 0.75);
     padding-left: calc(var(--bs-gutter-x) * 0.75);
@@ -6,7 +7,8 @@
   .desktop {
     display: none;
   }
-  .mobile { 
+
+  .mobile {
     display: block;
   }
 
@@ -23,6 +25,7 @@
   .nav {
     padding: 10px 0 20px;
   }
+
   .nav-main-box {
     transition: .4s;
     position: absolute;
@@ -37,27 +40,34 @@
     width: 316px;
     background-color: #637598;
   }
+
   .nav-main {
     flex-direction: column;
     justify-content: center;
     margin: 55px auto;
+
     li {
       margin: 20px 15px 0;
       padding: 0;
     }
+
     .link {
       color: #fff;
+
       &::before {
         background-color: #515151;
       }
+
       &:hover {
         color: #515151;
       }
     }
   }
+
   .show {
     right: 0px;
   }
+
   .logo {
     width: 90px;
     height: auto;
@@ -68,50 +78,62 @@
     overflow-x: clip;
     margin-top: 25px;
   }
+
   .header .flex-left {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
   }
+
   .calendar {
     margin: 0 16px;
   }
+
   .header-text {
     font-size: 16px;
   }
+
   .header-title {
     text-align: center;
     font-size: 80px;
     margin: 10px auto 30px;
     line-height: 65px;
   }
+
   .bonus-box {
     min-height: 95px;
     margin: 30px auto 20px;
   }
+
   .header-bonus-img {
     margin: 0 9px 0 11px;
   }
+
   .header-bonus {
     font-size: 16px;
   }
+
   .header-price {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin-top: 8px;
   }
+
   .flex-bottom {
     align-items: center;
   }
+
   .price-box {
     margin-top: 20px;
   }
+
   .new {
     line-height: 1;
     margin-top: 0;
     margin-bottom: 5px;
   }
+
   .header .timer {
     justify-content: center;
     margin: 25px auto 15px;
@@ -122,6 +144,7 @@
   .section-title {
     font-size: 46px;
   }
+
   .title-item {
     font-size: 22px;
   }
@@ -129,6 +152,7 @@
   /*----------------*/
   .period {
     padding: 60px 0 30px;
+
     .block:first-of-type .text {
       padding: 0 20px;
     }
@@ -137,11 +161,13 @@
   /*----------------*/
   .problem {
     padding: 30px 0 0;
+
     .section-title {
       text-align: center;
       padding: 0 5px;
       margin: 0 auto 30px;
     }
+
     .foto {
       width: 100%;
       margin: 0 auto;
@@ -151,46 +177,56 @@
   /*----------------*/
   .banner {
     padding: 0 0 60px;
+
     &::before,
     &::after {
-    display: none;
+      display: none;
     }
+
     .section-title:first-of-type {
       margin: 0 auto;
       padding: 60px 0 20px;
     }
-    .group{
+
+    .group {
       margin-bottom: 16px;
     }
-    .block{
+
+    .block {
       margin-bottom: 16px;
     }
-    .text{
+
+    .text {
       padding-right: 5px;
     }
+
     .section-title:last-of-type {
       margin: 40px auto 20px;
     }
   }
 
   /*----------------*/
-  .title-section{
+  .title-section {
     padding: 60px 0;
-    &::before{
+
+    &::before {
       top: -43px;
       left: 1%;
       width: 86px;
       height: 86px;
     }
-    &::after{
+
+    &::after {
       bottom: -43px;
       right: 1%;
       width: 86px;
       height: 86px;
     }
-    .container{
+
+    .container {
+
       &::before,
-      &::after{
+      &::after {
         display: none;
       }
     }
@@ -199,15 +235,18 @@
   /*----------------*/
   .result {
     padding: 1px 0 0;
+
     .section-title {
       text-align: center;
       margin: 60px auto 20px;
     }
-    li{
+
+    li {
       padding: 0px 31px 18px 40px;
-        &::before{
-      }
+
+      &::before {}
     }
+
     .foto {
       max-width: 545px;
       margin: 0 auto;
@@ -217,27 +256,34 @@
   /*----------------*/
   .program {
     padding: 60px 0;
+
     &::before,
     &::after {
       display: none;
     }
-    .section-title {  
+
+    .section-title {
       margin: 0 auto 30px;
     }
+
     .wrap {
       gap: 10px;
     }
+
     .block {
       flex-direction: column;
       padding: 40px 30px 20px 30px;
     }
+
     .left {
       width: 100%;
     }
-    .left .block-title{
+
+    .left .block-title {
       margin-top: 0px;
     }
-    .right{
+
+    .right {
       min-width: 305px;
       min-height: auto;
       max-width: none;
@@ -247,80 +293,99 @@
       transform: translateX(-50%);
       width: 100%;
     }
-    .block-title{
+
+    .block-title {
       font-size: 24px;
     }
-    li{
+
+    li {
       padding: 0 14px 15px 0;
     }
-    li:last-of-type{
+
+    li:last-of-type {
       padding-bottom: 0;
     }
   }
-    
+
   /*----------------*/
   .price {
     padding: 60px 0 30px;
+
     &::after {
       display: none;
     }
-    .title-item{
+
+    .title-item {
       margin: 20px auto 30px;
     }
-    .flex{
+
+    .flex {
       flex-direction: column;
       align-items: center;
     }
+
     .title {
       font-size: 32px;
+
       &::after {
         width: 94%;
       }
     }
+
     ul {
       padding: 0 10px 0 19px;
+
       &::after {
         width: 94%;
       }
     }
-    li:last-child{
+
+    li:last-child {
       padding-bottom: 30px;
     }
-    .btn-box{
+
+    .btn-box {
       margin-bottom: 26px;
     }
   }
-  
+
   /*----------------*/
-  .grafik{
+  .grafik {
     padding: 30px 0;
-    .container{
+
+    .container {
       &::after {
         display: none;
       }
     }
-    .wrap{
+
+    .wrap {
       flex-direction: row;
       // gap: 8px;
       gap: 5px;
     }
-    .block{
+
+    .block {
       flex-direction: column;
       // gap: 10px;
       gap: 5px;
     }
-    .box{
+
+    .box {
       font-size: 14px;
       max-width: 115px;
       padding: 0 15px;
     }
+
     .timer {
       flex-direction: column;
       margin-top: 30px;
     }
-    .timer-title{
+
+    .timer-title {
       margin-bottom: 12px;
     }
+
     .btn {
       margin: 30px auto 0;
     }
@@ -329,16 +394,20 @@
   /*----------------*/
   .speaker {
     margin: 30px auto;
+
     .section-title {
       text-align: center;
       margin: 40px auto 20px;
     }
-    .bg{
+
+    .bg {
       padding: 0 18px 0 30px;
     }
-    .mg-left{
+
+    .mg-left {
       margin-left: 0px;
     }
+
     .foto {
       margin-top: -50px;
       margin-left: -15%;
@@ -348,11 +417,13 @@
   /*----------------*/
   .speaker-tv {
     padding: 30px 0;
+
     &::before,
     &::after {
       display: none;
     }
-    .section-title{
+
+    .section-title {
       padding: 0 8px;
     }
   }
@@ -418,6 +489,7 @@
         white-space: nowrap;
       }
     }
+
     .slick-prev {
       left: -20px;
     }
@@ -425,6 +497,7 @@
     .slick-next {
       right: -20px;
     }
+
     .title-item:last-of-type {
       font-size: 18px;
       margin-bottom: 0;
@@ -505,109 +578,137 @@
     // max-height: 530px;
     padding: 20px;
   }
+
   .form-title {
     font-size: 42px;
     line-height: 90%;
     margin: 30px auto 15px;
+
     span {
       line-height: 90%;
     }
   }
+
   .form-subtitle {
     font-size: 16px;
     max-width: 290px;
   }
+
   // ***   ***   ***
-  .form-subtitle.btn-1{
+  .form-subtitle.btn-1 {
     // margin: 20px auto 10px;
   }
+
   .form-subtitle.btn-2 {
     // max-width: 360px;
     // font-size: 14px;
   }
-  .btn-3{
-    .form-title{
+
+  .btn-3 {
+    .form-title {
       margin: 15px auto;
     }
-    ul{    
+
+    ul {
       margin: 15px 0px 15px 19px;
     }
-    li{
+
+    li {
       font-size: 16px;
     }
   }
+
   // ***   ***   ***
   form input {
     width: 100%;
     height: 40px;
   }
+
   form label {
     padding-left: 0px;
     font-size: 16px;
   }
+
   form .btn {
     margin: 10px auto 0;
     max-width: 295px;
     width: 100%;
     height: 69px;
   }
+
   form .btn::after {
     height: 68px;
   }
+
   label[for="agree"] {
     font-size: 11px;
     padding: 14px 0 0;
   }
+
   form a,
   label[for=agree] {
     font-size: 11px;
   }
+
   /*=============*/
   @media screen and (max-width: 374px) {
     .header-text {
       padding-right: 30px;
     }
+
     .header-title {
       font-size: 54px;
       line-height: normal;
     }
+
     .new {
       font-size: 40px;
     }
+
     .header .btn {
       // width: 250px;
     }
-    .title-section .section-title{
+
+    .title-section .section-title {
       font-size: 33px;
     }
-     .program .block {
+
+    .program .block {
       padding: 40px 10px 20px 20px;
     }
+
     .program .right {
       min-width: auto;
     }
+
     .price .title img {
       width: 75px;
       height: auto;
     }
+
     .price .btn {
       width: 250px;
     }
-    .grafik{
+
+    .grafik {
       .box {
         max-width: 92px;
         font-size: 12px;
       }
-      .wrap{
+
+      .wrap {
         gap: 2px;
       }
-      .block{
+
+      .block {
         gap: 2px;
       }
-    } 
+    }
+
     .speaker .bg {
       padding: 0 13px 0 18px;
     }
+
     .speaker-tv .section-title,
     .reviews .section-title {
       font-size: 42px;
@@ -618,26 +719,33 @@
       // max-height: 510px;
       padding: 15px;
     }
+
     .fancybox-close-small {
       margin: 0;
     }
+
     .form-title {
       font-size: 34px;
     }
-     .btn-3 li {
+
+    .btn-3 li {
       font-size: 14px;
     }
+
     form input {
       width: 100%;
     }
+
     form a,
     label[for=agree] {
       font-size: 11px;
     }
+
     form .btn {
       flex-direction: row;
       padding: 0;
     }
+
     /*=========*/
   }
 
@@ -645,7 +753,8 @@
     .header .flex-left {
       align-items: center;
     }
-    .speaker .foto{
+
+    .speaker .foto {
       margin: -50px auto 0;
     }
   }
@@ -660,7 +769,8 @@
   @media screen and (min-width: 768px) and (max-width: 991px) {
     .header::before {
       height: 100%;
-    } 
+    }
+
     .autor-img-mob-1 {
       display: block;
       max-width: 500px;
@@ -681,6 +791,7 @@
       flex-direction: row;
       align-items: flex-start;
     }
+
     .header .timer {
       margin-top: 0;
       margin-left: 20px;
