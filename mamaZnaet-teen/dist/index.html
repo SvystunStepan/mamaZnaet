@@ -14,7 +14,7 @@
   <meta property="og:title" content="На одній хвилі з підлітком">
   <meta property="og:image" content="images/og.png">
   <title>На одній хвилі з підлітком</title>
-  <link type="text/css" rel="stylesheet" href="css/app.css?v=1.0">
+  <link type="text/css" rel="stylesheet" href="css/app.css?v=1.1">
   <link rel="stylesheet" href="css/loader.css">
   <link rel="shortcut icon" href="images/favicon.webp">
 
@@ -85,6 +85,33 @@
       <span>ЗАРАЗ&nbsp;ДІЄ&nbsp;ЗНИЖКА</span>
     </article>
   </div>
+
+  <section class="video-sect">
+    <div class="container video" id="video-1">
+      <h2 class="section-title"><span>ДЕНЬ 1. </span>Мій підліток некерований. Чому він так себе поводить?</h2>
+      <div class="row">
+        <div class="col col-md-8 mx-auto">
+          <div class="video-box">
+            <iframe src="https://www.youtube.com/embed/-CluL7mX6hk?si=41SqgFMRVAaZbyR9"
+              allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container video" id="video-2">
+      <h2 class="section-title"><span>ДЕНЬ 2. </span>Обов’язкові напрямки розвитку для підлітка, яким не вчать в школі
+      </h2>
+      <div class="row">
+        <div class="col col-md-8 mx-auto">
+          <div class="video-box">
+            <iframe src="https://www.youtube.com/embed/9X-2gnOJDAU?si=rxV86v8vqJrV0Zt-"
+              allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <header class="header">
     <div class="container">
@@ -416,8 +443,8 @@
               <li>Закритий <span>telegram чат</span> учасників</li>
               <li>Доступ до записів на <span>6 місяців</span></li>
             </ul>
-            <div class="old">Повна ціна <s>6&nbsp;000&nbsp;грн</s></div>
-            <div class="new-price">2999&nbsp;грн</div>
+            <div class="old">Повна ціна <s>6000 грн</s></div>
+            <div class="new-price">3499&nbsp;грн</div>
             <div class="btn-box">
               <a data-fancybox="" data-src="#popup1" class="btn"
                 onclick="selectTariff('samostijnyj', 'paymentForm')">Оплатити курс</a>
@@ -445,8 +472,8 @@
               <li><span>Зворотній зв'язок</span> по уроках від професійного психолога (текстом)</li>
               <li><span>Можливість ставити запитання</span> професійному психологу (текстом)</li>
             </ul>
-            <div class="old">Повна ціна <s>8&nbsp;000&nbsp;грн</s></div>
-            <div class="new-price">3999&nbsp;грн</div>
+            <div class="old">Повна ціна <s>8000 грн</s></div>
+            <div class="new-price">4499&nbsp;грн</div>
             <div class="btn-box">
               <a data-fancybox="" data-src="#popup1" class="btn"
                 onclick="selectTariff('psyholog', 'paymentForm')">Оплатити курс</a>
@@ -476,8 +503,8 @@
               <li><span>Бонус 2.</span> Онлайн курс «Стоп Гаджети»</li>
               <li><span>4 сесії розборів ситуацій</span> учасників від Анни Просветової</li>
             </ul>
-            <div class="old">Повна ціна <s>10&nbsp;000&nbsp;грн</s></div>
-            <div class="new-price">4999&nbsp;грн</div>
+            <div class="old">Повна ціна <s>10000 грн</s></div>
+            <div class="new-price">5499&nbsp;грн</div>
             <div class="btn-box">
               <a data-fancybox="" data-src="#popup1" class="btn"
                 onclick="selectTariff('maximalnyj', 'paymentForm')">Оплатити курс</a>
@@ -800,7 +827,7 @@
     const formAppendData = {
       //назва пакету "Самостійний" ↓
       samostijnyj: {
-        value: 2999,
+        value: 3499,
         currency: "UAH",
         product: "На одній хвилі з підлітком",
         tariff: "Самостійний",
@@ -810,7 +837,7 @@
         redirect: "https://teen.mamaznaet.pro/thx",
       },
       samostijnyj1: {
-        value: 1500,
+        value: 1750,
         currency: "UAH",
         product: "На одній хвилі з підлітком",
         tariff: "Самостійний передоплата",
@@ -821,7 +848,7 @@
       },
       //назва пакету "З психологом" ↓
       psyholog: {
-        value: 3999,
+        value: 4499,
         currency: "UAH",
         product: "На одній хвилі з підлітком",
         tariff: "З психологом",
@@ -831,7 +858,7 @@
         redirect: "https://teen.mamaznaet.pro/thx",
       },
       psyholog1: {
-        value: 2000,
+        value: 2250,
         currency: "UAH",
         product: "На одній хвилі з підлітком",
         tariff: "З психологом передоплата",
@@ -842,7 +869,7 @@
       },
       //назва пакету "МАКСИМАЛЬНИЙ" ↓
       maximalnyj: {
-        value: 4999,
+        value: 5499,
         currency: "UAH",
         product: "На одній хвилі з підлітком",
         tariff: "Максимальний",
@@ -852,7 +879,7 @@
         redirect: "https://teen.mamaznaet.pro/thx",
       },
       maximalnyj1: {
-        value: 2500,
+        value: 2750,
         currency: "UAH",
         product: "На одній хвилі з підлітком",
         tariff: "Максимальний передоплата",
@@ -942,8 +969,8 @@
   <script type="text/javascript"
     src="https://cdn.jsdelivr.net/combine/npm/zepto@1.2.0/dist/zepto.js,npm/zepto@1.2.0/src/fx.js?ver=5.3.2"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.js?ver=5.3.2"></script>
-  <script src="js/vendor.js?v=2"></script>
-  <script src="js/app.js?v=2"></script>
+  <script src="js/vendor.js?v=1.1"></script>
+  <script src="js/app.js?v=1.1"></script>
 </body>
 
 </html>
