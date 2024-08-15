@@ -1,0 +1,581 @@
+& {
+  /* .row>* {
+    padding-right: calc(var(--bs-gutter-x) * 0.75);
+    padding-left: calc(var(--bs-gutter-x) * 0.75);
+  } */
+
+  .roller {
+    height: 26px;
+
+    span {
+      font-size: 11px;
+      letter-spacing: 1px;
+      padding: 0 20px;
+    }
+  }
+
+  /*-------------------*/
+  .header {
+    margin-top: 25px;
+    padding-bottom: 0;
+  }
+  .header .flex-left {
+    justify-content: center;
+  }
+  .header-small-img {
+    width: 44px;
+    height: 44px;
+  }
+  .header-text {
+    font-size: 16px;
+  }
+  .header-title {
+    text-align: center;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px;
+    margin: 30px auto -25px;
+    max-width: 350px;
+
+    span {
+      font-size: 60px;
+      top: -15px;
+    }
+  }
+  .header-subtitle {
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+  .bonus-box {
+    min-height: 95px;
+    margin: 30px auto 20px;
+  }
+  .header-bonus-img {
+    margin: 0 9px 0 11px;
+  }
+  .header-bonus {
+    font-size: 16px;
+  }
+  .header-price {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-flex {
+    align-items: center;
+  }
+  .btn {
+    width: 300px;
+    padding: 0px 67px 0 24px;
+    margin: 0px auto 0 -25px;
+  }
+ 
+  .header .timer {
+    justify-content: center;
+    margin: 15px auto 0;
+  }
+  .header .price-box {
+    margin-top: 20px;
+  }
+  .header .new {
+    margin-left: 0;
+  }
+  .autor-img-mob {
+    display: block;
+    width: 100%;
+    margin-top: -20%;
+  }
+  /*----------------*/
+  .section-title {
+    font-size: 30px;
+  }
+
+
+  /*----------------*/
+  .six-block{
+    padding: 60px 0 30px;
+    .section-title{
+      max-width: 640px;
+      margin: 0 auto 30px;
+    }
+    .wrap{
+      gap: 10px;
+    }
+    .block{
+      max-width: 366px;
+      padding: 0;
+    }
+    .num{
+      padding-left: 10px;
+    }
+    .one {
+      padding-left: 25px;
+    }
+    .text{
+      line-height: 135%;
+      padding: 30px 20px 30px 21px;
+    }
+  }
+
+  /*----------------*/
+  .course-for{
+    padding: 30px 0 0;
+
+    .section-title{
+      text-align: center;
+      max-width: 230px;
+      margin: 0 auto 30px;
+    }
+    .block{
+      height: auto;
+      max-height: none;
+    }
+    .box{
+      margin-bottom: 30px;
+    }
+    .margin{
+      margin-bottom: 0;
+    }
+    .inline{
+      padding-bottom: 10px;
+    }
+    .text{
+      padding-right: 0;
+    }
+    .btn{
+      width: 300px;
+      padding: 0 107px 0 40px;
+      margin: 46px auto 15px;
+    }
+    .zirka {
+      right: -10px;
+    }
+    .btn-block-item {
+      right: 4px;
+    }
+  }
+
+  /*----------------*/
+  .program {
+    padding: 30px 0 60px;
+   
+    .section-title {
+      margin-bottom: 60px;
+    }
+    .wrap {
+      gap: 40px 10px;
+    }
+    .block {
+      padding: 22px;
+      margin-left: 0px;
+    }
+    .lesson-num {
+      font-size: 16px;
+      line-height: 30px;
+      top: -30px;
+      left: 10px;
+      transform: translateY(0) rotate(0deg);
+      width: 78px;
+      height: 30px;
+    }
+    .box-title {
+      font-size: 20px;
+    }
+    .btn{
+      margin-top: -20px;
+    }
+  }
+
+  /*----------------*/
+  .result {
+    padding: 60px 0 30px;
+
+    .section-title {
+      margin-bottom: 52px;
+    }
+    .wrap {
+      gap: 30px;
+    }
+  }
+
+  /*----------------*/
+  .format {
+    padding: 30px 0 0;
+  
+    .foto {
+      display: block;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .section-title {
+      text-align: center;
+      margin: 0 auto 30px;
+    }
+    ul {
+      margin-bottom: 20px;
+    }
+    li {
+      padding-right: 6px;
+    }
+  }
+
+  /*----------------*/
+  .price {
+    padding: 30px 0;
+
+    &::before,
+    &::after{
+      margin-left: -1px;
+    }
+    .section-title{
+      margin-bottom: 30px;
+    }
+    .flex {
+      gap: 10px 20px;
+    }
+  }
+
+  /*----------------*/
+  .speaker {
+    padding: 100px 0 0;
+
+    &::before{
+      max-height: 400px;
+      background: url(../images/speaker-psevdo-1.webp);
+      background-size: cover;
+    }
+    .section-title {
+      text-align: center;
+      margin: 0 auto 10px;
+    }
+    .title-item{
+      text-align: center;
+      font-size: 20px;
+      margin: 0 10px 30px;
+    }
+    ul {
+      margin-bottom: 0px;
+    }
+    li {
+      padding: 0px 8px 20px 54px;
+      margin: 0;
+
+      &::before {
+        top: 13px;
+      }
+    }
+    .foto {
+      margin: 20px auto 0;
+    }
+  }
+
+  /*----------------*/
+  .speaker-tv {
+    padding: 60px 0;
+
+    .speaker-tv-title {
+      font-size: 38px;
+      max-width: 450px;
+    }
+  }
+
+  /*-----------------*/
+  .smi-list {
+    margin: 100px auto 0;
+
+    .slick-prev {
+      left: -40px;
+    }
+
+    .slick-next {
+      right: -40px;
+    }
+  }
+
+  /*-----------------*/
+  .slick-dots li {
+    margin: 0 -5px;
+  }
+  .smi-list {
+    margin: 30px auto;
+  }
+  .slick-prev,
+  .slick-next {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+
+  .slick-prev {
+    left: -25px;
+
+    &:before {
+      top: 6px;
+      left: 8px;
+    }
+  }
+
+  .slick-next {
+    right: -25px;
+
+    &:before {
+      top: 6px;
+      right: 8px;
+    }
+  }
+  /*----------------*/
+  .you-will-learn{
+    padding: 30px 0;
+
+    .section-title{
+      margin: 0 auto 30px;
+    }
+    .block{
+      height: auto;
+      padding: 40px 15px 20px;
+    }
+    .btn{
+      width: 300px;
+      padding: 0 107px 0 40px;
+      margin: 30px auto 10px;
+    }
+    .zirka {
+      right: -10px;
+    }
+    .btn-block-item {
+      right: 4px;
+    }
+  }
+
+  /*--------------------*/
+  .reviews {
+    padding: 40px 0 30px;
+
+    .section-title {
+      max-width: 630px;
+      padding: 0 10px;
+    }
+    .title-item:last-of-type {
+      font-size: 18px;
+      padding: 0 25px;
+      max-width: 630px;
+    }
+  }
+
+  /*----------------*/
+  .how-learning {
+    padding: 30px 0;
+    margin: 70px auto 0;
+
+    .section-title{
+      margin-bottom: 30px;
+    }
+  }
+
+  /*----------------*/
+  .video-lesson {
+    padding: 100px 0 60px;
+
+    .section-title {
+      margin: 0px auto 10px;
+    }
+    .text {
+      font-size: 16px;
+      padding-bottom: 20px;
+    }
+  }
+
+  /*----------------*/
+  .answers {
+    .section-title {
+      padding: 0 5px;
+    }
+  }
+  .answers-border {
+    padding: 24px 10px 23px 20px;
+  }
+  .bg-arrow {
+    padding: 0 13px;
+    margin-left: 15px;
+  }
+
+  /*-----------------*/
+  .help {
+    padding: 20px 0 60px;
+    margin-top: 100px;
+
+    .text {
+      margin: 20px auto;
+    }
+    .tg,
+    .vb {
+      width: 345px;
+    }
+  }
+
+  /*-----------------*/
+  .course-for::before,
+  .program::after ,
+  .program .container::before,
+  .video-lesson::before,
+  .answers::before {
+    display: none;
+  }
+
+  /*==================*/
+  .fancybox-content {
+    max-width: 344px;
+    padding: 20px;
+  }
+  .form-title {
+    font-size: 32px;
+    margin: 30px auto 15px;
+  }
+  .form-subtitle {
+    font-size: 16px;
+    max-width: 290px;
+  }
+  form label {
+    padding-left: 0px;
+    font-size: 16px;
+  }
+  form input {
+    width: 100%;
+    height: 40px;
+  }
+  form .btn {
+    margin: 10px auto 0;
+    max-width: 295px;
+    width: 100%;
+    height: 79px;
+    padding: 0;
+  }
+  form .btn::after {
+    height: 78px;
+  }
+  label[for="agree"] {
+    // font-size: 11px;
+    padding: 14px 0 0;
+  }
+  form a,
+  label[for=agree] {
+    font-size: 11px;
+  }
+  /*=============*/
+
+  @media screen and (max-width: 374px) {
+    .header-title {
+      font-size: 36px;
+      margin-bottom: -20px;
+    }
+    .btn,
+    .course-for .btn,
+    .you-will-learn .btn {
+      width: 240px;
+      padding-left: 20px;
+      padding-right: 90px;
+    }
+    //--------
+    .price .title {
+      font-size: 30px;
+    }
+    .price .img {
+      width: 68px;
+      height: auto;
+    }
+    .price .btn {
+      width: 250px;
+    }
+    //--------
+    .you-will-learn .block::before{
+      top: -25px;
+      width: 50px;
+      height: 50px;
+    }
+    //--------
+    .reviews .title-item:last-of-type{
+      padding: 0 3px;
+    }
+    //--------
+    .answers .section-title{
+      font-size: 27px;
+      padding: 0;
+    }
+    //--------
+    .help .section-title {
+      font-size: 28px;
+    }
+    //--------
+    .fancybox-content {
+      padding: 15px;
+    }
+    .fancybox-close-small {
+      margin: 0;
+    }
+  }
+  //--------
+
+  @media screen and (max-width: 574px) {
+    .header{
+      background-image: none;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .mobile{display: block;}
+    .desktop{display: none;}
+  }
+  @media screen and (min-width: 575px) and (max-width: 991px) {
+    .header{
+      background-image: url(../images/header-bg-mob2.webp);
+      padding-bottom: 50px;
+    }
+    .header::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(2px);
+      z-index: 1; 
+    }
+    .header .container {
+      position: relative;
+      z-index: 10;
+    }
+    .autor-img-mob {
+      display: none;
+    }
+  }
+  @media screen and (min-width:992px) and (max-width: 1023px) {
+    .header{
+      padding-bottom: 70px;
+    }
+    .header .flex-left {
+      justify-content: flex-start;
+    }
+    .header-title {
+      text-align: left;
+      margin: 30px 0 -10px;
+    }
+    .header-subtitle {
+      text-align: left;
+    }
+    .header-price {
+      flex-direction: row;
+    }
+    .header-price .btn {
+      margin: 0;
+    }
+    .header .timer {
+      margin: -60px auto 0;
+    }
+    .autor-img-mob {
+      display: none;
+    }
+    .course-for .btn {
+      display: none;
+    }
+  }
+}

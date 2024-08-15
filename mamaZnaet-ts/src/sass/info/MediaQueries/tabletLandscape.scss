@@ -1,0 +1,28 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+  @import '../desktop';
+//1024-1199
+  .header-title{
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  .course-for .section-title {
+    max-width: 335px;
+    margin-bottom: 43%;
+  }
+  .course-for .block {
+    max-height: 625px;
+  }
+  
+  .format .section-title {
+    margin-top: 50px;
+  }
+
+  @media screen and (min-width:1150px) and (max-width: 1199px) {
+    .course-for .section-title {
+      margin-bottom: 20%;
+    }
+  }
+}
