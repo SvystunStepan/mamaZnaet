@@ -1517,7 +1517,7 @@ li {
 /*-----------*/
 .help {
   background: #303030;
-  padding: 40px 0 60px;
+  padding: 50px 0 70px;
   margin-top: 150px;
   position: relative;
 
@@ -1586,6 +1586,117 @@ li {
     border-radius: 60px;
     background: #6F3FAA;
   }
+  .text{
+    color: #fff;
+    text-align: center;
+    max-width: 1020px;
+    margin: 40px auto 0;
+  }
+}
+
+/*-----------*/
+.footer {
+  text-align: center;
+  background: #212121;
+  // margin-top: 100px;
+
+  .row {
+    padding: 20px 0;
+  }
+  .flex-left {
+    margin-top: 0;
+  }
+  .logo {
+    width: 102px;
+    height: 67px;
+    display: block;
+  }
+  li>a {
+    color: #FFF;
+    font-family: "Involve-Regular", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    transition: border-bottom 0.3s ease;
+
+    &:hover {
+      color: #F88341;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #F88341;
+      transition: width 0.3s ease;
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    text-align: center;
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.flex-inline {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.mess {
+  img {
+    width: 40px;
+    height: 40px;
+    transition: 0.3s ease;
+
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}
+
+.viber {
+  margin: 0 15px;
+}
+
+.flex-inline {
+  .tell {
+    color: #FFF;
+    font-family: "Involve-Bold", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    white-space: nowrap;
+  }
+
+  div {
+    display: flex;
+  }
+}
+
+.footer ul.mail {
+  justify-content: flex-end;
 }
 
 

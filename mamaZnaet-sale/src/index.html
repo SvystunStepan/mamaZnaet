@@ -13,7 +13,7 @@
   <meta property="og:title" content="Розпродаж Мама Знає">
   <meta property="og:image" content="images/og.png" />
   <title>Розпродаж Мама Знає</title>
-  <link type="text/css" rel="stylesheet" href="css/app.css?v=1.1">
+  <link type="text/css" rel="stylesheet" href="css/app.css?v=1.2">
   <link rel="stylesheet" href="css/loader.css">
   <link rel="shortcut icon" href="images/favicon.webp">
   <!-- Meta Pixel Code -->
@@ -75,12 +75,17 @@
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=697953208922003&ev=PageView&noscript=1" /></noscript>
   <!-- End Meta Pixel Code -->
+  <style>
+    .roller span {
+      white-space: nowrap;
+    }
+  </style>
 </head>
 
 <body>
   <div class="running-line">
     <article class="roller">
-      <span>ТРАВНЕВИЙ&nbsp;РОЗПРОДАЖ&nbsp;-&nbsp;87%</span>
+      <span>СЕРПНЕВИЙ&nbsp;РОЗПРОДАЖ&nbsp;-&nbsp;89%</span>
     </article>
   </div>
 
@@ -95,15 +100,23 @@
             <a href="#price" class="top-link scroll">Пакети</a>
             <a href="#not-sure" class="top-btn scroll">Залишити заявку</a>
           </div>
-          <div class="header-subtitle">Великий &nbsp;<span>травневий розпродаж</span>&nbsp; проєкту «Мама знає»</div>
+          <div class="header-subtitle">Великий &nbsp;<span>серпневий розпродаж</span>&nbsp; проєкту «Мама знає»</div>
           <h1 class="header-title">Заберіть найпопулярніші курси по вихованню дітей
-            <span>зі&nbsp;знижкою&nbsp;-87%</span>
+            <span>зі&nbsp;знижкою&nbsp;-89%</span>
           </h1>
           <div class="block">
-            <p class="text">Розпродаж триває: <br><span>З 21 по 24 травня</span></p>
+            <p class="text">Розпродаж триває: <br><span>З 20 по 22 серпня</span></p>
           </div>
           <div class="btn-box">
             <a href="#price" class="btn scroll">Обрати курси зі знижкою</a>
+          </div>
+          <div class="timer">
+            <div class="flex-row">
+              <div class="days chart"><span>00</span></div><i>:</i>
+              <div class="hours chart"><span>00</span></div><i>:</i>
+              <div class="minutes chart"><span>00</span></div><i>:</i>
+              <div class="seconds chart"><span>00</span></div>
+            </div>
           </div>
         </div>
         <div class="col-lg-5 mx-auto p-0">
@@ -138,73 +151,199 @@
         <div class="container">
           <h2 class="section-title">Оберіть свій <span>пакет розпродажу</span></h2>
           <div class="flex">
+
             <div class="tariff minimal">
               <div class="title"><span>мінімальний</span></div>
               <ul>
-                <li><i>1</i>Курс «Стоп Гаджети»</li>
-                <li><i>2</i>Курс «Правила і кордони без стресу»</li>
-                <li><i>3</i>Курс «Статеве виховання дітей»</li>
-                <li class="marker"><span>Доступ на 3 місяці</span></li>
+                <li><i>1</i>Міні-курс «Стоп Гаджети»</li>
+                <li><i>2</i>Міні-курс «Правила і кордони без стресу»</li>
+                <li><i>3</i>Міні-курс «Статеве виховання дітей»</li>
+                <li><i>4</i>Марафон «Спокійна мама»</li>
+                <li><i>5</i>Воркшоп «Формула мотивації дітей»</li>
+                <li class="marker"><span>Доступ 6 місяців</span></li>
               </ul>
-
               <div class="price-box">
-                <p class="old">Звичайна ціна <s>4200&nbsp;грн</s></p>
-                <div class="new-price"><span>Спеціальна ціна</span> <br>599&nbsp;грн</div>
+                <p class="old">Звичайна ціна <s>7000&nbsp;грн</s></p>
+                <div class="new-price"><span>Знижка 89%</span> <br>769&nbsp;грн</div>
+                <!-- <div class="new-price"><span>Спеціальна ціна</span> <br>769&nbsp;грн</div> -->
               </div>
               <div class="btn-box">
                 <a data-fancybox="" data-src="#popup" class="btn" onclick="selectTariff('minimal')">Пройти курс</a>
               </div>
             </div>
+
             <div class="tariff basic">
               <div class="title"><span>базовий</span></div>
               <ul>
-                <li><i>1</i>Курс «Стоп Гаджети»</li>
-                <li><i>2</i>Курс «Правила і кордони без стресу»</li>
-                <li><i>3</i>Курс «Статеве виховання дітей»</li>
-                <li><i>4</i>Курс «Спокійна мама»</li>
-                <li><i>5</i>Курс «Формула мотивації дітей»</li>
-                <li><i>6</i>Курс «Стоп покарання»</li>
-                <li class="marker"><span>Доступ на 6 місяців</span></li>
+                <li><i>1</i>Міні-курс «Стоп Гаджети»</li>
+                <li><i>2</i>Міні-курс «Правила і кордони без стресу»</li>
+                <li><i>3</i>Міні-курс «Статеве виховання дітей»</li>
+                <li><i>4</i>Марафон «Спокійна мама»</li>
+                <li><i>5</i>Воркшоп «Формула мотивації дітей»</li>
+                <li><i>6</i>Міні-курс «Стоп покарання»</li>
+                <li><i>7</i>Міні-курс «18 способів домовитись з дитиною»</li>
+                <li><i>8</i>Міні-курс «Слухняна дитина»</li>
+                <li><i>9</i>Міні-курс «Як позбутись агресії»</li>
+                <li><i class="ten">10</i>Міні-курс «Мої діти живуть дружно»</li>
+                <li class="marker"><span>Доступ 6 місяців</span></li>
               </ul>
-
               <div class="price-box">
-                <p class="old">Звичайна ціна <s>8400&nbsp;грн</s></p>
-                <div class="new-price"><span>Спеціальна ціна</span> <br>999&nbsp;грн</div>
+                <p class="old">Звичайна ціна <s>14000&nbsp;грн</s></p>
+                <div class="new-price"><span>Знижка 89%</span> <br>1539&nbsp;грн</div>
+                <!-- <div class="new-price"><span>Спеціальна ціна</span> <br>1539&nbsp;грн</div> -->
               </div>
               <div class="btn-box">
                 <a data-fancybox="" data-src="#popup" class="btn" onclick="selectTariff('basic')">Пройти курс</a>
               </div>
             </div>
+
             <div class="tariff advanced">
               <div class="title"><span>розширений</span></div>
               <ul>
-                <li><i>1</i>Курс «Стоп Гаджети»</li>
-                <li><i>2</i>Курс «Правила і кордони без стресу»</li>
-                <li><i>3</i>Курс «Статеве виховання дітей»</li>
-                <li><i>4</i>Курс «Спокійна мама»</li>
-                <li><i>5</i>Курс «Формула мотивації дітей»</li>
-                <li><i>6</i>Курс «Стоп покарання»</li>
-                <li><i>7</i>Курс «18 способів домовитись з дитиною»</li>
-                <li><i>8</i>Курс «Слухняна дитина»</li>
-                <li><i>9</i>Курс «Як позбутись агресії»</li>
-                <li><i class="ten">10</i>Курс «Мої діти живуть дружно»</li>
-                <li class="marker"><span>Доступ на 12 місяців</span></li>
+                <li><i>1</i>Міні-курс «Стоп Гаджети»</li>
+                <li><i>2</i>Міні-курс «Правила і кордони без стресу»</li>
+                <li><i>3</i>Міні-курс «Статеве виховання дітей»</li>
+                <li><i>4</i>Марафон «Спокійна мама»</li>
+                <li><i>5</i>Воркшоп «Формула мотивації дітей»</li>
+                <li><i>6</i>Міні-курс «Стоп покарання»</li>
+                <li><i>7</i>Міні-курс «18 способів домовитись з дитиною»</li>
+                <li><i>8</i>Міні-курс «Слухняна дитина»</li>
+                <li><i>9</i>Міні-курс «Як позбутись агресії»</li>
+                <li><i class="ten">10</i>Міні-курс «Мої діти живуть дружно»</li>
+                <li><i class="ten">11</i>Міні-курс «Підготовка до дитсадка»</li>
+                <li><i class="ten">12</i>Міні-курс «Підготовка до школи»</li>
+                <li><i class="ten">13</i>Майстер-клас «Подолання страхів і стресових станів у дітей»</li>
+                <li><i class="ten">14</i>Курс «Особисті кордони для жінок»</li>
+                <li><i class="ten">15</i>Курс «Токсичні стосунки: План виходу»</li>
+                <li class="marker"><span>Доступ 12 місяців</span></li>
               </ul>
-
               <div class="price-box">
-                <p class="old">Звичайна ціна <s>14000&nbsp;грн</s></p>
-                <div class="new-price"><span>Спеціальна ціна</span> <br>1499&nbsp;грн</div>
+                <p class="old">Звичайна ціна <s>21000&nbsp;грн</s></p>
+                <div class="new-price"><span>Знижка 89%</span> <br>2299&nbsp;грн</div>
+                <!-- <div class="new-price"><span>Спеціальна ціна</span> <br>2299&nbsp;грн</div> -->
               </div>
               <div class="btn-box">
                 <a data-fancybox="" data-src="#popup" class="btn" onclick="selectTariff('advanced')">Пройти курс</a>
               </div>
             </div>
+
+            <div class="tariff i-want-everything">
+              <div class="title"><span>Хочу все!</span></div>
+              <ul>
+                <li><i>1</i>Міні-курс «Стоп Гаджети»</li>
+                <li><i>2</i>Міні-курс «Правила і кордони без стресу»</li>
+                <li><i>3</i>Міні-курс «Статеве виховання дітей»</li>
+                <li><i>4</i>Марафон «Спокійна мама»</li>
+                <li><i>5</i>Воркшоп «Формула мотивації дітей»</li>
+                <li><i>6</i>Міні-курс «Стоп покарання»</li>
+                <li><i>7</i>Міні-курс «18 способів домовитись з дитиною»</li>
+                <li><i>8</i>Міні-курс «Слухняна дитина»</li>
+                <li><i>9</i>Міні-курс «Як позбутись агресії»</li>
+                <li><i class="ten">10</i>Міні-курс «Мої діти живуть дружно»</li>
+                <li><i class="ten">11</i>Міні-курс «Підготовка до дитсадка»</li>
+                <li><i class="ten">12</i>Міні-курс «Підготовка до школи»</li>
+                <li><i class="ten">13</i>Майстер-клас «Подолання страхів і стресових станів у дітей»</li>
+                <li><i class="ten">14</i>Курс «Виховання без криків і покарань»</li>
+                <li><i class="ten">15</i>Курс «На одній хвилі з підлітком»</li>
+                <li><i class="ten">16</i>Курс «Особисті кордони для жінок»</li>
+                <li><i class="ten">17</i>Курс «Токсичні стосунки: План виходу»</li>
+                <li class="marker"><span>Доступ 12 місяців</span></li>
+              </ul>
+              <div class="price-box">
+                <p class="old">Звичайна ціна <s>36400&nbsp;грн</s></p>
+                <div class="new-price"><span>Знижка 89%</span> <br>3999&nbsp;грн</div>
+                <!-- <div class="new-price"><span>Спеціальна ціна</span> <br>3999&nbsp;грн</div> -->
+              </div>
+              <div class="btn-box">
+                <a data-fancybox="" data-src="#popup" class="btn" onclick="selectTariff('everything')">Пройти курс</a>
+              </div>
+            </div>
+
+            <div class="tariff svd">
+              <div class="title"><span>СПЕЦ.ПАКЕТ<br> «СВІДОМЕ ВИХОВАННЯ ДІТЕЙ»</span>
+                <p class="text">Для батьків з дітьми від 3 до 15 років</p>
+              </div>
+
+              <p class="text"><span>ВИХОВАННЯ БЕЗ КРИКІВ І ПОКАРАНЬ</span> <br> Старт 9 вересня
+                <br>Тривалість <span>5 тижнів</span>
+              </p>
+              <div class="title-item">Пакет <span>«З ПСИХОЛОГОМ»</span></div>
+              <ul>
+                <li><i>1</i><span>Модуль 1.</span>Шлях до спокою</li>
+                <li><i>2</i><span>Модуль 2.</span>Розуміння дитячої поведінки</li>
+                <li><i>3</i><span>Модуль 3.</span>Ефективна комунікація з дітьми</li>
+                <li><i>4</i><span>Модуль 4.</span>Правила і кордони, позбавляємося покарань</li>
+                <li><i>5</i><span>Модуль 5.</span>Вирішення конфліктів і пошук компромісів</li>
+                <li><i>6</i>Практичні <span>завдання</span> до уроків</li>
+                <li><i>7</i><span>Аудіо-версія</span> всіх занять</li>
+                <li><i>8</i><span>Презентації</span> всіх занять</li>
+                <!-- <li><i>9</i>Доступ до записів на <span>6 місяців</span></li> -->
+                <li><i>9</i><span>Закритий чат</span> учасників</li>
+                <!-- <li><i class="ten">10</i><span>Закритий чат</span> учасників</li> -->
+                <li><i class="ten">10</i><span>Зворотній зв'язок</span> по уроках від професійного психолога (текстом)
+                </li>
+                <li><i class="ten">11</i><span>Можливість ставити запитання</span> професійному психологу (текстом)</li>
+                <li><i class="ten">12</i><span>Бонус 1.</span> Модуль 6. Мама на двох "як виростити двох дітей"</li>
+                <li><i class="ten">13</i><span>Бонус 2.</span> Курс "Самостійні уроки з інтересом, без істерик і стресу"
+                </li>
+                <li><i class="ten">14</i><span>Бонус 3.</span> Курс "Формула мотивації дітей"</li>
+                <li><i class="ten">15</i><span>Бонус 4.</span> Курс "Як позбутись дитячої агресії"</li>
+                <li class="marker">Доступ до записів на <span>6 місяців</span></li>
+              </ul>
+
+              <p class="text"><span>НА ОДНІЙ ХВИЛІ З ПІДЛІТКОМ</span> <br> Старт 7 жовтня
+                <br>Тривалість <span>4 тижні</span>
+              </p>
+              <div class="title-item">Пакет <span>«З ПСИХОЛОГОМ»</span></div>
+              <ul>
+                <li><i>1</i><span>Блок 1.</span>Психологічні та емоційні особливості підлітків</li>
+                <li><i>2</i><span>Блок 2.</span>Розвиток довіри</li>
+                <li><i>3</i><span>Блок 3.</span>Спілкування та домовленості</li>
+                <li><i>4</i><span>Блок 4.</span>Правила та наслідки</li>
+                <li><i>5</i><span>Блок 5.</span>Про що не розповідають в школі</li>
+                <li><i>6</i>Практичні <span>завдання</span> до уроків</li>
+                <li><i>7</i><span>Аудіо-версія</span> уроків</li>
+                <li><i>8</i><span>Презентації</span> уроків</li>
+                <li><i>9</i>Закритий <span>telegram чат</span> учасників</li>
+                <!-- <li><i class="ten">10</i>Доступ до записів на <span>6 місяців</span></li> -->
+                <li><i class="ten">10</i><span>Зворотній зв'язок</span> по уроках від професійного психолога (текстом)
+                </li>
+                <li><i class="ten">11</i><span>Можливість ставити запитання</span> професійному психологу (текстом)</li>
+                <li class="marker">Доступ до записів на <span>6 місяців</span></li>
+              </ul>
+              <div class="price-box">
+                <p class="old">Звичайна ціна <s>15400&nbsp;грн</s></p>
+                <div class="new-price"><span>Знижка 80%</span> <br>2999&nbsp;грн</div>
+                <!-- <div class="new-price"><span>Спеціальна ціна</span> <br>2999&nbsp;грн</div> -->
+              </div>
+              <div class="btn-box">
+                <a data-fancybox="" data-src="#popup" class="btn" onclick="selectTariff('svd')">Пройти курс</a>
+              </div>
+            </div>
+
+            <div class="tariff ls">
+              <div class="title"><span>СПЕЦ.ПАКЕТ<br> «ЛІНІЯ СИЛИ»</span></div>
+              <ul>
+                <li><i>1</i>Курс «Особисті кордони для жінок»</li>
+                <li><i>2</i>Курс «Токсичні стосунки: План виходу»</li>
+                <li class="marker"><span>Доступ 3 місяці</span></li>
+              </ul>
+              <div class="price-box">
+                <p class="old">Звичайна ціна <s>2800&nbsp;грн</s></p>
+                <div class="new-price"><span>Знижка 80%</span> <br>559&nbsp;грн</div>
+                <!-- <div class="new-price"><span>Спеціальна ціна</span> <br>769&nbsp;грн</div> -->
+              </div>
+              <div class="btn-box">
+                <a data-fancybox="" data-src="#popup" class="btn" onclick="selectTariff('ls')">Пройти курс</a>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
     </section>
 
-    <section class="spec-offer" id="spec-offer">
+    <!-- <section class="spec-offer" id="spec-offer">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
@@ -234,7 +373,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="spec-package">
       <div class="psevdo">
@@ -282,7 +421,7 @@
           <a href="viber://chat?number=%2B380637043711" class="mess viber" target="_blank">
             <img class="vbr" loading="lazy" src="images/viber.svg" alt="image"></a>
         </div>
-        <p class="text">Розпродаж триває: <br><span>З 21 по 24 травня</span></p>
+        <p class="text">Розпродаж триває: <br><span>З 20 по 22 серпня</span></p>
         <div class="timer">
           <div class="flex-row">
             <div class="days chart"><span>00</span></div><i>:</i>
@@ -483,8 +622,8 @@
   <script type="text/javascript"
     src="https://cdn.jsdelivr.net/combine/npm/zepto@1.2.0/dist/zepto.js,npm/zepto@1.2.0/src/fx.js?ver=5.3.2"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.js?ver=5.3.2"></script>
-  <script defer src="js/vendor.js?v=1.1"></script>
-  <script defer src="js/app.js?v=1.1"></script>
+  <script defer src="js/vendor.js?v=1.2"></script>
+  <script defer src="js/app.js?v=1.2"></script>
 </body>
 
 </html>

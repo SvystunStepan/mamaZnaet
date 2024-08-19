@@ -50,7 +50,7 @@ Zepto(function ($) {
 document.addEventListener("DOMContentLoaded", function () {
   var videoContainer = document.getElementById('video-container');
   var lazyVideo = document.createElement('iframe');
-  lazyVideo.setAttribute('data-src', 'https://www.youtube.com/embed/ebjYjT26Q-c?si=Mch0Ry_1IHljRKHE');
+  lazyVideo.setAttribute('data-src', 'https://www.youtube.com/embed/ZqypVOdJwFU?si=CYYfrhXbVOBYYMa3');
   lazyVideo.setAttribute('allow', 'autoplay; encrypted-media');
   lazyVideo.setAttribute('allowfullscreen', '');
   lazyVideo.classList.add('lazy-video');

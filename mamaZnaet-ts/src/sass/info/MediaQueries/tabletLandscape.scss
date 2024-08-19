@@ -20,6 +20,10 @@
     margin-top: 50px;
   }
 
+  .footer ul {
+    flex-direction: column;
+  }
+
   @media screen and (min-width:1150px) and (max-width: 1199px) {
     .course-for .section-title {
       margin-bottom: 20%;

@@ -404,15 +404,62 @@
     padding: 20px 0 60px;
     margin-top: 100px;
 
-    .text {
-      margin: 20px auto;
-    }
     .tg,
     .vb {
       width: 345px;
     }
   }
 
+  /*-----------------*/
+  .footer {
+    // margin-top: 60px;
+
+    .row {
+      padding: 30px 0 20px;
+    }
+
+    .flex-left {
+      justify-content: center;
+    }
+
+    .logo {
+      width: 90px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    ul {
+      flex-direction: column;
+      justify-content: center;
+      margin: 15px 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  .flex-inline {
+    flex-direction: column;
+    max-width: 225px;
+    margin: 0 auto;
+
+    ul {
+      margin: 0;
+    }
+
+    li {
+      margin: 10px auto;
+    }
+  }
+
+  ul.mail {
+    margin: 0;
+
+    li {
+      padding-bottom: 0;
+    }
+  }
   /*-----------------*/
   .course-for::before,
   .program::after ,
