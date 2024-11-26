@@ -52,7 +52,7 @@ Zepto(function ($) {
 document.addEventListener("DOMContentLoaded", function () {
   var videoContainer = document.getElementById('video-container');
   var lazyVideo = document.createElement('iframe');
-  lazyVideo.setAttribute('data-src', 'https://www.youtube.com/embed/CdQdoIV2o9E?si=gv_AkonA7E_WHhik7');
+  lazyVideo.setAttribute('data-src', 'https://www.youtube.com/embed/S1f1AsTqDWQ?si=8md357rg5plRc_Hx');
   lazyVideo.setAttribute('allow', 'autoplay; encrypted-media');
   lazyVideo.setAttribute('allowfullscreen', '');
   lazyVideo.classList.add('lazy-video');
@@ -92,89 +92,58 @@ $(document).ready(function () {
   });
 
 
-  //ТАЙМЕР ЦІНИ
+  // Таймер відліку до 00:00
   const timers = document.querySelectorAll('.timer');
 
-  timers.forEach((timer, index) => {
-    const daysDisplay = timer.querySelector('.days');
-    const hoursDisplay = timer.querySelector('.hours');
-    const minutesDisplay = timer.querySelector('.minutes');
-    const secondsDisplay = timer.querySelector('.seconds');
+  timers.forEach((timer) => {
+    const hoursDisplay = timer.querySelector('.hours span');
+    const minutesDisplay = timer.querySelector('.minutes span');
+    const secondsDisplay = timer.querySelector('.seconds span');
 
-    function getTimeUntilDate(targetDate) {
+    function getTimeUntilMidnight() {
       const now = new Date();
-      const target = new Date(targetDate);
+      const tomorrow = new Date(now);
+      tomorrow.setHours(24, 0, 0, 0); // Встановлюємо на 00:00 наступного дня
 
-      const timeDifference = target - now;
+      const timeDifference = tomorrow - now;
       return Math.floor(timeDifference / 1000);
     }
 
-    const targetDate = new Date('August 22, 2024 22:00:00');
-    let remainingTime = getTimeUntilDate(targetDate);
-
     function updateTimerDisplay() {
-      const days = Math.floor(remainingTime / 86400);
+      let remainingTime = getTimeUntilMidnight();
+
+      if (remainingTime <= 0) {
+        hoursDisplay.textContent = '00';
+        minutesDisplay.textContent = '00';
+        secondsDisplay.textContent = '00';
+        return;
+      }
+
       const hours = Math.floor((remainingTime % 86400) / 3600);
       const minutes = Math.floor((remainingTime % 3600) / 60);
       const seconds = remainingTime % 60;
 
-      daysDisplay.textContent = days.toString().padStart(2, '0');
       hoursDisplay.textContent = hours.toString().padStart(2, '0');
       minutesDisplay.textContent = minutes.toString().padStart(2, '0');
       secondsDisplay.textContent = seconds.toString().padStart(2, '0');
     }
 
-    function updateTimer() {
-      if (remainingTime > 0) {
-        remainingTime--;
-        updateTimerDisplay();
-      }
-    }
-
-    setInterval(updateTimer, 1000);
+    setInterval(updateTimerDisplay, 1000);
   });
-  /* const timers = document.querySelectorAll('.timer');
-  
-  timers.forEach((timer, index) => {
-      const daysDisplay = timer.querySelector('.days');
-      const hoursDisplay = timer.querySelector('.hours');
-      const minutesDisplay = timer.querySelector('.minutes');
-      const secondsDisplay = timer.querySelector('.seconds');
-  
-      function getTimeUntilDate(targetDate) {
-          const now = new Date();
-          const target = new Date(targetDate);
-  
-          const timeDifference = target - now;
-          return Math.floor(timeDifference / 1000);
-      }
-  
-      const targetDate = new Date('May 20, 2024 14:31:00');
-      let remainingTime = getTimeUntilDate(targetDate);
-  
-      function updateTimerDisplay() {
-          const days = Math.floor(remainingTime / 86400);
-          const hours = Math.floor((remainingTime % 86400) / 3600);
-          const minutes = Math.floor((remainingTime % 3600) / 60);
-          const seconds = remainingTime % 60;
-  
-          daysDisplay.textContent = days.toString().padStart(2, '0');
-          hoursDisplay.textContent = hours.toString().padStart(2, '0');
-          minutesDisplay.textContent = minutes.toString().padStart(2, '0');
-          secondsDisplay.textContent = seconds.toString().padStart(2, '0');
-      }
-  
-      function updateTimer() {
-          if (remainingTime > 0) {
-              remainingTime--;
-              updateTimerDisplay();
-          } else {
-              window.location.href = 'index-1.html'; // Перенаправлення на index-1.html після завершення таймера
-          }
-      }
-  
-      setInterval(updateTimer, 1000);
-  }); */
 
 
 })
+
+function toggleDetails(button) {
+  const details = button.parentNode.parentNode.querySelector(".course-details");
+  const icon = button.querySelector("img");
+
+  if (details.style.display === "none" || details.style.display === "") {
+    details.style.display = "block";
+    icon.src = "images/arrow-up.svg";
+  } else {
+    details.style.display = "none";
+    icon.src = "images/arrow-down.svg";
+  }
+}
+

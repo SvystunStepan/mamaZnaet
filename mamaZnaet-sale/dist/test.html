@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Закріплені заголовки</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .tariff {
+            padding: 20px;
+            margin-bottom: 40px;
+            border: 1px solid #ddd;
+            position: relative;
+        }
+
+        .title {
+            position: relative;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 10px;
+            z-index: 10;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tariff {
+            padding-top: 50px;
+            /* щоб контент не перекривався з закріпленим заголовком */
+        }
+
+        .tariff.min {
+            background-color: #f4f4f4;
+        }
+
+        .tariff.max {
+            background-color: #f9f9f9;
+        }
+
+        .content {
+            padding: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto quod ut adipisci eos nisi consectetur
+        praesentium. Autem magnam dolore ad ut molestias odit porro, illum quisquam. Iste, minus totam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto quod ut adipisci eos nisi consectetur
+        praesentium. Autem magnam dolore ad ut molestias odit porro, illum quisquam. Iste, minus totam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto quod ut adipisci eos nisi consectetur
+        praesentium. Autem magnam dolore ad ut molestias odit porro, illum quisquam. Iste, minus totam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto quod ut adipisci eos nisi consectetur
+        praesentium. Autem magnam dolore ad ut molestias odit porro, illum quisquam. Iste, minus totam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto quod ut adipisci eos nisi consectetur
+        praesentium. Autem magnam dolore ad ut molestias odit porro, illum quisquam. Iste, minus totam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto quod ut adipisci eos nisi consectetur
+        praesentium. Autem magnam dolore ad ut molestias odit porro, illum quisquam. Iste, minus totam.</p>
+    <div class="tariff min">
+        <div class="title"><span>Мінімальний тариф</span></div>
+        <div class="content">
+            <p>Контент для мінімального тарифу. Прокрутіть вниз, щоб побачити зміну заголовка.</p>
+            <p>Ще багато тексту...</p>
+            <p>Ще багато тексту...</p>
+            <p>Ще багато тексту...</p>
+            <p>Ще багато тексту...</p>
+            <p>Ще багато тексту...</p>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto quod ut adipisci eos nisi consectetur
+        praesentium. Autem magnam dolore ad ut molestias odit porro, illum quisquam. Iste, minus totam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto quod ut adipisci eos nisi consectetur
+        praesentium. Autem magnam dolore ad ut molestias odit porro, illum quisquam. Iste, minus totam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto quod ut adipisci eos nisi consectetur
+        praesentium. Autem magnam dolore ad ut molestias odit porro, illum quisquam. Iste, minus totam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto quod ut adipisci eos nisi consectetur
+        praesentium. Autem magnam dolore ad ut molestias odit porro, illum quisquam. Iste, minus totam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto quod ut adipisci eos nisi consectetur
+        praesentium. Autem magnam dolore ad ut molestias odit porro, illum quisquam. Iste, minus totam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto quod ut adipisci eos nisi consectetur
+        praesentium. Autem magnam dolore ad ut molestias odit porro, illum quisquam. Iste, minus totam.</p>
+    <div class="tariff max">
+        <div class="title"><span>Максимальний тариф</span></div>
+        <div class="content">
+            <p>Контент для максимального тарифу. Прокрутіть вниз, щоб побачити зміну заголовка.</p>
+            <p>Ще багато тексту...</p>
+            <p>Ще багато тексту...</p>
+            <p>Ще багато тексту...</p>
+            <p>Ще багато тексту...</p>
+            <p>Ще багато тексту...</p>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto quod ut adipisci eos nisi consectetur
+        praesentium. Autem magnam dolore ad ut molestias odit porro, illum quisquam. Iste, minus totam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto quod ut adipisci eos nisi consectetur
+        praesentium. Autem magnam dolore ad ut molestias odit porro, illum quisquam. Iste, minus totam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto quod ut adipisci eos nisi consectetur
+        praesentium. Autem magnam dolore ad ut molestias odit porro, illum quisquam. Iste, minus totam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto quod ut adipisci eos nisi consectetur
+        praesentium. Autem magnam dolore ad ut molestias odit porro, illum quisquam. Iste, minus totam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto quod ut adipisci eos nisi consectetur
+        praesentium. Autem magnam dolore ad ut molestias odit porro, illum quisquam. Iste, minus totam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto quod ut adipisci eos nisi consectetur
+        praesentium. Autem magnam dolore ad ut molestias odit porro, illum quisquam. Iste, minus totam.</p>
+    <script>
+        window.addEventListener('scroll', function () {
+            const minBlock = document.querySelector('.tariff.min');
+            const maxBlock = document.querySelector('.tariff.max');
+            const minTitle = minBlock.querySelector('.title');
+            const maxTitle = maxBlock.querySelector('.title');
+
+            const minBlockRect = minBlock.getBoundingClientRect();
+            const maxBlockRect = maxBlock.getBoundingClientRect();
+
+            const minTitleRect = minTitle.getBoundingClientRect();
+            const maxTitleRect = maxTitle.getBoundingClientRect();
+
+            // Якщо блок "min" вгорі, закріплюємо його title
+            if (minBlockRect.top <= 0 && minBlockRect.bottom > minTitleRect.height) {
+                minTitle.classList.add('sticky');
+            } else {
+                minTitle.classList.remove('sticky');
+            }
+
+            // Якщо блок "max" вгорі, закріплюємо його title
+            if (maxBlockRect.top <= 0 && maxBlockRect.bottom > maxTitleRect.height) {
+                maxTitle.classList.add('sticky');
+            } else {
+                maxTitle.classList.remove('sticky');
+            }
+
+            // Якщо блок "min" завершився, title повертається на місце
+            if (minBlockRect.bottom <= minTitleRect.height) {
+                minTitle.classList.remove('sticky');
+            }
+
+            // Якщо блок "max" завершився, title повертається на місце
+            if (maxBlockRect.bottom <= maxTitleRect.height) {
+                maxTitle.classList.remove('sticky');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

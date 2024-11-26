@@ -8,7 +8,7 @@
   }
 
   .header {
-    background-image: url(../images/header-bg-mobile.webp);
+    background-image: url(../images/header-bg-mobile.webp?v=1.0);
     padding-bottom: 0px;
     margin-top: 26px;
 
@@ -20,7 +20,7 @@
       transform: translateX(-50%);
       width: 100%;
       height: 80%;
-      background-color: #D6E9FD;
+      background-color: #2A2A2A;
       z-index: -2;
     }
   }
@@ -28,12 +28,13 @@
   .top-logo {
     width: 78px;
     height: 46px;
+    margin-bottom: 20px;
   }
 
   .top-block {
     justify-content: center;
     margin-top: 10px;
-    gap: 0 50px;
+    gap: 0 20px;
   }
 
   .top-btn {
@@ -45,7 +46,8 @@
     font-size: 18px;
     line-height: 160%;
     text-align: center;
-    margin: 0 auto 28px;
+    margin: 30px auto 28px;
+    padding: 0 50px;
 
     span {
       line-height: 160%;
@@ -78,7 +80,7 @@
   
   .header-img-mob {
     display: block;
-    margin: -80px auto 0;
+    margin: 0px auto 0;
     width: 100%;
     height: 100%;
   }
@@ -94,50 +96,43 @@
 
   //------
   .video-lesson {
-    padding: 60px 0 40px;
+    padding: 60px 0 0;
 
     .title-item {
       margin: 20px auto;
     }
 
-    .video-box {
+    /* .video-box {
       position: relative;
       padding-bottom: 120%;
       width: 67%;
       height: 100%;
       overflow: hidden;
-    }
+    } */
   }
 
   //------
   .price {
     padding: 60px 0;
 
-    &::before {
-      height: 80%;
-    }
-
-    &::after {
-      top: 80%;
-    }
-
     .section-title {
       margin-bottom: 30px;
     }
 
-    ul {
-      padding: 0 20px 15px 20px;
+    .title{
+      // flex-direction: column;
+      ul {
+        // margin: 10px auto;
+      }
     }
 
-    .svd {
-      .title {
-        padding-top: 20px;
-        min-height: 160px;
+    ul{
+      padding-bottom: 10px;
+    }
 
-        span{
-          font-size: 34px;
-        }
-      }
+    .course-block {
+      // max-width: fit-content;
+      margin: 15px 15px 0px 30px;
     }
   }
 
@@ -197,7 +192,7 @@
 
   //------
   .not-sure {
-    padding: 60px 0 40px;
+    padding: 60px 0 0;
 
     .section-title {
       text-align: center;
@@ -231,8 +226,8 @@
     }
 
     .logo {
-      width: 156px;
-      height: 103px;
+      width: 100px;
+      height: 65px;
       margin: 0 auto;
     }
 
@@ -272,9 +267,7 @@
 
   //------
   .fancybox-content {
-    max-width: 344px;
-    max-height: 530px;
-    padding: 23px;
+    padding: 20px;
   }
 
   .form-title {
@@ -313,6 +306,10 @@
   label[for=agree] {
     font-size: 12px;
   }
+  #popup3 ul li {
+    padding: 0 0 8px 10px;
+    font-size: 17px;
+  }
 
 
   @media screen and (max-width: 374px) {
@@ -328,6 +325,7 @@
 
     .header-subtitle {
       font-size: 16px;
+      padding: 0 40px;
     }
 
     .header-subtitle span {
@@ -350,10 +348,19 @@
     .price ul {
       padding: 0 10px 15px;
     }
-
+    .price .toggle-btn {
+      font-size: 12px;
+    }
+    .price .svd .title span{
+      font-size: 30px;
+    }
+    .price .svd .title li {
+      text-align: center;
+      padding-left: 65px;
+      padding-right: 65px;
+    }
     //----
     .fancybox-content {
-      max-height: 510px;
       padding: 15px;
     }
 
@@ -362,16 +369,33 @@
     }
 
     .form-title {
-      font-size: 44px;
+      font-size: 36px;
     }
 
     form input {
       width: 100%;
+      height: 50px;
+      margin-bottom: 4px;
     }
-
+    form .btn {
+      font-size: 16px;
+      height: 60px;
+      &::after{
+        height: 60px;
+      }
+    }
     form a,
     label[for=agree] {
       font-size: 11px;
+    }
+
+    #popup3 ul li {
+      padding: 0 0 5px 10px;
+      font-size: 14px;
+      &::before {
+        left: -22px;
+        top: -4px;
+      }
     }
   }
 
@@ -396,10 +420,23 @@
       display: none;
     }
   }
-
+  @media screen and (max-width:887px) {
+    .price::after {
+      display: none;
+    }
+    .not-sure::after {
+      bottom: -15%;
+      width: 100%;
+      background-size: cover;
+      height: 530px;
+      opacity: 0.3;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
   @media screen and (min-width: 991px) and (max-width: 1023px) {
     .header {
-      background-image: url(../images/header-bg-desktop.webp);
+      background-image: url(../images/header-bg-desktop.webp?v=1.0);
       position: static;
       padding-bottom: 100px;
 
@@ -407,9 +444,13 @@
         height: 70%;
       }
     }
-
+    .header .timer {
+      margin: 20px 0 0;
+      max-width: 345px;
+    }
+    
     .top-block {
-      margin: 20px -50px 30px 0;
+      margin: 20px 0px 30px 0;
       max-width: none;
       justify-content: flex-start;
     }
@@ -422,6 +463,7 @@
     .header-subtitle {
       text-align: left;
       margin: 0 0 20px;
+      padding: 0;
     }
 
     .header-title {
