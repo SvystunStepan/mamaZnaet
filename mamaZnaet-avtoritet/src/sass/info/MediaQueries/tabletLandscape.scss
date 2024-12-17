@@ -1,0 +1,80 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+  @import '../desktop';
+  //1024-1199
+  .header {
+    padding-bottom: 5%;
+  }
+  .header-title {
+    font-size: 66px;
+    line-height: 66px;
+  }
+  .header-flex{
+    flex-direction: column;
+  }
+  .header .timer{
+    margin: 20px 0 0;
+  }
+
+  // .section-title {
+    //   font-size: 40px;
+    //   line-height: 100%;
+    // }
+    
+  .who-this-course {
+    padding-top: 40px;
+
+    .section-title {
+      font-size: 40px;
+      line-height: 100%;
+      max-width: 500px;
+    }
+    .foto {
+      width: 200%;
+      max-width: none;
+      margin-left: -50%;
+    }
+    .btn-box {
+      margin: 35px auto 50px;
+    }
+  }
+
+  .gallery .gallery-box {
+    max-width: 480px;
+  }
+
+  .format {
+    .section-title {
+      margin: 50px auto 15px;
+      text-align: center;
+    }
+    li {
+      padding-left: 45px;
+      padding-top: 4px;
+
+      &::before {
+        top: 0;
+        transform: translateY(0);
+        width: 35px;
+        height: 35px;
+      }
+      &:first-child::before {
+        top: 0;
+      }
+    }
+    .btn-box {
+      margin: 0 0 70px;
+    }
+    .foto {
+      width: 129%;
+      max-width: none;
+      margin-left: -29%;
+    }
+  }
+
+  .program .block:first-of-type::before {
+    right: 0;
+  }
+
+}

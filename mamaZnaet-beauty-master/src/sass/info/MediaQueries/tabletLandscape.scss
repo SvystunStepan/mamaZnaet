@@ -1,0 +1,71 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+  @import '../desktop';
+  //1024-1199
+  .header-title {
+    font-size: 100px;
+    line-height: 95px;
+
+    span {
+      font-size: 100px;
+      line-height: 50px;
+      top: -45px;
+    }
+  }
+  .header-title-item {
+    font-size: 35px;
+    line-height: 35px;
+    margin-top: 20px;
+  }
+
+  .who-this-course .ml {
+    margin-left: 0;
+  }
+
+  .content {
+
+    .content-title {
+      font-size: 50px;
+      line-height: 38px;
+    }
+    .flex {
+      padding-top: 20px;
+    }
+    .block {
+      margin-bottom: 50px;
+    }
+  }
+
+  .banner::before {
+    top: 42%;
+    max-width: 334px;
+    max-height: 382px;
+  }
+  .banner::after {
+    top: 252px;
+    max-height: 382px;
+    max-width: 460px;
+  }
+
+  .format::before {
+    top: 225px;
+    width: 400px;
+    height: 400px;
+  }
+  .format::after {
+    top: -215px;
+    width: 400px;
+    height: 400px;
+  }
+  .result .wrap {
+    -ms-flex-pack: justify;
+    justify-content: center;
+  }
+  .autor .foto-item {
+    width: 30%;
+  }
+  .f4 {
+    width: 100% !important;
+  }
+} 
