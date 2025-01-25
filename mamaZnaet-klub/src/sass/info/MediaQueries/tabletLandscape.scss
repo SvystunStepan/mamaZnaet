@@ -1,0 +1,43 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+  @import '../desktop';
+  //1024-1199
+
+  .nav {
+    padding: 5px 0 0px;
+  }
+  .header-subtitle {
+    margin-top: 80%;
+  }
+
+  .personal-psychologist{
+    .section-title {
+      margin-top: 35px;
+    }
+    ul {
+      padding-bottom: 30px;
+    }
+  } 
+  
+  .vhodit {
+    padding: 40px 0 35px;
+  }
+
+  .club-for{
+    .block{
+      max-width: 480px;
+    }
+    .text-col{
+      padding: 0 20px;
+    }
+    .block-title{
+      margin: 16px 0 10px;
+    }
+  }
+
+  .speaker-tv {
+    padding: 60px 0 50px;
+  }
+
+}

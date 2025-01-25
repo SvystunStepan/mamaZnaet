@@ -363,15 +363,18 @@
   -webkit-text-fill-color: transparent;
 
   span {
-    font-family: "Source Serif 4",sans-serif;
-    font-weight: 500;
-    background: linear-gradient(
-      90deg, 
-      rgb(245, 189, 135), 
-      rgb(255, 146, 52), 
-      rgb(241, 151, 73), 
-      rgb(243, 170, 103)
-    );
+    background-color: #FF9234;
+    font-family: "Source Serif 4 Bold",sans-serif;
+    font-weight: 700;
+    // font-family: "Source Serif 4",sans-serif;
+    // font-weight: 500;
+    // background: linear-gradient(
+    //   90deg, 
+    //   rgb(245, 189, 135), 
+    //   rgb(255, 146, 52), 
+    //   rgb(241, 151, 73), 
+    //   rgb(243, 170, 103)
+    // );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -570,25 +573,20 @@
   letter-spacing: 0%;
   text-transform: uppercase;
   color: rgb(55, 53, 54);
-  // background: linear-gradient(
-  //   90deg,
-  //   rgb(71, 71, 72),
-  //   rgb(156, 156, 156),
-  //   rgb(56, 56, 56)
-  // );
-  // -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
 
   span {
-    font-family: "Source Serif 4",sans-serif;
-    font-weight: 500;
-    background: linear-gradient(
-      90deg, 
-      rgb(245, 189, 135), 
-      rgb(255, 146, 52), 
-      rgb(241, 151, 73), 
-      rgb(243, 170, 103)
-    );
+    background-color: #FF9234;
+    font-family: "Source Serif 4 Bold",sans-serif;
+    font-weight: 700;
+    // font-family: "Source Serif 4",sans-serif;
+    // font-weight: 500;
+    // background: linear-gradient(
+    //   90deg, 
+    //   rgb(245, 189, 135), 
+    //   rgb(255, 146, 52), 
+    //   rgb(241, 151, 73), 
+    //   rgb(243, 170, 103)
+    // );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -870,7 +868,9 @@ li {
 
   .green {
     border-radius: 20px;
-    background: linear-gradient(270.00deg, rgb(174, 186, 145) 0%,rgb(194, 210, 161) 100%);
+    // background: linear-gradient(270.00deg, rgb(174, 186, 145) 0%,rgb(194, 210, 161) 100%);
+    background: linear-gradient(96.67deg, #DCEDBA 1.4%, #F4FFDE 46.02%, #DCEDBA 98.39%);
+
     padding: 39px 25px 24px 25px;
 
     &::before {
@@ -878,7 +878,7 @@ li {
     }
 
     .block-title {
-      color: rgb(255, 255, 255);
+      color: #373536;
       font-family: "Source Serif 4",sans-serif;
       font-size: 34px;
       font-weight: 500;

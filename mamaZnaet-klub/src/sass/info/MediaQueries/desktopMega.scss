@@ -1,0 +1,28 @@
+@import '../../mq';
+
+@media #{$desktopMega} {
+    @import '../desktop';
+
+    & {
+        .header {
+            background-size: contain;
+
+            &::before {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 99%;
+                background: url(../images/header-bg-mega.webp);
+                // background: url(../images/header-bg-tab.webp);
+                z-index: -1;
+                background-position: bottom;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+        // .header::before,
+        .header::after{
+          display: none;
+        }
+    }
+}
