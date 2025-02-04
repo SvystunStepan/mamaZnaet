@@ -64,19 +64,22 @@
 
   /*----------*/
   .header {
-    background-image: url(../images/header-bg-mob.webp);
+    background-image: url(../images/header-bg-mob-small.webp);
     // background-position: top;
-    margin-top: 25px;
+    // margin-top: 25px;
     overflow-x: clip;
+    padding-bottom: 14%;
   }
 
   .header-subtitle {
-    padding: 0 5px;
+    // padding: 0 5px;
+    // margin: 53% auto 20px;
+    padding: 20px 5px 0;
     margin: 53% auto 20px;
   }
   .header .row .btn {
-    width: 293px;
-    padding: 0 100px 0 30px;
+    width: 285px;
+    padding: 0 70px;
   }
   .header .timer{
     margin-bottom: 21%;
@@ -102,16 +105,18 @@
   /*----------*/
   .vhodit {
     background-image: url(../images/bg-1-mob.svg);
-    padding: 60px 0;
+    padding: 60px 0 30px;
 
     .wrap{
       gap: 10px;
     }
 
     .btn{
-      max-width: 307px;
+      // max-width: 307px;
+      max-width: 285px;
       justify-content: flex-start;
-      padding: 0 105px 0 50px;
+      // padding: 0 105px 0 50px;
+      padding: 0 70px;
     }
   }
   /*----------*/
@@ -199,6 +204,9 @@
       margin-bottom: 20px;
       padding: 0 20px;
     }
+    ul{
+      margin-bottom: 30px;
+    }
     li{
       padding-right: 5px;
     }
@@ -270,19 +278,7 @@
       right: 8px;
     }
   }
-  /*------------*/
-  .reviews {
-    padding: 60px 0;
 
-    .section-title {
-      font-size: 32px;
-    }
-    .title-item:last-of-type {
-      font-size: 18px;
-      padding: 0 25px;
-      max-width: 630px;
-    }
-  }
   /*----------*/
   .answers {
     padding: 60px 0 0;
@@ -472,6 +468,14 @@
       flex-direction: row;
       padding: 0;
     }
+    //--------
+    .fixed-block .title-block{
+      font-size: 20px;
+    }
+    .fixed-block .btn {
+      max-width: 160px;
+      padding: 0px 5px;
+    }
   }
 
   @media screen and (min-width: 379px) {
@@ -518,7 +522,51 @@
     }
   }
 
+  @media screen and (max-width:768px) {
+    .reviews,
+    .club{
+      margin: 30px auto 0;
+      padding-bottom: 70px;
+      .slick-prev {
+        left: 15%;
+      }
+      .slick-next {
+        right: 15%;
+      }
+    }
+    .club img {
+      max-width: 350px;
+      margin: 0 auto;
+    }
+  .courses{
+    margin: 50px auto;
+    .flex{
+      gap: 10px;
+    }
+    .block{
+      gap: 10px;
+    }
+    .block-standart {
+      width: 100%;
+      .text{
+        font-size: 14px;
+        line-height: 19px;
+        margin: 5px;
+      }
+    }
+  }
+}
   @media screen and (min-width:768px) and (max-width: 1023px) {
+    .reviews,
+    .club{
+      .slick-prev {
+        left: 27%;
+      }
+      .slick-next {
+        right: 27%;
+      }
+    }
+
     .vhodit .block,
     .online-platf .block,
     .temy .block,

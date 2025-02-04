@@ -13,7 +13,7 @@
   <meta property="og:title" content="Клуб - Мама Знає">
   <meta property="og:image" content="images/og.png">
   <title>Клуб - Мама Знає</title>
-  <link type="text/css" rel="stylesheet" href="css/app.css?v=1.3">
+  <link type="text/css" rel="stylesheet" href="css/app.css?v=1.8">
   <link rel="shortcut icon" href="images/favicon.webp">
 
   <!-- Meta Pixel Code -->
@@ -75,14 +75,77 @@
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=697953208922003&ev=PageView&noscript=1" /></noscript>
   <!-- End Meta Pixel Code -->
+  <style>
+    .header .row .btn,
+    .vhodit .btn {
+      padding-right: 0;
+    }
+  </style>
+  <!-- <style>
+    .video1 {
+      padding: 80px 0 0px;
+      position: relative;
+    }
+
+    .video1 .video-box {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video1 iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    @media screen and (max-width: 1023px) {
+      .video1 {
+        padding: 50px 0 0px;
+      }
+    }
+  </style> -->
 </head>
 
 <body>
-  <div class="running-line">
+  <!-- <div class="running-line">
     <article class="roller">
-      <span>НОВОРІЧНА&nbsp;ЗНИЖКА&nbsp;-60%</span>
+      <span>&nbsp;ЗНИЖКА&nbsp;-60%</span>
     </article>
+  </div> -->
+
+  <div class="fixed-block">
+    <div class="flex">
+      <div>
+        <div class="title-block">Знижка -60%</div>
+        <div class="timer">
+          <div class="timer-title">Ціна зросте через:</div>
+          <div class="flex-row">
+            <div class="hours chart"><span>00</span></div><i>:</i>
+            <div class="minutes chart"><span>00</span></div><i>:</i>
+            <div class="seconds chart"><span>00</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="#price" class="btn scroll">Вступити в клуб за 399 грн</a>
+      </div>
+    </div>
   </div>
+
+  <!-- <section class="video1" id="video1">
+    <div class="container">
+      <div class="row">
+        <div class="col col-md-8 mx-auto">
+          <div class="video-box" id="video-container1"></div>
+        </div>
+      </div>
+    </div>
+  </section> -->
 
   <header class="header">
     <div class="container">
@@ -115,26 +178,25 @@
           <img class="autor-img-mob-1 lozad" loading="lazy" src="images/header-bg-mob-1.webp" alt="">
         </div>
         <div class="col-lg-6">
-          <!-- <h1 class="header-title">Батьківський <span>авторитет</span> для підлітків</h1> -->
           <div class="tablet">
             <img src="images/header-tablet.webp" class="foto lozad" loading="lazy" alt="image">
           </div>
-          <div class="header-subtitle">Отримайте доступ до бази знань 16+ курсів, ефірів з найкращими дитячими
-            психологами України та крутому комʼюніті сучасних мам</div>
+          <div class="header-subtitle">16+ курсів, 200+ уроків<br> на теми виховання, мотивації<br>
+            та розвитку дитини</div>
           <div class="btn-box">
-            <a href="#price" class="btn scroll">Приєднатися за 399 грн
-              <span class="zirka"><img loading="lazy" src="images/star.svg" alt="image"></span>
-              <p class="btn-block-item">знижка <span>-60%</span></p>
+            <a href="#price" class="btn scroll">Приєднатись до Клубу
+              <!-- <span class="zirka"><img loading="lazy" src="images/star.svg" alt="image"></span>
+              <p class="btn-block-item">знижка <span>-60%</span></p> -->
             </a>
           </div>
-          <div class="timer">
+          <!-- <div class="timer">
             <div class="timer-title">Ціна зросте через:</div>
             <div class="flex-row">
               <div class="hours chart"><span>00</span></div><i>:</i>
               <div class="minutes chart"><span>00</span></div><i>:</i>
               <div class="seconds chart"><span>00</span></div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -191,10 +253,29 @@
           </div>
         </div>
         <div class="btn-box">
-          <a href="#price" class="btn scroll">Приєднатися за 399 грн
-            <span class="zirka"><img loading="lazy" src="images/star.svg" alt="image"></span>
-            <p class="btn-block-item">знижка <span>-60%</span></p>
+          <a href="#price" class="btn scroll">Приєднатись до Клубу
+            <!-- <span class="zirka"><img loading="lazy" src="images/star.svg" alt="image"></span>
+            <p class="btn-block-item">знижка <span>-60%</span></p> -->
           </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="section-title">Відгуки мам, які проходили курси&nbsp;«Мама&nbsp;знає»</div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-8 col-lg-12">
+            <div class="reviews-slider" id="slider01">
+              <div class="item"><img src="images/011.webp" alt="image"></div>
+              <div class="item"><img src="images/012.webp" alt="image"></div>
+              <div class="item"><img src="images/013.webp" alt="image"></div>
+              <div class="item"><img src="images/014.webp" alt="image"></div>
+              <div class="item"><img src="images/015.webp" alt="image"></div>
+              <div class="item"><img src="images/016.webp" alt="image"></div>
+              <div class="item"><img src="images/017.webp" alt="image"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -232,55 +313,106 @@
       </div>
     </section>
 
-    <section class="temy" id="temy">
+    <section class="courses" id="courses">
       <div class="container">
-        <div class="section-title">Які теми* розбираються в клубі:</div>
-        <div class="wrap">
+        <div class="section-title">Які курси входять в&nbsp;клуб:</div>
+        <div class="flex">
           <div class="block">
-            <img src="images/checked.svg" alt="image">
-            <p class="text">Як відучити дитину від гаджетів</p>
+            <div class="block-standart">
+              <img src="images/img-100.webp" class="lozad" loading="lazy" alt="image">
+              <p class="text">Як перестати кричати та зриватися на дитину та чоловіка, почати відчувати себе більш
+                спокійною, менше стресувати, приділяючи спеціальним технікам всього 10 хвилин на день</p>
+            </div>
+            <div class="block-standart">
+              <img src="images/img-101.webp" class="lozad" loading="lazy" alt="image">
+              <p class="text">Як спілкуватися з дітьми, щоб не повторювати все по 100 разів, позбутися ігнору та донести
+                свої прохання і вимоги, щоб дитина їх почула і зрозуміла</p>
+            </div>
           </div>
           <div class="block">
-            <img src="images/checked.svg" alt="image">
-            <p class="text">Правила і кордони яких дотримуються</p>
+            <div class="block-standart">
+              <img src="images/img-102.webp" class="lozad" loading="lazy" alt="image">
+              <p class="text">15 покрокових технік, які допоможуть швидко позбутися поганої поведінки та неслухняності
+                без погроз, покарань і криків</p>
+            </div>
+            <div class="block-standart">
+              <img src="images/img-103.webp" class="lozad" loading="lazy" alt="image">
+              <p class="text">Як без сліз та істерик відучити дитину цілодобово сидіти в гаджетах. І мотивувати замість
+                цього вчитися, допомагати по дому, займатися спортом</p>
+            </div>
           </div>
           <div class="block">
-            <img src="images/checked.svg" alt="image">
-            <p class="text">Мотивація дітей до навчання, спорту</p>
+            <div class="block-standart">
+              <img src="images/img-104.webp" class="lozad" loading="lazy" alt="image">
+              <p class="text">Як обрати правильний дитячий садок для своєї дитини, допомогти їй швидко адаптуватися і
+                ходити туди з задоволенням, без сліз та істерик</p>
+            </div>
+            <div class="block-standart">
+              <img src="images/img-105.webp" class="lozad" loading="lazy" alt="image">
+              <p class="text">Як зробити так, щоб дитина сама хотіла робити уроки, розвиватися, прибирати в кімнаті,
+                займатися спортом. Робила це без вашого примусу, маніпуляцій і крику</p>
+            </div>
           </div>
           <div class="block">
-            <img src="images/checked.svg" alt="image">
-            <p class="text">Як позбутись дитячої агресії</p>
+            <div class="block-standart">
+              <img src="images/img-106.webp" class="lozad" loading="lazy" alt="image">
+              <p class="text">Техніки для батьків, які допоможуть запобігати конфліктам, ревнощам і суперництву між
+                дітьми, об'єднати сім'ю без криків і покарань, зберігаючи спокій</p>
+            </div>
+            <div class="block-standart">
+              <img src="images/img-107.webp" class="lozad" loading="lazy" alt="image">
+              <p class="text">Всього за 1 вечір ви отримаєте практичні техніки і методики, які допоможуть не провокувати
+                дитячі страхи, стресові стани та швидко з ними справлятися</p>
+            </div>
           </div>
           <div class="block">
-            <img src="images/checked.svg" alt="image">
-            <p class="text">Як впоратися зі своїми емоціями і зберігати спокій</p>
+            <div class="block-standart">
+              <img src="images/img-108.webp" class="lozad" loading="lazy" alt="image">
+              <p class="text">Як почати статеве виховання, говорити про сексуальність без привнесення комплексів,
+                реагувати на складні запитання та підтримувати сексуальну безпеку, будучи другом своїй дитині</p>
+            </div>
+            <div class="block-standart">
+              <img src="images/img-109.webp" class="lozad" loading="lazy" alt="image">
+              <p class="text">Пройдіть шлях до слухняності без крику: навчіться реагувати на впертість і неслухняність
+                без покарань, позбудьтеся стресу після трудових днів для вашого спокою і мирних вечорів у родині</p>
+            </div>
           </div>
           <div class="block">
-            <img src="images/checked.svg" alt="image">
-            <p class="text">Батьківський авторитет</p>
+            <div class="block-standart">
+              <img src="images/img-110.webp" class="lozad" loading="lazy" alt="image">
+              <p class="text">Отримайте техніки, які допоможуть позбутися крику, хамства, грубості, агресії та непослуху
+                у поведінці вашої дитини без покарань та погроз</p>
+            </div>
+            <div class="block-standart">
+              <img src="images/img-111.webp" class="lozad" loading="lazy" alt="image">
+              <p class="text">Як доносити до дитини важливі правила і розставляти кордони так, щоб дитина їх
+                дотримувалася, слухалася вас і з нею було легко. Без криків, скандалів, погроз і покарань</p>
+            </div>
           </div>
           <div class="block">
-            <img src="images/checked.svg" alt="image">
-            <p class="text">Підготовка дитини до школи/садка</p>
+            <div class="block-standart">
+              <img src="images/img-112.webp" class="lozad" loading="lazy" alt="image">
+              <p class="text">Як зробити так, щоб дитина з нетерпінням чекала навчання в школі, була психологічно
+                готова, вчилася не з-під палки, а за власним бажанням</p>
+            </div>
+            <div class="block-standart">
+              <img src="images/img-113.webp" class="lozad" loading="lazy" alt="image">
+              <p class="text">Як стати авторитетною фігурою для дитини 10-16 років через зміцнення довіри та відкритість
+                у спілкуванні, без криків, заборон і тиранії</p>
+            </div>
           </div>
           <div class="block">
-            <img src="images/checked.svg" alt="image">
-            <p class="text">Статеве виховання дітей</p>
+            <div class="block-standart">
+              <img src="images/img-114.webp" class="lozad" loading="lazy" alt="image">
+              <p class="text">Отримай покроковий план та діючі техніки для відновлення самоповаги, високої самооцінки та
+                сміливості бути собою. Тому що ти того варта!</p>
+            </div>
+            <div class="block-standart">
+              <img src="images/img-115.webp" class="lozad" loading="lazy" alt="image">
+              <p class="text">Як розпізнати ознаки аб'юзу в своїх відносинах, вийти з них без драм, нервів та істерик і
+                закласти міцний фундамент для побудови здорових стосунків у майбутньому</p>
+            </div>
           </div>
-          <div class="block">
-            <img src="images/checked.svg" alt="image">
-            <p class="text">Подолання страхів та стресів у дітей</p>
-          </div>
-        </div>
-        <div class="title-item"><span>* Це лише невелика частина найпопулярніших тем, їх набагато більше і постійно
-            додаються нові</span>
-        </div>
-        <div class="btn-box">
-          <a href="#price" class="btn scroll">Приєднатися за 399 грн
-            <span class="zirka"><img loading="lazy" src="images/star.svg" alt="image"></span>
-            <p class="btn-block-item">знижка <span>-60%</span></p>
-          </a>
         </div>
       </div>
     </section>
@@ -345,37 +477,102 @@
 
     <section class="price" id="price">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="section-title">Вступаючи в&nbsp;клуб,<br>ви отримуєте:</div>
-            <ul>
-              <li><span>Доступ до 16 курсів на теми виховання, мотивації, розвитку дітей (середня ціна одного курсу —
-                  1400 грн)</span></li>
-              <li>Доступ до всіх нових курсів, що будуть зʼявлятися в клубі</li>
-              <li>Доступ до чату в Телеграм</li>
-              <li>Сесії «Питання-Відповідь» з експертами клубу</li>
-              <li>Ефіри з запрошеними спікерами (психологи, нутріціологи, лікарі)</li>
-              <li>Доступ до додаткових навчальних матеріалів (статті, відео-уроки, подкасти)</li>
-            </ul>
-            <div class="block">
-              <div class="block-title">Доступ на&nbsp;1&nbsp;місяць</div>
-              <div class="old">1000 грн</div>
-              <div class="new">399 грн</div>
-              <div class="btn-box">
-                <a href="https://t.me/ClubMomKnowsBot?start=ZGw6MjQ2MTY0" class="btn" target="_blank">Вступити в клуб на
-                  1 місяць
-                  <span class="zirka"><img loading="lazy" src="images/star.svg" alt="image"></span>
-                  <p class="btn-block-item">знижка <span>-60%</span></p>
-                </a>
+        <!-- <div class="row justify-content-center"> -->
+        <!-- <div class="col-md-6"> -->
+        <div class="section-title">Вступаючи в&nbsp;клуб,<br>ви отримуєте:</div>
+        <ul>
+          <li><span>16+ курсів</span> на теми виховання, мотивації, розвитку дітей</li>
+          <li><span>Доступ до всіх нових курсів</span>, що будуть зʼявлятися в клубі</li>
+          <li><span>Доступ до чату в Телеграм</span></li>
+          <li><span>Сесії «Питання-Відповідь»</span> з експертами клубу</li>
+          <li><span>Ефіри з запрошеними спікерами</span> (психологи, нутріціологи, лікарі)</li>
+          <li><span>Доступ до додаткових навчальних матеріалів</span> (статті, відео-уроки, подкасти)</li>
+        </ul>
+
+        <div class="flex">
+          <div class="block">
+            <div class="block-title">Доступ на&nbsp;1&nbsp;місяць</div>
+            <div class="old">1000 грн</div>
+            <div class="new">399 грн</div>
+            <div class="btn-box">
+              <a href="https://t.me/ClubMomKnowsBot?start=Adfs2ASd" class="btn ss-btn" target="_blank">Вступити в
+                клуб <br>на 1 місяць
+                <span class="zirka"><img loading="lazy" src="images/star.svg" alt="image"></span>
+                <p class="btn-block-item">знижка <span>-60%</span></p>
+              </a>
+            </div>
+            <div class="timer">
+              <div class="timer-title">Ціна зросте через:</div>
+              <div class="flex-row">
+                <div class="hours chart"><span>00</span></div><i>:</i>
+                <div class="minutes chart"><span>00</span></div><i>:</i>
+                <div class="seconds chart"><span>00</span></div>
               </div>
-              <div class="timer">
-                <div class="timer-title">Ціна зросте через:</div>
-                <div class="flex-row">
-                  <div class="hours chart"><span>00</span></div><i>:</i>
-                  <div class="minutes chart"><span>00</span></div><i>:</i>
-                  <div class="seconds chart"><span>00</span></div>
-                </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="block-title">Доступ на&nbsp;3&nbsp;місяці</div>
+            <div class="old">3000 грн</div>
+            <div class="new">999 грн</div>
+            <div class="btn-box">
+              <a href="https://t.me/ClubMomKnowsBot?start=Adfs2ASd" class="btn ss-btn" target="_blank">Вступити в
+                клуб <br>на 3 місяці
+                <span class="zirka"><img loading="lazy" src="images/star.svg" alt="image"></span>
+                <p class="btn-block-item">знижка <span>-67%</span></p>
+              </a>
+            </div>
+            <div class="timer">
+              <div class="timer-title">Ціна зросте через:</div>
+              <div class="flex-row">
+                <div class="hours chart"><span>00</span></div><i>:</i>
+                <div class="minutes chart"><span>00</span></div><i>:</i>
+                <div class="seconds chart"><span>00</span></div>
               </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="block-title">Доступ на&nbsp;6&nbsp;місяців</div>
+            <div class="old">6000 грн</div>
+            <div class="new">1699 грн</div>
+            <div class="btn-box">
+              <a href="https://t.me/ClubMomKnowsBot?start=Adfs2ASd" class="btn ss-btn" target="_blank">Вступити в
+                клуб <br>на 6 місяців
+                <span class="zirka"><img loading="lazy" src="images/star.svg" alt="image"></span>
+                <p class="btn-block-item">знижка <span>-72%</span></p>
+              </a>
+            </div>
+            <div class="timer">
+              <div class="timer-title">Ціна зросте через:</div>
+              <div class="flex-row">
+                <div class="hours chart"><span>00</span></div><i>:</i>
+                <div class="minutes chart"><span>00</span></div><i>:</i>
+                <div class="seconds chart"><span>00</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- </div> -->
+        <!-- </div> -->
+      </div>
+    </section>
+
+    <section class="club" id="club">
+      <div class="container">
+        <div class="row">
+          <div class="col-9 mx-auto">
+            <div class="section-title">Клуб «Мама&nbsp;Знає»</div>
+            <div class="club-slider" id="slider02">
+              <div class="item"><img src="images/30.webp" alt="image"></div>
+              <div class="item"><img src="images/31.webp" alt="image"></div>
+              <div class="item"><img src="images/32.webp" alt="image"></div>
+              <div class="item"><img src="images/33.webp" alt="image"></div>
+              <div class="item"><img src="images/34.webp" alt="image"></div>
+              <div class="item"><img src="images/35.webp" alt="image"></div>
+              <div class="item"><img src="images/36.webp" alt="image"></div>
+              <div class="item"><img src="images/37.webp" alt="image"></div>
             </div>
           </div>
         </div>
@@ -395,13 +592,14 @@
           <div class="col-lg-6 order-1 order-lg-2">
             <div class="section-title">Авторка клубу <br>Анна Просвєтова</div>
             <ul>
-              <li>Психологиня, авторка навчальних програм для батьків. Ці&nbsp;програми пройшло вже більше ніж
+              <li><span>Психологиня, авторка навчальних програм для батьків.</span> Ці&nbsp;програми пройшло вже більше
+                ніж
                 60&nbsp;000 сімей</li>
-              <li>Експерт-консультант телевізійних проектів на каналах СТБ, Інтер, Україна, 1+1</li>
-              <li>Авторка книжок та статей з психології виховання</li>
-              <li>Сімейна медіаторка, працює із сімейними конфліктами, кризовими ситуаціями</li>
-              <li>Учасниця соціальних та волонтерських проектів з допомоги жертвам насильства</li>
-              <li>Мама доньки</li>
+              <li><span>Експерт-консультант телевізійних проектів</span> на каналах СТБ, Інтер, Україна, 1+1</li>
+              <li><span>Авторка книжок та статей</span> з психології виховання</li>
+              <li><span>Сімейна медіаторка</span>, працює із сімейними конфліктами, кризовими ситуаціями</li>
+              <li><span>Учасниця соціальних та волонтерських проектів</span> з допомоги жертвам насильства</li>
+              <li><span>Мама доньки</span></li>
             </ul>
           </div>
         </div>
@@ -462,26 +660,23 @@
               <button class="accordion">Які курси доступні в клубі? <span class="bg-arrow"><i class="arrow"></i></span>
               </button>
               <div class="accordion-content">
-                <!-- <p class="text tc"></p> -->
                 <ul class="disc">
-                  <li>«Підготовка до дитсадка»</li>
-                  <li>«Підготовка до школи»</li>
-                  <li>«Стоп гаджети!». Як без сліз та істерик відучити дитину цілодобово сидіти в телефоні/компʼютері
-                  </li>
-                  <li>«Мої діти живуть дружно». Стратегії, які допоможуть вашим дітям подолати ревнощі та суперництво
-                  </li>
-                  <li>«Статеве виховання дітей»</li>
-                  <li>«Правила і кордони без стресу». Як доносити до дитини важливі правила і розставляти кордони</li>
-                  <li>«Формула мотивації дітей»</li>
-                  <li>«Спокійна мама». Як перестати кричати і зриватися, перейти у врівноважений стан</li>
-                  <li>«Стоп покарання!». Позбудьтеся покарань і замініть їх на екологічні методи</li>
-                  <li>«Як позбутись дитячої агресії»</li>
-                  <li>«Слухняна дитина»</li>
-                  <li>«18 способів домовитись з дитиною»</li>
-                  <li>«Подолання страхів та стресових станів у дітей»</li>
-                  <li>«Батьківський авторитет для підлітків»</li>
-                  <li>«Особисті кордони для жінок»</li>
-                  <li>«Токсичні стосунки: план виходу»</li>
+                  <li><span>«СПОКІЙНА МАМА»</span> — як перестати кричати та знайти баланс </li>
+                  <li><span>«18 СПОСОБІВ ДОМОВИТИСЬ З ДИТИНОЮ»</span> — без криків і повторень </li>
+                  <li><span>«СЛУХНЯНА ДИТИНА»</span> — техніки для швидкого вирішення проблем поведінки </li>
+                  <li><span>«СТОП ГАДЖЕТИ»</span> — як мотивувати дитину займатися спортом і навчанням </li>
+                  <li><span>«ПІДГОТОВКА ДО ДИТСАДКА»</span> — адаптація без сліз і стресу</li>
+                  <li><span>«ФОРМУЛА МОТИВАЦІЇ ДІТЕЙ»</span> — щоб дитина сама хотіла вчитися і допомагати</li>
+                  <li><span>«МОЇ ДІТИ ЖИВУТЬ ДРУЖНО!»</span> — подолання ревнощів і суперництва</li>
+                  <li><span>«ПОДОЛАННЯ СТРАХІВ І СТРЕСІВ»</span> — швидкі методики для спокою дитини</li>
+                  <li><span>«СТАТЕВЕ ВИХОВАННЯ»</span> — без соромʼязливості та комплексів</li>
+                  <li><span>«ВІДМОВА ВІД ПОКАРАНЬ»</span> — екологічні способи досягнення слухняності</li>
+                  <li><span>«ДИТЯЧА АГРЕСІЯ»</span> — 25 способів позбутися хамства й грубості</li>
+                  <li><span>«ПРАВИЛА І КОРДОНИ БЕЗ СТРЕСУ»</span> — донесення важливих правил без скандалів</li>
+                  <li><span>«ПІДГОТОВКА ДО ШКОЛИ»</span> — психологічна готовність дитини до навчання</li>
+                  <li><span>«БАТЬКІВСЬКИЙ АВТОРИТЕТ ДЛЯ ПІДЛІТКІВ»</span> — довіра і повага без тиранії</li>
+                  <li><span>«ЛІНІЯ СИЛИ»</span> — особисті кордони для жінок і відновлення самооцінки</li>
+                  <li><span>«ТОКСИЧНІ СТОСУНКИ»</span> — план виходу для здорових відносин</li>
                 </ul>
                 <p class="text tc">В клуб постійно додаються нові курси на актуальні теми.</p>
               </div>
@@ -492,7 +687,6 @@
                     class="arrow"></i></span>
               </button>
               <div class="accordion-content">
-                <!-- <p class="text tc"></p> -->
                 <ul class="line">
                   <li>Доступ до 16 курсів на теми виховання, мотивації, розвитку дітей</li>
                   <li>Доступ до всіх нових курсів, що будуть зʼявлятися в клубі</li>
@@ -503,19 +697,6 @@
                 </ul>
               </div>
             </div>
-
-            <!-- <div class="answers-border">
-              <button class="accordion">Я оплатила курс, що мені робити далі? <span class="bg-arrow"><i
-                    class="arrow"></i></span></button>
-              <div class="accordion-content">
-                <p class="text tc">Після оплати на вказану вами електронну адресу надійде лист із доступом до особистого
-                  кабінету. Це спеціальна платформа, де ви знайдете уроки курсу. Якщо не отримали листа, перевірте папку
-                  «Спам» - можливо, лист потрапив туди. Якщо і там листа немає - зверніться до <a
-                    href="https://t.me/School_Mama_Znaet" target="_blank" class="answers-link">служби підтримки,</a>
-                  вони допоможуть вам
-                  розібратися.</p>
-              </div>
-            </div> -->
 
           </div>
         </div>
@@ -561,13 +742,19 @@
       </div>
     </div>
   </footer>
-
-
+  <script src="./thx_oto/custom-link-utm-main/dl.js"></script>
+  <script>
+    ssCustomLink('ss-btn', './thx_oto/custom-link-utm-main/dl.php', true, {
+      variables: {
+        name: 'value',
+      }
+    });
+  </script>
   <script type="text/javascript"
     src="https://cdn.jsdelivr.net/combine/npm/zepto@1.2.0/dist/zepto.js,npm/zepto@1.2.0/src/fx.js?ver=5.3.2"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.js?ver=5.3.2"></script>
-  <script defer src="js/vendor.js?v=1.3"></script>
-  <script defer src="js/app.js?v=1.3"></script>
+  <script defer src="js/vendor.js?v=1.6"></script>
+  <script defer src="js/app.js?v=1.6"></script>
 </body>
 
 </html>

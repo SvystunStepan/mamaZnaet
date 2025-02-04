@@ -16,7 +16,7 @@ observer.observe();
 document.addEventListener("DOMContentLoaded", function () {
   var videoContainer = document.getElementById('video-container');
   var lazyVideo = document.createElement('iframe');
-  lazyVideo.setAttribute('data-src', 'https://www.youtube.com/embed/GNDMN2KR1IE?si=AVqeBva2XOcVjU0R');
+  lazyVideo.setAttribute('data-src', 'https://www.youtube.com/embed/OblHMGHYza0?si=5b_nV3Bbk7Jh14xB');
   lazyVideo.setAttribute('allow', 'autoplay; encrypted-media');
   lazyVideo.setAttribute('allowfullscreen', '');
   lazyVideo.classList.add('lazy-video');
@@ -183,44 +183,45 @@ $(document).ready(function () {
 
   //ТАЙМЕР ЦІНИ
   const timers = document.querySelectorAll('.timer');
-  timers.forEach((timer) => {
+
+  timers.forEach((timer, index) => {
     const hoursDisplay = timer.querySelector('.hours span');
     const minutesDisplay = timer.querySelector('.minutes span');
     const secondsDisplay = timer.querySelector('.seconds span');
-    function getTimeUntilMidnight() {
-      const now = new Date();
-      const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1); // Наступний день
-      const timeDifference = (tomorrow - now) / 1000; // Різниця в секундах
-      return Math.floor(timeDifference);
+
+    const timerKey = `timerStart_${index}`; // Унікальний ключ для кожного таймера
+
+    function getTimeRemaining() {
+      const startTime = sessionStorage.getItem(timerKey) || Date.now();
+      sessionStorage.setItem(timerKey, startTime);
+      const elapsed = Math.floor((Date.now() - startTime) / 1000);
+      return Math.max(900 - elapsed, 0); // 900 секунд = 15 хвилин
     }
+
     function updateTimerDisplay(timeRemaining) {
-      const hours = Math.floor(timeRemaining / 3600);
-      const minutes = Math.floor((timeRemaining % 3600) / 60);
+      const minutes = Math.floor(timeRemaining / 60);
       const seconds = timeRemaining % 60;
-      hoursDisplay.textContent = hours.toString().padStart(2, '0');
+      hoursDisplay.textContent = '00';
       minutesDisplay.textContent = minutes.toString().padStart(2, '0');
       secondsDisplay.textContent = seconds.toString().padStart(2, '0');
     }
+
     function updateTimer() {
-      const timeRemaining = getTimeUntilMidnight();
-      if (timeRemaining > 0) {
-        updateTimerDisplay(timeRemaining);
-      } else {
-        // Оновлення після півночі
-        updateTimerDisplay(0);
+      const timeRemaining = getTimeRemaining();
+      updateTimerDisplay(timeRemaining);
+      if (timeRemaining === 0) {
         clearInterval(timerInterval);
-        setTimeout(() => {
-          startTimer();
-        }, 1000);
       }
     }
+
     function startTimer() {
       updateTimer();
-      timerInterval = setInterval(updateTimer, 1000);
+      const timerInterval = setInterval(updateTimer, 1000); // Локальна змінна
     }
-    let timerInterval;
+
     startTimer();
   });
+
 
 })
 

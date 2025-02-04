@@ -49,7 +49,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: center;
 }
 .flex-row {
@@ -73,7 +73,7 @@
   display: inline-block;
   position: relative;
   text-align: center;
-  padding-top: 3px;
+  // padding-top: 3px;
 }
 .chart {
   color: #FF5582;
@@ -86,39 +86,41 @@
   line-height: normal;
   margin: 0 6px;
 }
-/* .days,
-.hours,
-.minutes,
-.seconds {
-  position: relative;
+.price{
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    position: relative;
 
-  &::after {
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: rgb(55, 53, 54);
-    text-align: center;
-    font-variant-numeric: lining-nums proportional-nums;
-    font-family: "Involve-Regular", sans-serif;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 17px;
+    &::after {
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgb(55, 53, 54);
+      text-align: center;
+      font-variant-numeric: lining-nums proportional-nums;
+      font-family: "Involve-Regular", sans-serif;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 17px;
+    }
+  }
+  .days::after {
+    content: "днів";
+  }
+  .hours::after {
+    content: "годин";
+  }
+  .minutes::after {
+    content: "хвилин";
+  }
+  .seconds::after {
+    content: "секунд";
   }
 }
-.days::after {
-  content: "днів";
-}
-.hours::after {
-  content: "годин";
-}
-.minutes::after {
-  content: "хвилин";
-}
-.seconds::after {
-  content: "секунд";
-} */
 /*-------------------*/
 
 .btn{
@@ -193,7 +195,7 @@
     justify-content: space-evenly;
   }
   .title-block{
-    color: rgb(255, 255, 255);
+    color: #ff5582;
     font-family: "Involve-Bold",sans-serif;
     font-size: 22px;
     font-weight: 700;
@@ -353,7 +355,7 @@
 .title-item{
   color: rgb(55, 53, 54);
   font-family: "Involve-Regular",sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0;
@@ -382,7 +384,7 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: center;
   span{
     font-variant-numeric: lining-nums proportional-nums;
@@ -428,7 +430,7 @@ li {
   font-size: 20px;
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: center;
   max-width: 345px;
   min-height: 150px;
@@ -473,7 +475,7 @@ li {
   font-size: 20px;
   font-weight: 700;
   line-height: 27px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: center;
   text-transform: uppercase;
   margin: 20px auto 8px;
@@ -635,7 +637,7 @@ li {
     width: 100%;
     height: auto; 
     border-radius: 10px;
-  }
+  } 
 }
 
 
@@ -651,7 +653,7 @@ li {
     font-size: 20px;
     font-weight: 400;
     line-height: 27px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     padding: 20px;
     margin: 0 auto;
@@ -743,6 +745,8 @@ li {
     padding-bottom: 177.77%; // вертикальне 
     height: 0;
     overflow: hidden;
+    max-width: 232px;
+    margin: 0 auto;
    }
    .video-box iframe {
     position: absolute;
@@ -757,11 +761,8 @@ li {
 
 .price{
   background-color: #30188F;
-  // max-width: 375px;
   max-width: 575px;
-  margin: 0 auto;
-  padding-bottom: 40px;
-  margin-top: 80px;
+  margin: 120px auto;
   position: relative;
 
   &::before{
@@ -778,6 +779,7 @@ li {
     top: -3%;
     left: 50%;
     transform: translateX(-50%);
+    z-index: -1;
   }
   &::after{
     position: absolute;
@@ -793,47 +795,67 @@ li {
     bottom: -3%;
     left: 50%;
     transform: translateX(-50%);
+    z-index: -1;
   }
   .section-title{
     color: #fff;
-    padding-top: 5%;
-  }
-  .package{
-    max-width: 345px;
-    height:auto;
-    border-radius: 10px;
-    background: rgb(255, 255, 255);
-    margin: 0 auto;
-    padding-bottom: 35px;
+    margin-bottom: 30px;
   }
   ul{
-    padding: 30px 20px 20px;
+    margin-bottom: 30px;
+    li{
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  .month{
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .border{
+    box-sizing: border-box;
+    border: 1px solid rgb(205, 154, 255);
+    border-radius: 10px;
+    padding: 25px 0 20px;
   }
   .period{
-    color: rgb(0, 0, 0);
-    font-variant-numeric: lining-nums proportional-nums;
-    font-family: "Involve-Bold", sans-serif;
-    font-size: 20px;
+    color: rgb(48, 24, 143);
+    font-family: "Involve-Bold",sans-serif;
+    font-size: 30px;
     font-weight: 700;
-    line-height: 27px;
-    letter-spacing: 0%;
+    line-height: 40px;
+    letter-spacing: 0;
     text-align: center;
     text-transform: uppercase;
-    border-top: 2px dashed rgb(48, 24, 143);
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 20px 0;
+    margin: 0 auto 9px;
   }
   .price-old{
-    color: rgb(0, 0, 0);
-    font-variant-numeric: lining-nums proportional-nums;
-    font-family: "Involve-Regular",sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0%;
     text-align: center;
-    text-decoration: line-through;
+
+    s{
+      color: rgb(0, 0, 0);
+      font-variant-numeric: lining-nums proportional-nums;
+      font-family: "Involve-Regular",sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0;
+    }
+    span{
+      color: rgb(255, 255, 255);
+      font-family: "Involve-Bold",sans-serif;
+      font-variant-numeric: lining-nums proportional-nums;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0;
+      text-align: left;
+      border-radius: 3px;
+      background: rgb(255, 49, 104);
+      padding: 0 5px;
+    }
   }
   .price-new{
     color: rgb(255, 49, 104);
@@ -842,7 +864,7 @@ li {
     font-size: 50px;
     font-weight: 700;
     line-height: 67px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
   }
   .btn-box {
@@ -852,12 +874,29 @@ li {
   .btn{
     width: 325px;
     padding: 0;
+    margin-top: 5px;
+    margin-bottom: 18px;
+  }
+  .timer-title{
+    color: rgb(55, 53, 54);
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .flex-row {
+    margin-top: -10px;
+  }
+  .timer .chart {
+    height: 60px;
+    padding-top: 10px;
+  }
+  .flex-row i {
+    color: rgb(55, 53, 54);
   }
 }
 
 
 .club{
-  max-width: 375px; 
+  max-width: 375px;
   padding-bottom: 75px;
   margin: 80px auto 0;
 
@@ -1096,7 +1135,7 @@ li {
     font-size: 28px;
     font-weight: 700;
     line-height: 37px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     margin-bottom: 8px;
   }

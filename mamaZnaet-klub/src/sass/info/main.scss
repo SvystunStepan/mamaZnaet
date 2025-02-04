@@ -11,7 +11,7 @@
   display: none;
 }
 
-.running-line {
+/* .running-line {
   background: #ff4e7c;
   position: fixed;
   top: 0;
@@ -20,18 +20,15 @@
   width: 100%;
   z-index: 999;
 }
-
 .roller-wrapper {
   white-space: nowrap;
 }
-
 .roller {
   overflow: hidden;
   display: flex;
   align-items: center;
   height: 40px;
 }
-
 .roller span {
   position: relative;
   color: #FFF;
@@ -42,7 +39,7 @@
   letter-spacing: 0%;
   text-transform: uppercase;
   padding: 0 50px;
-}
+} */
 
 /*-------------------*/
 .timer {
@@ -88,7 +85,7 @@
   padding-top: 3px;
 }
 
-.chart {
+.chart span{
   color: #FF5582;
   text-align: center;
   font-variant-numeric: lining-nums proportional-nums;
@@ -526,7 +523,8 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  margin-top: 40px;
+  // margin-top: 40px;
+  padding-bottom: 5%;
   position: relative;
 
   &::before {
@@ -562,7 +560,7 @@ li {
 .header-subtitle {
   color: rgb(55, 53, 54);
   font-family: "Involve-Regular", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0%;
@@ -577,7 +575,7 @@ li {
 
 .header .row .btn {
   width: 417px;
-  padding-right: 10%;
+  padding-right: 0;
 }
 
 .autor-img-mob {
@@ -685,6 +683,7 @@ li {
   .btn{
     max-width: 421px;
     width: 100%;
+    padding-right: 0;
   }
 }
 /*----------------*/
@@ -856,7 +855,7 @@ li {
     background: url(../images/psevdo-5.webp);
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: 2;
+    z-index: -1;
   } 
   .container {
     position: relative;
@@ -886,10 +885,10 @@ li {
 
 /*----------------*/
 .price{
-  padding: 50px 0 20px;
+  padding: 50px 0 0;
   position: relative;
 
-  &::before {
+  /* &::before {
     position: absolute;
     content: "";
     top: 66%;
@@ -900,7 +899,7 @@ li {
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 2;
-  }
+  } */
   &::after {
     position: absolute;
     content: "";
@@ -911,7 +910,11 @@ li {
     background: url(../images/psevdo-7.webp);
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: 2;
+    z-index: -1;
+  }
+  ul{
+    max-width: 630px;
+    margin: 0 auto 50px;
   }
   li{
     &:last-of-type{
@@ -922,20 +925,29 @@ li {
     text-align: center;
     margin: 0 auto 30px;
   }
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    justify-content: center; 
+    align-items: center;     
+  }
+
   .block{
-    max-width: 630px;
+    max-width: 413px;
     width: 100%;
     min-height: 444px;
     border-radius: 10px;
     background: rgb(238, 246, 255);
-    margin: 30px auto 0;
+    // margin: 30px auto 0;
     padding: 40px 0;
   }
   .block-title{
     margin-bottom: 20px;
   }
   .btn{
-    padding-right: 11%;
+    padding-right: 17%;
+    max-width: 322px;
   }
 }
 
@@ -1294,11 +1306,13 @@ li {
 }
 .answers {
   .disc {
-    list-style: inside;
+    // list-style: inside;
+    list-style: none;
     li{
-      padding-left: 0;
+      padding: 0 0 9px 0;
       &::before{
-        background: none;
+        // background: none;
+        display: none;
       }
     }
   }
@@ -1334,6 +1348,7 @@ li {
   text-align: center;
   background: rgb(47, 99, 144);
   margin-top: 50px;
+  padding-bottom: 115px;
 
   .row {
     padding: 20px 0;
@@ -1599,6 +1614,187 @@ label[for=agree] {
 }
 
 /*=============*/
+.fixed-block {
+  position: fixed;
+  // max-width: 375px;
+  // max-width: 575px;
+  width: 100%; 
+  min-height: 100px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(47, 99, 144);
+  z-index: 20;
+  &::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: -1px;
+    bottom: 0;
+    background: rgb(47, 99, 144);
+    z-index: -1;
+  }
+
+  .flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 575px;
+    margin: 0 auto;
+    padding: 10px 0;  
+  }
+  .title-block{
+    color: rgb(255, 255, 255);
+    font-family: "Involve-Bold",sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .timer-title {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0 auto -5px;
+  }
+  .flex-row i {
+    color: #fff;
+  }
+  .timer .chart {
+    width: 40px;
+    height: 26px;
+  }
+  .chart span{
+    font-size: 24px;
+    line-height: 27px;
+  }
+  .days::after,
+  .hours::after,
+  .minutes::after,
+  .seconds::after {
+    display: none;
+  }
+  .btn{
+    font-size: 14px;
+    line-height: 19px;
+    max-width: 183px;
+    width: 100%;
+    height: 63px;
+    padding: 0 20px;
+  }
+}
+
+.reviews{
+  margin: 100px auto 0;
+  padding-bottom: 100px;
+
+  .section-title{
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 40px;
+  }
+  .item{
+    padding: 0 15px;
+    height: auto;
+  }
+  img {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+  }
+  .slick-next, .slick-prev {
+    bottom: -70px;
+    top: auto;
+    transform: translateY(0);
+  }
+  .slick-prev {
+    left: 35%;
+  }
+  .slick-next {
+    right: 35%;
+  }
+  .slick-dots {
+    bottom: -70px;
+  }
+}
+
+.courses{
+  margin: 100px auto;
+
+  .section-title {
+    text-align: center;
+    margin: 0 auto 40px;
+  }
+  .flex{
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    // align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .block{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .block-standart {
+    padding: 0;
+    max-width: 305px;
+    img {
+      max-width: 305px;
+      width: 100%;
+      height: auto;
+    }
+    .text{
+      color: rgb(55, 53, 54);
+      text-align: center;
+      font-size: 16px;
+      line-height: 21px;
+      margin: 10px;
+    }
+  }
+}
+
+
+.club{
+  // max-width: 375px; 
+  padding-bottom: 90px;
+  margin: 80px auto 0;
+
+  .section-title {
+    text-align: center;
+    margin: 0 auto 40px;
+  }
+  .item{
+    padding: 0 15px;
+    height: auto; 
+  }
+  img {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+  }
+  .slick-next, .slick-prev {
+    bottom: -70px;
+    top: auto;
+    transform: translateY(0);
+  }
+  .slick-prev {
+    left: 35%;
+  }
+  .slick-next {
+    right: 35%;
+  }
+  .slick-dots {
+    bottom: -70px;
+  }
+}
+
 
 @media screen and (min-width: 1200px) and (max-width:1420px) {
   .header-subtitle {

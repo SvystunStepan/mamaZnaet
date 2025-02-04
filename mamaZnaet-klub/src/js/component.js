@@ -14,20 +14,31 @@ observer.observe();
 
 
 
+
 // Відкладене завантаження відео
 //---------- початок ----------
 document.addEventListener("DOMContentLoaded", function () {
-  var videoContainer = document.getElementById('video-container');
-  var lazyVideo = document.createElement('iframe');
-  // lazyVideo.setAttribute('data-src', 'https://www.youtube.com/embed/l3_KMnX8qq8?si=V8tLFp2I1Obt4pXJ');
-  lazyVideo.setAttribute('data-src', 'https://www.youtube.com/embed/Pvexhzo62SE');
-  lazyVideo.setAttribute('allow', 'autoplay; encrypted-media');
-  lazyVideo.setAttribute('allowfullscreen', '');
-  lazyVideo.classList.add('lazy-video');
-  videoContainer.appendChild(lazyVideo);
+  // Масив з інформацією про відео
+  const videoData = [
+    { containerId: 'video-container', videoSrc: 'https://www.youtube.com/embed/GNDMN2KR1IE?si=ZNMoY7QA8-8aZzRJ' },
+    { containerId: 'video-container1', videoSrc: 'https://www.youtube.com/embed/du87TDPXBRM?si=j6HvHQDO6y5rD6By&start=48' }
+  ];
+
+  // Додаємо відео в усі вказані контейнери
+  videoData.forEach(({ containerId, videoSrc }) => {
+    const videoContainer = document.getElementById(containerId);
+    if (videoContainer) {
+      const lazyVideo = document.createElement('iframe');
+      lazyVideo.setAttribute('data-src', videoSrc);
+      lazyVideo.setAttribute('allow', 'autoplay; encrypted-media');
+      lazyVideo.setAttribute('allowfullscreen', '');
+      lazyVideo.classList.add('lazy-video');
+      videoContainer.appendChild(lazyVideo);
+    }
+  });
   // Функція, що відкладає завантаження відео
   function loadLazyVideo() {
-    var lazyVideos = document.querySelectorAll('.lazy-video');
+    const lazyVideos = document.querySelectorAll('.lazy-video');
     lazyVideos.forEach(function (lazyVideo) {
       if (lazyVideo.getBoundingClientRect().top < window.innerHeight && lazyVideo.getBoundingClientRect().bottom >= 0) {
         lazyVideo.src = lazyVideo.dataset.src;
@@ -41,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Викликаємо функцію loadLazyVideo() відразу при завантаженні сторінки
   loadLazyVideo();
 });
+//---------- кінець ----------
 
 
 
@@ -116,6 +128,73 @@ $(document).ready(function () {
     }, 1500);
   });
 
+  //ВІДГУКИ
+  $('#slider01').slick({
+    dots: true,
+    arrows: true,
+    // autoplay: true,
+    adaptiveHeight: true,
+    speed: 2000,
+    autoplaySpeed: 4000,
+    // slidesToScroll: 1,
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 1024, // Для ширини до 1024px
+        settings: {
+          slidesToShow: 2, // Показувати 2 слайди
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 768, // Для ширини до 768px
+        settings: {
+          slidesToShow: 1, // Показувати 1 слайд
+          slidesToScroll: 1
+        }
+      }
+    ],
+    customPaging: function (slider, i) {
+      return '<button class="dot"></button>'; // Генерація крапок
+    }
+  });
+
+  //КЛУБ
+  $('#slider02').slick({
+    dots: true,
+    arrows: true,
+    // autoplay: true,
+    // adaptiveHeight: true,
+    speed: 2000,
+    autoplaySpeed: 5000,
+    slidesToShow: 4,
+    responsive: [
+      {
+        breakpoint: 1440, // Для ширини до 1440px
+        settings: {
+          slidesToShow: 3, // Показувати 3 слайди
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 1024, // Для ширини до 1024px
+        settings: {
+          slidesToShow: 2, // Показувати 2 слайди
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 768, // Для ширини до 768px
+        settings: {
+          slidesToShow: 1, // Показувати 1 слайд
+          slidesToScroll: 1
+        }
+      }
+    ],
+    customPaging: function (slider, i) {
+      return '<button class="dot"></button>'; // Генерація крапок
+    }
+  });
 
   //головний слайдер фото
   $('#slider1').slick({
@@ -144,22 +223,6 @@ $(document).ready(function () {
       }
     }]
   });
-
-  //слайдер відгуків
-  /* $('#slider3').slick({
-    dots: false,
-    speed: 1000,
-    slidesToShow: 2,
-    // adaptiveHeight: true,
-    arrows: true,
-    responsive: [{
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1
-      }
-    }]
-  }); */
-
 
 
   //accardion
@@ -253,3 +316,25 @@ $(document).ready(function () {
 
 
 })
+
+
+$('.reviews-slider, .club-slider, .speaker-slider').on('init reInit afterChange', function (event, slick, currentSlide) {
+  const totalDots = 5; // Скільки крапок показати
+  const $slider = $(this); // Поточний слайдер
+  const $dots = $slider.find('.slick-dots li'); // Крапки цього слайдера
+  const current = currentSlide || 0;
+
+  $dots.each(function (index) {
+    if (index >= current - Math.floor(totalDots / 2) && index <= current + Math.floor(totalDots / 2)) {
+      $(this).show(); // Показуємо крапки
+    } else {
+      $(this).hide(); // Ховаємо зайві крапки
+    }
+  });
+});
+
+// коли використовується "adaptiveHeight: true" текст на сторінці не "тремтить"
+$('#slider01.reviews-slider').on('setPosition', function () {
+  const slickList = $(this).find('.slick-list');
+  slickList.height(slickList.height()); // Фіксує висоту
+});
