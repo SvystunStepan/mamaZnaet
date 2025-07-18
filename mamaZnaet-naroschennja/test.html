@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <style>
+        .video-placeholder {
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .video-placeholder img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            cursor: pointer;
+        }
+
+        .video-placeholder iframe {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="video-slider">
+        <div class="video-placeholder" data-video-id="QRhjqURLFEA">
+            <img src="https://img.youtube.com/vi/QRhjqURLFEA/hqdefault.jpg" alt="">
+            <button class="play-button">▶</button>
+        </div>
+        <div class="video-placeholder" data-video-id="79I8utmJe30">
+            <img src="https://img.youtube.com/vi/79I8utmJe30/hqdefault.jpg" alt="">
+            <button class="play-button">▶</button>
+        </div>
+        <div class="video-placeholder" data-video-id="tkEO3JIbzuw">
+            <img src="https://img.youtube.com/vi/tkEO3JIbzuw/hqdefault.jpg" alt="">
+            <button class="play-button">▶</button>
+        </div>
+        <div class="video-placeholder" data-video-id="QRhjqURLFEA">
+            <img src="https://img.youtube.com/vi/QRhjqURLFEA/hqdefault.jpg" alt="">
+            <button class="play-button">▶</button>
+        </div>
+        <div class="video-placeholder" data-video-id="sx2OxxTH9y4">
+            <img src="https://img.youtube.com/vi/sx2OxxTH9y4/hqdefault.jpg" alt="">
+            <button class="play-button">▶</button>
+        </div>
+    </div>
+
+</body>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.video-slider').slick({
+            dots: true,
+            arrows: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: true
+        });
+
+        $('.video-placeholder').on('click', function () {
+            var videoId = $(this).data('video-id');
+            var iframe = $('<iframe>', {
+                src: 'https://www.youtube.com/embed/' + videoId + '?autoplay=1',
+                frameborder: 0,
+                allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture',
+                allowfullscreen: true
+            });
+            $(this).html(iframe);
+        });
+    });
+</script>
+
+</html>

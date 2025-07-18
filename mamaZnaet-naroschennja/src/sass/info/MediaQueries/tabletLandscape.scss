@@ -1,0 +1,8 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+  @import '../desktop';
+  //1024-1199
+
+  
+}

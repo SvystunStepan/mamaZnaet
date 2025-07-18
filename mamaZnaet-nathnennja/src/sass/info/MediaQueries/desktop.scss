@@ -1,0 +1,9 @@
+@import '../../mq';
+
+@media #{$desktop} {
+    @import '../desktop';
+    // min 1200px
+    & {
+
+    }
+}

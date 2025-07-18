@@ -1,0 +1,14 @@
+@import '../../mq';
+
+@media #{$desktopMega} {
+    @import '../desktop';
+
+    & {
+        .header {
+            background-size: contain;
+        }
+        .nihto{
+            background-size: contain;
+        }
+    }
+}

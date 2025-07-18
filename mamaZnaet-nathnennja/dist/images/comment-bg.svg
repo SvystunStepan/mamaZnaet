@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 241" width="1920" height="241">
+	<title>comment-bg</title>
+	<defs>
+		<image width="1920" height="40" id="img1" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDE5MjAgNDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDQwTDE5MjAgNDBDMTkyMCA0MCAxMzM1LjYzIDAgOTYwIDBDNTg0LjM2NSAwIDAgNDAgMCA0MFoiIGZpbGw9IiNFQ0U2RTAiLz4KPC9zdmc+Cg=="/>
+		<image width="1920" height="160" id="img2" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxNjAiIHZpZXdCb3g9IjAgMCAxOTIwIDE2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjE5MjAiIGhlaWdodD0iMTYwIiBmaWxsPSIjRUNFNkUwIi8+Cjwvc3ZnPgo="/>
+		<image width="1920" height="40" id="img3" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDE5MjAgNDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBMMTkyMCAwQzE5MjAgMCAxMzM1LjYzIDQwIDk2MCA0MEM1ODQuMzY1IDQwIDAgMCAwIDBaIiBmaWxsPSIjRUNFNkUwIi8+Cjwvc3ZnPgo="/>
+	</defs>
+	<style>
+	</style>
+	<use id="img1" href="#img1" transform="matrix(1,0,0,1,0,1)"/>
+	<use id="img2" href="#img2" transform="matrix(1,0,0,1,0,40)"/>
+	<use id="img3" href="#img3" transform="matrix(1,0,0,1,0,199)"/>
+</svg>

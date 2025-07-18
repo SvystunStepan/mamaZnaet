@@ -1,0 +1,11 @@
+@import '../../mq';
+
+@media #{$desktopMega} {
+    @import '../desktop';
+
+    & {
+        .header {
+            padding-bottom: 5%;
+        }
+    }
+}

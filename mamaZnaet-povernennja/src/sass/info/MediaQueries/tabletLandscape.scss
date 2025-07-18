@@ -1,0 +1,52 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+  @import '../desktop';
+  //1024-1199
+
+  .header {
+    padding: 70px 0 50px;
+
+    .header-title {
+      font-size: 120px;
+      line-height: 120px;
+    }
+    .header-subtitle {
+      font-size: 100px;
+      line-height: 112px;
+      padding-left: 30px;
+    }
+    .flex-wrap {
+      margin-right: -75px;
+      justify-content: center;
+    }
+    .btn {
+      margin: 50px auto 0;
+    }
+  }
+  .dytynstvo {
+    padding: 100px 0 60px;
+  }
+  .nihto {
+    padding-top: 50px;
+    .btn {
+      margin: 40px 0;
+    }
+  }
+  .format{
+    padding: 50px 0 0;
+    ul{
+      margin-bottom: 60px;
+    }
+  }
+  .speaker {
+    .header-subtitle {
+      font-size: 90px;
+      line-height: 90px;
+    }
+    .foto {
+      margin-left: -300px;
+      max-width: 760px;
+    }
+  }
+}

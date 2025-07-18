@@ -1,0 +1,653 @@
+& {
+  html, body {
+    overscroll-behavior: contain !important;
+  }
+  .desktop{
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+
+
+  .roller {
+    height: 26px;
+
+    span {
+      font-size: 14px;
+      // letter-spacing: 1px;
+      padding: 0 20px;
+    }
+  }
+  /* .roller span {
+    padding: 0 20px;
+  } */
+
+/*-------------------*/
+  /* .video1 {
+    padding: 20px 0 30px;
+    .section-title {
+      font-size: 40px;
+    }
+  } */
+/*-------------------*/
+.section-title {
+  font-size: 36px;
+  span{
+    font-size: 56px;
+    line-height: 54px;
+  }
+}
+
+.text22 {
+  font-size: 20px;
+  line-height: 26px;
+}
+.text30 {
+  font-size: 24px;
+}
+  /*----------*/
+  .btn{
+    width: auto;
+  }
+  /*----------*/
+  .header {
+    background-image: url(../images/header-bg-mobile.webp);
+
+    .header-title{
+      text-align: center;
+      font-size: 45px;
+      line-height: 40px;
+      margin: 10% auto 0;
+      max-width: 700px;
+    
+      span{
+        font-size: 66px;
+        line-height: 0;
+      }
+    }
+    .sticker{
+      top: 11px;
+      right: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 12px 6px;
+      position: relative;
+    }
+
+    .subtitle.text22 {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .subtitle.text {
+      text-align: center;
+      padding: 10px 0;
+    }
+    .flex-row{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .btn-box{
+      padding-right: 50+20px;
+      }
+    }
+    .flex-wrap{
+      justify-content: center;
+      gap: 0px 40px;
+    }
+    .header-price{
+      display: flex;
+      align-items: center;
+      gap: 0 10px;
+    }
+    .btn{
+      width: 100%;
+      margin: 22px auto 22px -30px;
+      padding-right: 40px;
+    }
+  }
+  .bonus{
+    padding-top: 20px;
+    .notebook{
+      max-width: 78px;
+    }
+    .text{
+      padding-left: 6px;
+    }
+  }
+  .label{
+    padding: 10px;
+    margin: 100% 15px -132px 15px;
+    // max-width: 412px;
+    max-width: 500px;
+    
+    .text{
+      font-size: 14px;
+      line-height: 18px;
+    }
+    .border{
+      padding: 17px 20px 13px 0;
+    }
+    .quotes{
+      max-width: 52px;
+      margin: -42px 5px auto 10px;
+    }
+  }
+  /*----------*/
+  .stany{
+    padding-top: 23%;
+    margin-top: 30%;
+  
+    .section-title{
+      text-align: left;
+      font-size: 36px;
+      margin-left: 15px;
+      margin-bottom: 20px;
+      span{
+        font-size: 56px;
+        margin-left: 28%;
+      }
+    }
+    .stany-img{
+      margin: 10px auto 0;
+      width: 100%;
+      max-width: 500px;
+    }
+    .block{
+      gap: 20px;
+      margin-bottom: 12px;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+      .question{
+        width: 64px;
+        height: 64px;
+      }
+    }
+  }
+  /*----------*/
+  .tjagar{
+    padding: 60px 0;
+
+    &::before,
+    &::after{
+      display: none;
+    }
+    .section-title{
+      font-size: 36px;
+      margin: 0 auto 20px;
+      padding: 0 5px;
+      max-width: 656px;
+
+      span{
+        font-size: 56px;
+        line-height: 34px;
+      }
+    }
+    .block{
+      padding: 30px 3px 30px 20px;
+      margin: 0 auto;
+    }
+    .red{
+      padding-right: 21px;
+    }
+    .text30{
+      margin-bottom: 10px;
+    }
+  }
+  /*----------*/
+  .lecture {
+    padding: 80px 0 30px;
+    .section-title{
+      padding: 0 8px;
+      span{
+        white-space: nowrap;
+      }
+    }
+    .subtitle.text22{
+      margin-bottom: 10px;
+    }
+    .subtitle.text {
+      margin: 0 -3px;
+    }
+    .block{
+      margin-top: 20px;
+    }
+    .bg-color{
+      padding: 30px 20px;
+      .text30{
+        margin-bottom: 20px;
+      }
+    }
+    
+    .notebook{
+      .text30{
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .notebook-img{
+        width: 100%;
+      }
+      li {
+        padding-right: 20px;
+      }
+    }
+  }
+  /*----------*/
+  .nathnennja{
+    padding: 30px 0 40px;
+    .section-title{
+      margin-bottom: 20px;
+    }
+    .nathnennja-img{
+      max-width: 60px;
+      margin-right: 15px;
+    }
+  }
+  /*----------*/
+  .comment{
+    background-image: url(../images/comment-bg-mobile.svg);
+    padding: 40px 0;
+  
+    .quotes{
+      margin: 0px 18px 0 0;
+    }
+    .text22{
+      margin-top: 26px;
+      padding: 0 20px 0 0;
+    }
+    .text{
+      margin: 0;
+    }
+  }
+  /*----------*/
+  .result{
+    padding: 60px 0;
+  
+    .section-title{
+      margin-right: 0;
+    }
+    li{
+      padding: 0px 0 20px 53px;
+    }
+    .result-img{
+      max-width: 500px;
+    }
+  }
+  /*----------*/
+  .format{
+    .section-title{
+      margin: 50px 0 20px;
+      text-align: center;
+      span{
+        line-height: 54px;
+      }
+    }
+    li{
+      padding: 0 10px 22px 54px;
+    }
+  }
+  /*----------*/
+  .autor{
+    margin: 60px auto 0;
+    .block{
+      max-height: none;
+      height: auto;
+      padding: 40px 10px 30px 20px;
+    }
+    .section-title{
+      margin-bottom: 20px;
+      span{
+        line-height: 54px;
+        letter-spacing: -6px;
+      }
+    }
+    li{
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+    }
+    .label {
+      position: relative;
+      margin: 24px auto 30px;
+    }
+    .autor-img{
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+  /*----------*/
+  .price{
+    padding: 60px 0;
+    .section-title{
+      span{
+        line-height: 34px;
+      }
+    }
+    .btn{
+      margin: 0 22px 30px;
+    }
+  }
+  /*----------*/
+  .answers {
+    padding: 60px 0;
+    .section-title{
+      margin-bottom: 20px;
+    }
+  }
+  .answers-border {
+    padding: 24px 10px 23px 20px;
+  }
+  .bg-arrow {
+    padding: 0 13px;
+    margin-left: 15px;
+  }
+  .accordion-content {
+    .text,
+    .disc,
+    .line {
+      padding: 18px 10px 0 0;
+    }
+  }
+  /*----------*/
+  .footer {
+    padding: 50px 0 110px;
+
+    .flex-block{
+      justify-content: center;
+      flex-direction: column-reverse;
+    }
+    .flex-wrap{
+      flex-direction: column;
+      justify-content: center;
+    }
+    .zvjazok img{
+      width: 50px;
+      height: 50px;
+    }
+    .social {
+      margin: 20px auto 30px;
+      img{
+        width: 30px;
+        height: 30px;
+      }
+    }
+    
+    ul {
+      flex-direction: column;
+      justify-content: center;
+      margin: 30px auto 0;
+    }
+    li {
+      margin-bottom: 20px;
+    }
+  }
+
+  /*=========*/
+  .fancybox-content {
+    max-width: 344px;
+    padding: 20px;
+  }
+  .fancybox-content .section-title {
+    font-size: 36px;
+    margin-top: 25px;
+  }
+  .form-subtitle {
+    font-size: 16px;
+    max-width: 290px;
+  }
+  form input {
+    width: 100%;
+    height: 40px;
+  }
+  form label {
+    padding-left: 0px;
+    font-size: 16px;
+  }
+  form .btn {
+    margin: 10px auto 0;
+    max-width: 295px;
+    width: 100%;
+    height: 69px;
+    padding: 0;
+  }
+  form .btn::after {
+    height: 68px;
+  }
+  label[for="agree"] {
+    font-size: 11px;
+    padding: 14px 0 0;
+  }
+  form a,
+  label[for=agree] {
+    font-size: 11px;
+  }
+  /*=========*/
+  @media screen and (max-width: 374px) {
+    .section-title{
+      font-size: 32px;
+      line-height: 34px;
+      span{
+        font-size: 46px;
+        line-height: 46px;
+      }
+    }
+    .header .header-title {
+      font-size: 38px;
+      line-height: 38px;
+      // margin: 10% auto 0;
+    }
+    .header .btn {
+      max-width: 280px;
+      padding-left: 20px;
+      padding-right: 75px;
+      height: 79px;
+
+      .zirka {
+        top: -22px;
+        right: -38px;
+      }
+      .btn-block-item {
+        right: -23px;
+      }
+    }
+    .header .label {
+      margin: 130% 5px -100px 5px;
+    }
+    .label{
+      .quotes {
+        position: absolute;
+        left: 20px;
+      }
+      .border {
+        padding: 20px 10px 10px;
+      }
+    } 
+    .lecture .section-title {
+      padding: 0;
+      span {
+        white-space: wrap;
+      }
+    }
+    .autor .section-title span {
+      letter-spacing: -5px;
+    }
+    
+    //--------
+    .fancybox-content {
+      max-height: 510px;
+      padding: 15px;
+    }
+    .fancybox-close-small {
+      margin: 0;
+    }
+    .fancybox-content .section-title {
+      font-size: 34px;
+    }
+    form input {
+      width: 100%;
+    }
+    form a,
+    label[for=agree] {
+      font-size: 11px;
+    }
+    form .btn {
+      flex-direction: row;
+      padding: 0;
+    }
+    //--------
+    .fixed-block .title-block{
+      font-size: 20px;
+    }
+    .fixed-block .btn {
+      max-width: 160px;
+    }
+  }
+
+  @media screen and (min-width: 436px) and (max-width: 530px) {
+    .label{
+      margin: 100% auto -70px;
+    }  
+    .stany {
+      padding-top:0;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .lecture::after {
+      bottom: 4%;
+      max-height: 668px;
+      height: 100%;
+      width: 100%;
+      background: url(../images/psevdo-3-mob.webp);
+      background-size: cover;
+    }
+    .format .format-img-mob{
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      margin: -45% auto 0;
+    }
+    .format .format-img-des{
+      display: none;
+    }
+  }
+  @media screen and (min-width: 501px) {
+    .format .format-img-des{
+      display: block;
+      width: 100%;
+      margin: -15% auto 0;
+    }
+  }
+  @media screen and (min-width: 531px) {
+    .header {
+      background-image: none;
+      background: rgb(236, 230, 224);
+    }
+    .header .header-price {
+      flex-direction: column;
+    }
+    .header .flex-row{
+      padding: 10px 0 0;
+    }
+    .header .label{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      margin: -10% auto 0;
+      width: 100%;
+    } 
+    .header-bg-tab{
+      display: block !important;
+      max-width: 500px;
+      width: 100%;
+      margin: 0 auto;
+     }
+     .stany {
+      padding-top: 0;
+      margin-top: 25%;
+    }
+    .lecture .subtitle.text {
+      margin: 0 auto;
+    }
+  }
+ 
+  @media screen and (min-width:768px) and (max-width: 1023px) {
+    .header .header-title{
+      margin-top: 5%;
+    }
+    .stany {
+      margin-top: 14%;
+      .section-title {
+        text-align: center;
+        margin-left: -87px;
+      }
+    }
+    .result {
+      .section-title{
+        text-align: center;
+      }
+      li {
+      padding-top: 10px;
+      }
+    }
+    .autor .section-title{
+      text-align: center;
+    }
+    .autor .block {
+      margin: 0 auto;
+      max-width: 540px;
+    }
+
+  }
+
+  @media screen and (max-width: 991px) {
+    .result .result-img{
+      display: none;
+    }
+  }
+  @media screen and (min-width:992px) and (max-width: 1023px) {
+    .header .label {
+      left: 49%;
+      transform: none;
+    }
+    .stany {
+       margin-top: 15%;
+       .section-title {
+        text-align: left;
+        margin: 0 0 -15% 0;
+        span {
+          margin-left: 13%;
+        }
+      }
+      .block:last-of-type{
+        margin-bottom: 40px;
+      }
+     }
+    .result li {
+      padding-top:5px;
+    }
+     .result .result-img{
+      margin: auto 0 -60px -50px;
+    }
+    .format .format-img-des {
+      width: 193%;
+      margin: -15% auto 0 -170px;
+    }
+    .autor .autor-img {
+      width: 187%;
+      margin: 0 auto 0px -131px;
+    }
+  }
+
+  // .header::before,
+  // .header::after,
+  // .vhodit::before,
+  // .online-platf::before,
+  // .video::before,
+  // .price::before,
+  // .price::after{
+  //   display: none;
+  // }
+}

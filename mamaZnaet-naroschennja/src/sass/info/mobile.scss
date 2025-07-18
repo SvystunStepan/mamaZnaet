@@ -1,0 +1,387 @@
+& {
+  html, body {
+    overscroll-behavior: contain !important;
+  }
+  .desktop{
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+
+  /*-------------------*/
+  .rozpoznalas::before,
+  .rozpoznalas::after,
+  .reviews-img::before,
+  .banner::before,
+  .section-form::before{
+    display: none;
+  }
+  /*-------------------*/
+
+  .roller {
+    height: 26px;
+
+    span {
+      font-size: 14px;
+      padding: 0 20px;
+    }
+  }
+  /* .roller span {
+    padding: 0 20px;
+  } */
+
+
+  /*-------------------*/
+  .section-title {
+    font-size: 36px;
+    span{
+      font-size: 36px;
+    }
+  }
+
+  /*-------------------*/
+  .header {
+    background-image: url(../images/header-bg-mobile.webp);
+    padding-bottom: 147%;
+
+    .header-title{
+      text-align: center;
+      font-size: 48px;
+      margin: 56px auto 10px;
+    }
+    .subtitle{
+      font-size: 22px;
+      line-height: 28px;
+      text-align: center;
+      margin: 0 auto 20px;
+      padding: 0 5px;
+    }
+     .flex-wrap{
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+    }
+    .btn{
+      margin: 0 auto;
+    }
+  }
+  /*----------*/
+  .pracy{
+    padding: 50px 0 30px;
+
+    .section-title{
+      margin: 0 auto 20px;
+    }
+    .flex-wrap{
+      gap: 48px 20px;
+    }
+  } 
+  /*----------*/
+  .rozpoznalas{
+    padding: 30px 0;
+  }               
+  /*----------*/
+  .kurs{
+    padding: 30px 0;
+
+    .section-title{
+      margin: 0 auto 20px;
+    }
+    .flex-wrap{
+      gap: 10px;
+    }
+  }
+  /*----------*/
+  .register{
+    padding: 30px 0;
+    .flex-wrap{
+      gap: 20px;
+    }
+    .flex-row {
+      gap: 20px;
+    }
+    .img{
+      width: 34px;
+      height: 46px;
+    }
+    .section-title{
+      font-size: 32px;
+      span{
+        font-size: 32px;
+      }
+    }
+    .flex-col {
+      gap: 12px;
+    }
+    .text{
+      font-size: 18px;
+      line-height: 23px;
+      margin: 0 5px;
+    }
+  }
+  /*----------*/
+  .dlaczego, .wybrac, .teraz{
+    padding: 30px 0;
+
+    .flex-wrap{
+      gap: 40px 10px;
+    }
+    .title-item{
+      margin: 30px auto 20px;
+    }
+  }
+  /*----------*/
+  .reviews-img{
+    padding: 30px 0;
+
+    .section-title{
+      margin: 0 auto 20px;
+    }
+    .item{
+      padding: 0 5px;
+    }
+  }
+  /*----------*/
+  .reviews-video{
+    padding: 40px 0 60px;
+    .item{
+      text-align: center;
+    }
+  }  
+  /*----------*/
+  .banner{
+    padding: 30px 0;
+
+    .lines {
+      &::after{
+        top: 25%;
+        left: -3%;
+        width: 100%;
+        height: 100%;
+        background: url(../images/photo-2-2.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+    .flex-col{
+      margin: 50px auto 0;
+    }
+    .sec-subtitle{
+      font-size: 18px;
+      line-height: 23px;
+      margin: 12px auto 20px;
+    }
+
+    .photo-1{
+      margin: 10px auto -10px 20px;
+    }
+  }
+  /*----------*/
+  .wybrac{
+    padding-bottom: 30px;
+    .section-title {
+      margin: 0 auto 20px;
+      padding-bottom: 0;
+    }
+    .flex-wrap {
+      gap: 20px 10px;
+    }
+    .flex-col{
+      max-width: 345px;
+      width: 100%;
+    }
+  }
+  /*----------*/
+  .pro-sebe{
+    padding: 30px 0;
+    .lines {
+      padding: 40px 0 0 22px;
+      &::before {
+        background: linear-gradient(to bottom right, #FFD9AD33, #FFD9AD00);
+        -webkit-mask:
+          linear-gradient(#fff 0 0) content-box,
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+      }
+    }
+    .flex-col{
+      margin-right: 0;
+    }
+    picture{
+      margin: 0 auto;
+    }
+    .photo-2{
+      width: 123%;
+      margin-left: -15%;
+      margin-bottom: -13px;
+    }
+  }
+  /*----------*/
+  .teraz{
+    .section-title {
+      margin: 0 auto 10px;
+    }
+    .title-item {
+      font-size: 18px;
+      line-height: 23px;
+      margin: 0 auto 20px;
+    }
+  }
+  /*----------*/
+  .wybrac2{
+    .section-title {
+      margin: 0 auto ;
+    }
+    .flex-col{
+      align-items: center;
+    }
+    .img{
+        margin: -70px 0 0;
+        margin-right: 18%;
+    }
+    .text-title {
+      margin: -35px auto 10px;
+    }
+  }
+  /*----------*/
+  .section-form{
+    padding: 30px 0 60px;
+   
+    .flex-col{
+      .section-title{
+        padding-bottom: 10px;
+      }
+      .title-item{
+        padding: 10px 0;
+      }
+    }
+    li {
+      padding-right: 5px;
+    }
+  }
+  /*----------*/
+  .footer{
+    padding: 40px 0;
+    .flex-col{
+      align-items: center;
+    }
+    .text{
+      text-align: center;
+    }
+    .contacts a:first-child{
+      margin-top: 40px;
+    }
+    .coordinates p:first-child{
+      margin-top: 30px;
+    }
+    .polityka{
+      margin-top: 30px;
+    }
+  }
+  /*----------*/
+  .block-popup {
+    .lines{
+      padding: 40px 20px 30px 20px;
+    }
+    .privacy-checkbox {
+      gap: 14px;
+    }
+    .text{
+      padding-right: 10px;
+    }
+  }
+  /*----------*/
+  .slick-dots {
+    bottom: -40px;
+  }
+  .slick-dots li {
+    margin: 0;
+  }
+  .slick-dots li button {
+    margin: -5px 0px 0 -5px;
+  }
+  /*----------*/
+
+  /*=========*/
+  .fancybox-content {
+    padding: 0px;
+  }
+  .fancybox-close-small {
+    margin: 10px 10px 0 0;
+  }
+  .fancybox-button svg {
+    width: 20px;
+    height: 20px;
+  }
+  .block-popup {
+    max-width: 340px;
+    .form-subtitle {
+      margin: 8px -6px 13px;
+    }
+  }
+  /*=========*/
+
+  @media screen and (max-width: 374px) {
+    .header .header-title {
+      font-size: 38px;
+      line-height: 38px;
+    }
+  }
+  @media screen and (min-width: 531px) and (max-width: 991px){
+    .header {
+      padding-bottom: 5%;
+      background-image: url(../images/header-bg-tab.webp);
+    }
+  }
+  @media screen and (min-width: 575px) and (max-width: 767px) {
+    .banner .photo-1 {
+      margin: 10px auto -10px;
+      max-width: 400px;
+    }
+  }
+  @media screen and (min-width:768px) and (max-width: 1023px) {
+    .banner {
+      .block {
+        min-height: auto;
+      }
+      .lines::after {
+        top: 0%;
+        left: 23%;
+      }
+      .photo-1 {
+        margin: 10px auto -10px;
+        max-width: 309px;
+      }
+    }
+    .pro-sebe .photo-2 {
+      width: 100%;
+      margin: -13px auto;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .footer .flex-block{
+      flex-direction: column;
+      align-items: center !important;
+      justify-content: center;
+    }
+  }
+  @media screen and (min-width:992px) and (max-width: 1023px) {
+    .header {
+      padding-bottom: 5%;
+      background-image: url(../images/header-bg-desktop.webp);
+    }
+    .footer {
+      .contacts a:first-child{
+        margin-top: 0;
+      }
+      .coordinates p:first-child{
+        margin-top: 0;
+      }
+      .polityka{
+        margin-top: 0;
+      }
+    }
+  }
+}
